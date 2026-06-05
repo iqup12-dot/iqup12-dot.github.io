@@ -279,7 +279,8 @@ section{padding:7rem 2.5rem;}
   border-radius:14px;padding:1.5rem;
   transition:border-color .2s,transform .2s;
 }
-.tl-card:hover{border-color:rgba(251,191,36,.4);transform:translateY(-3px);}
+.tl-clickable{cursor:pointer;}
+.tl-card.tl-clickable:hover{border-color:rgba(251,191,36,.4);transform:translateY(-3px);}
 .tl-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.8rem;}
 .tl-period{font-size:.72rem;color:var(--text-2);background:var(--bg-2);padding:.2rem .6rem;border-radius:5px;}
 .tl-hours{font-size:.75rem;font-weight:700;color:var(--amber);}
@@ -287,6 +288,60 @@ section{padding:7rem 2.5rem;}
 .tl-place{font-size:.78rem;color:var(--text-2);}
 .tl-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.75rem;}
 .tl-tag{font-size:.68rem;padding:.18rem .5rem;border-radius:4px;background:rgba(251,191,36,.1);color:var(--amber);border:1px solid rgba(251,191,36,.2);}
+
+/* ── 서브 라인업 섹션 ── */
+.sub-lineup-section{
+  grid-column:1/-1;
+  margin-top:.5rem;
+  border:1px solid rgba(167,139,250,.2);
+  border-radius:18px;
+  padding:1.75rem;
+  background:linear-gradient(135deg,rgba(167,139,250,.04),rgba(59,130,246,.04));
+}
+.sub-lineup-title{
+  font-size:.85rem;font-weight:700;
+  color:var(--purple);
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  margin-bottom:1.25rem;
+  padding-bottom:.75rem;
+  border-bottom:1px solid rgba(167,139,250,.15);
+}
+.sub-lineup-groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;}
+.sub-group{
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  overflow:hidden;
+}
+.sub-group-header{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:.7rem 1rem;
+  background:rgba(167,139,250,.08);
+  border-bottom:1px solid var(--border);
+}
+.sub-group-label{font-size:.78rem;font-weight:700;color:var(--purple);}
+.sub-count{
+  font-size:.68rem;font-weight:700;
+  background:rgba(167,139,250,.2);
+  color:var(--purple);
+  border-radius:99px;padding:.1rem .5rem;
+}
+.sub-group-items{display:flex;flex-direction:column;gap:.5rem;padding:.75rem;}
+.sub-item{
+  padding:.65rem .85rem;
+  border-radius:8px;
+  border:1px solid var(--border);
+  background:var(--bg-2);
+  transition:border-color .2s,background .2s;
+}
+.sub-item.tl-clickable:hover{
+  border-color:rgba(167,139,250,.4);
+  background:rgba(167,139,250,.06);
+}
+.sub-item-title{font-size:.82rem;font-weight:600;line-height:1.4;margin-bottom:.4rem;color:var(--text);}
+.sub-item-tags{display:flex;flex-wrap:wrap;gap:.25rem;}
+.sub-item-tags .tl-tag{font-size:.65rem;}
 
 /* ── Skills ── */
 #skills{background:var(--bg);}

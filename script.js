@@ -102,7 +102,7 @@ function cardHTML(p) {
   </div>`;
 }
 
-// ── 교육 타임라인 ──
+// ── 교육 타임라인 (서브 라인업 지원) ──
 function renderEducation() {
   const wrap = document.getElementById('education-timeline');
   const items = allProjects
@@ -111,11 +111,28 @@ function renderEducation() {
 
   if (!items.length) { wrap.innerHTML = '<p class="loading-msg">교육 데이터 없음</p>'; return; }
 
-  wrap.innerHTML = items.map(p => {
+  // 메인 항목과 서브 라인업 항목 분리
+  const mainItems = items.filter(p => !/^\[/.test(p.title));
+  const subItems  = items.filter(p =>  /^\[/.test(p.title));
+
+  // 서브 항목 그룹화 (태그 기준)
+  const groups = {};
+  subItems.forEach(p => {
+    const m = p.title.match(/^\[([^\]]+)\]/);
+    if (m) {
+      const tag = m[1];
+      if (!groups[tag]) groups[tag] = [];
+      groups[tag].push(p);
+    }
+  });
+
+  // 메인 카드 렌더링
+  const mainHTML = mainItems.map(p => {
     const hours = (p.title.match(/(\d+)h/)||[])[1];
     const place = p.star ? extractPlace(p.star) : '';
+    const idx = allProjects.indexOf(p);
     return `
-    <div class="tl-card">
+    <div class="tl-card tl-clickable" data-idx="${idx}">
       <div class="tl-top">
         <span class="tl-period">${p.date ? p.date.slice(0,7) : ''}</span>
         ${hours ? `<span class="tl-hours">⏱ ${hours}시간</span>` : ''}
@@ -125,6 +142,40 @@ function renderEducation() {
       <div class="tl-tags">${(p.tech_stack||[]).map(t=>`<span class="tl-tag">${t}</span>`).join('')}</div>
     </div>`;
   }).join('');
+
+  // 서브 그룹 렌더링
+  const subGroupHTML = Object.entries(groups).map(([tag, groupItems]) => {
+    const label = tag.replace(/^\d+h\s+/, '');
+    const subCards = groupItems.map(p => {
+      const cleanTitle = p.title.replace(/^\[[^\]]+\]\s*/, '');
+      const idx = allProjects.indexOf(p);
+      return `<div class="sub-item tl-clickable" data-idx="${idx}">
+        <p class="sub-item-title">${cleanTitle}</p>
+        <div class="sub-item-tags">${(p.tech_stack||[]).slice(0,3).map(t=>`<span class="tl-tag">${t}</span>`).join('')}</div>
+      </div>`;
+    }).join('');
+    return `
+    <div class="sub-group">
+      <div class="sub-group-header">
+        <span class="sub-group-label">${label}</span>
+        <span class="sub-count">${groupItems.length}</span>
+      </div>
+      <div class="sub-group-items">${subCards}</div>
+    </div>`;
+  }).join('');
+
+  const sublineupSection = subGroupHTML ? `
+    <div class="sub-lineup-section">
+      <div class="sub-lineup-title">📖 세부 학습 내역 — 장비사교육 · 장비제어SW · 공정기초</div>
+      <div class="sub-lineup-groups">${subGroupHTML}</div>
+    </div>` : '';
+
+  wrap.innerHTML = mainHTML + sublineupSection;
+
+  wrap.querySelectorAll('.tl-clickable').forEach(el => {
+    const idx = +el.dataset.idx;
+    el.addEventListener('click', () => { if (allProjects[idx]) openModal(allProjects[idx]); });
+  });
 }
 
 function extractPlace(star) {
