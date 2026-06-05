@@ -226,6 +226,14 @@ section{padding:7rem 2.5rem;}
 }
 .p-card:hover::before{opacity:1;}
 
+/* 새 카테고리 카드 accent */
+.p-card.cat-mat  {--card-accent:#22d3ee;}   /* 소재·분석 — cyan */
+.p-card.cat-ic   {--card-accent:#a78bfa;}   /* 회로·IC   — purple */
+.p-card.cat-sw   {--card-accent:#3b82f6;}   /* SW·자동화  — blue */
+.p-card.cat-proc {--card-accent:#fbbf24;}   /* 공정·장비  — amber */
+.p-card.cat-edu  {--card-accent:#94a3b8;}   /* 교육·학습  — slate */
+.p-card.cat-ugrad{--card-accent:#fb923c;}   /* 학부과정   — orange */
+/* 구버전 호환 */
 .p-card.cat-r{--card-accent:#3b82f6;}
 .p-card.cat-c{--card-accent:#22d3ee;}
 .p-card.cat-l{--card-accent:#fbbf24;}
@@ -235,6 +243,14 @@ section{padding:7rem 2.5rem;}
   font-size:.7rem;padding:.28rem .7rem;
   border-radius:20px;font-weight:600;letter-spacing:.03em;
 }
+/* 새 카테고리 뱃지 */
+.cat-mat  {background:rgba(34,211,238,.12); color:#22d3ee;}
+.cat-ic   {background:rgba(167,139,250,.15);color:#c4b5fd;}
+.cat-sw   {background:rgba(59,130,246,.15); color:#60a5fa;}
+.cat-proc {background:rgba(251,191,36,.12); color:#fbbf24;}
+.cat-edu  {background:rgba(148,163,184,.12);color:#94a3b8;}
+.cat-ugrad{background:rgba(251,146,60,.12); color:#fb923c;}
+/* 구버전 호환 */
 .cat-r{background:rgba(59,130,246,.15);color:#60a5fa;}
 .cat-c{background:rgba(34,211,238,.12);color:#22d3ee;}
 .cat-l{background:rgba(251,191,36,.12);color:#fbbf24;}
@@ -249,6 +265,12 @@ section{padding:7rem 2.5rem;}
   border-left:3px solid var(--blue);line-height:1.6;
   font-weight:500;
 }
+.p-card.cat-mat  .p-card-result{color:#67e8f9;background:rgba(34,211,238,.08); border-color:#22d3ee;}
+.p-card.cat-ic   .p-card-result{color:#c4b5fd;background:rgba(167,139,250,.08);border-color:#a78bfa;}
+.p-card.cat-sw   .p-card-result{color:#93c5fd;background:rgba(59,130,246,.08); border-color:#3b82f6;}
+.p-card.cat-proc .p-card-result{color:#fde68a;background:rgba(251,191,36,.08); border-color:#fbbf24;}
+.p-card.cat-ugrad.p-card-result{color:#fed7aa;background:rgba(251,146,60,.08); border-color:#fb923c;}
+/* 구버전 */
 .p-card.cat-c .p-card-result{color:#67e8f9;background:rgba(34,211,238,.08);border-color:var(--green);}
 .p-card.cat-l .p-card-result{color:#fde68a;background:rgba(251,191,36,.08);border-color:var(--amber);}
 
@@ -307,6 +329,18 @@ section{padding:7rem 2.5rem;}
   padding-bottom:.75rem;
   border-bottom:1px solid rgba(167,139,250,.15);
 }
+/* 학부과정 섹션 — 오렌지 테마 */
+.ugrad-section{
+  border-color:rgba(251,146,60,.25);
+  background:linear-gradient(135deg,rgba(251,146,60,.04),rgba(251,191,36,.03));
+}
+.ugrad-section .sub-lineup-title{
+  color:#fb923c;
+  border-bottom-color:rgba(251,146,60,.2);
+}
+.ugrad-section .sub-group-header{background:rgba(251,146,60,.08);}
+.ugrad-section .sub-group-label{color:#fb923c;}
+.ugrad-section .sub-count{background:rgba(251,146,60,.2);color:#fb923c;}
 .sub-lineup-groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;}
 .sub-group{
   background:var(--bg-card);

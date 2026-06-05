@@ -1,8 +1,14 @@
 const CAT_MAP = {
-  '🔬 연구/실험':    { key:'research', cls:'cat-r', card:'cat-r' },
-  '💻 코딩 프로젝트':{ key:'coding',   cls:'cat-c', card:'cat-c' },
-  '📚 학습':         { key:'learning', cls:'cat-l', card:'cat-l' },
-  '🤖 Claude 작업':  { key:'coding',   cls:'cat-c', card:'cat-c' },
+  '🔬 소재·분석 연구': { key:'mat',   cls:'cat-mat',   card:'cat-mat' },
+  '⚡ 회로·IC 설계':   { key:'ic',    cls:'cat-ic',    card:'cat-ic'  },
+  '💻 SW·자동화':      { key:'sw',    cls:'cat-sw',    card:'cat-sw'  },
+  '🏭 공정·장비':      { key:'proc',  cls:'cat-proc',  card:'cat-proc'},
+  '📚 교육·학습':      { key:'edu',   cls:'cat-edu',   card:'cat-edu' },
+  '🎓 학부 교과과정':  { key:'ugrad', cls:'cat-ugrad', card:'cat-ugrad'},
+  // 구버전 호환
+  '🔬 연구/실험':      { key:'mat',   cls:'cat-mat',   card:'cat-mat' },
+  '💻 코딩 프로젝트':  { key:'ic',    cls:'cat-ic',    card:'cat-ic'  },
+  '📚 학습':           { key:'edu',   cls:'cat-edu',   card:'cat-edu' },
 };
 
 let allProjects = [];
@@ -66,7 +72,7 @@ function renderResearch() {
   const grid = document.getElementById('research-grid');
   if (!grid) return;
   const items = allProjects
-    .filter(p => p.category === '🔬 연구/실험' && !p.title.includes('배터리'))
+    .filter(p => p.category === '🔬 소재·분석 연구' && !p.title.includes('배터리') && !p.title.includes('졸업논문') && !p.title.includes('CABON'))
     .sort((a,b) => new Date(b.date) - new Date(a.date));
   if (!items.length) { grid.innerHTML = ''; return; }
 
@@ -94,12 +100,12 @@ function renderResearch() {
 }
 
 function updateCounts() {
-  const c = { all: allProjects.length, research:0, coding:0, learning:0 };
+  const c = { all: allProjects.length, mat:0, ic:0, sw:0, proc:0, edu:0, ugrad:0 };
   allProjects.forEach(p => {
     const k = CAT_MAP[p.category]?.key;
     if (k) c[k] = (c[k]||0) + 1;
   });
-  ['all','research','coding','learning'].forEach(k => {
+  ['all','mat','ic','sw','proc','edu','ugrad'].forEach(k => {
     const el = document.getElementById(`cnt-${k}`);
     if (el) el.textContent = c[k] || 0;
   });
@@ -108,8 +114,9 @@ function updateCounts() {
 // ── 프로젝트 렌더링 ──
 function renderProjects() {
   const grid = document.getElementById('projects-grid');
+  // 학부 교과과정은 Projects 탭에서 제외 (Education 섹션에서 별도 표시)
   const filtered = currentFilter === 'all'
-    ? allProjects
+    ? allProjects.filter(p => CAT_MAP[p.category]?.key !== 'ugrad')
     : allProjects.filter(p => CAT_MAP[p.category]?.key === currentFilter);
 
   if (!filtered.length) { grid.innerHTML = '<p class="loading-msg">항목이 없습니다.</p>'; return; }
@@ -144,32 +151,25 @@ function cardHTML(p) {
 // ── 교육 타임라인 (서브 라인업 지원) ──
 function renderEducation() {
   const wrap = document.getElementById('education-timeline');
-  const items = allProjects
-    .filter(p => p.category === '📚 학습')
+
+  // 메인 교육 과정 (타임라인 카드)
+  const mainItems = allProjects
+    .filter(p => ['📚 교육·학습','📚 학습'].includes(p.category))
     .sort((a,b) => new Date(b.date) - new Date(a.date));
 
-  if (!items.length) { wrap.innerHTML = '<p class="loading-msg">교육 데이터 없음</p>'; return; }
+  // 학부 교과과정 (서브그룹)
+  const ugradItems = allProjects
+    .filter(p => p.category === '🎓 학부 교과과정')
+    .sort((a,b) => new Date(a.date) - new Date(b.date));
 
-  // 메인 항목과 서브 라인업 항목 분리
-  const mainItems = items.filter(p => !/^\[/.test(p.title));
-  const subItems  = items.filter(p =>  /^\[/.test(p.title));
+  if (!mainItems.length && !ugradItems.length) {
+    wrap.innerHTML = '<p class="loading-msg">교육 데이터 없음</p>'; return;
+  }
 
-  // 서브 항목 그룹화 (태그 기준)
-  const groups = {};
-  subItems.forEach(p => {
-    const m = p.title.match(/^\[([^\]]+)\]/);
-    if (m) {
-      const tag = m[1];
-      if (!groups[tag]) groups[tag] = [];
-      groups[tag].push(p);
-    }
-  });
-
-  // 메인 카드 렌더링
   const mainHTML = mainItems.map(p => {
     const hours = (p.title.match(/(\d+)h/)||[])[1];
-    const place = p.star ? extractPlace(p.star) : '';
-    const idx = allProjects.indexOf(p);
+    const place  = p.star ? extractPlace(p.star) : '';
+    const idx    = allProjects.indexOf(p);
     return `
     <div class="tl-card tl-clickable" data-idx="${idx}">
       <div class="tl-top">
@@ -182,10 +182,17 @@ function renderEducation() {
     </div>`;
   }).join('');
 
-  // 서브 그룹 렌더링
-  const subGroupHTML = Object.entries(groups).map(([tag, groupItems]) => {
-    const label = tag.replace(/^\d+h\s+/, '');
-    const subCards = groupItems.map(p => {
+  // 학부 과목 → prefix 태그로 그룹화
+  const ugGroups = {};
+  ugradItems.forEach(p => {
+    const m = p.title.match(/^\[학부\s+([^\]]+)\]/);
+    const tag = m ? m[1] : '기타';
+    if (!ugGroups[tag]) ugGroups[tag] = [];
+    ugGroups[tag].push(p);
+  });
+
+  const ugGroupHTML = Object.entries(ugGroups).map(([tag, items]) => {
+    const cards = items.map(p => {
       const cleanTitle = p.title.replace(/^\[[^\]]+\]\s*/, '');
       const idx = allProjects.indexOf(p);
       return `<div class="sub-item tl-clickable" data-idx="${idx}">
@@ -193,23 +200,22 @@ function renderEducation() {
         <div class="sub-item-tags">${(p.tech_stack||[]).slice(0,3).map(t=>`<span class="tl-tag">${t}</span>`).join('')}</div>
       </div>`;
     }).join('');
-    return `
-    <div class="sub-group">
+    return `<div class="sub-group">
       <div class="sub-group-header">
-        <span class="sub-group-label">${label}</span>
-        <span class="sub-count">${groupItems.length}</span>
+        <span class="sub-group-label">${tag}</span>
+        <span class="sub-count">${items.length}</span>
       </div>
-      <div class="sub-group-items">${subCards}</div>
+      <div class="sub-group-items">${cards}</div>
     </div>`;
   }).join('');
 
-  const sublineupSection = subGroupHTML ? `
-    <div class="sub-lineup-section">
-      <div class="sub-lineup-title">📖 세부 학습 내역 — 장비사교육 · 장비제어SW · 공정기초</div>
-      <div class="sub-lineup-groups">${subGroupHTML}</div>
+  const ugradSection = ugGroupHTML ? `
+    <div class="sub-lineup-section ugrad-section">
+      <div class="sub-lineup-title">🎓 학부 교과과정 — 중앙대 융합공학부 나노소재공학 (2019–2025)</div>
+      <div class="sub-lineup-groups">${ugGroupHTML}</div>
     </div>` : '';
 
-  wrap.innerHTML = mainHTML + sublineupSection;
+  wrap.innerHTML = mainHTML + ugradSection;
 
   wrap.querySelectorAll('.tl-clickable').forEach(el => {
     const idx = +el.dataset.idx;
