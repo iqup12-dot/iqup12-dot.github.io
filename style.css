@@ -86,11 +86,18 @@ a { text-decoration: none; color: inherit; }
   margin-top: .3rem;
 }
 
+.pl-school {
+  font-size: .72rem;
+  font-weight: 500;
+  color: var(--text-3);
+  margin-top: .35rem;
+}
+
 .pl-role {
-  font-size: .8rem;
-  font-weight: 600;
+  font-size: .82rem;
+  font-weight: 700;
   color: var(--accent);
-  margin-top: .875rem;
+  margin-top: .75rem;
 }
 
 .pl-tagline {
@@ -100,46 +107,12 @@ a { text-decoration: none; color: inherit; }
   line-height: 1.65;
 }
 
-/* Stats */
-.pl-stats {
-  display: flex;
-  margin: 1.625rem 0 1.25rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-}
-
-.pl-stat {
-  flex: 1;
-  padding: .875rem .5rem;
-  text-align: center;
-  border-right: 1px solid var(--border);
-}
-
-.pl-stat:last-child { border-right: none; }
-
-.pl-stat-num {
-  display: block;
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: var(--text-1);
-  letter-spacing: -.02em;
-}
-
-.pl-stat-label {
-  display: block;
-  font-size: .58rem;
-  color: var(--text-4);
-  margin-top: .15rem;
-  line-height: 1.3;
-}
-
 /* Nav */
 .pl-nav {
   display: flex;
   flex-direction: column;
   gap: .05rem;
+  margin-top: 1.25rem;
 }
 
 .pl-nav-link {
