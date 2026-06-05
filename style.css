@@ -230,12 +230,13 @@ a { text-decoration: none; color: inherit; }
 
 /* Sections */
 section {
-  padding: 4.5rem 3.75rem;
+  padding: 4.5rem max(3.75rem, calc((100% - 900px) / 2));
   border-bottom: 1px solid var(--border);
 }
 
-section:nth-child(even) { background: var(--bg-alt); }
-section:last-of-type    { border-bottom: none; }
+/* nth-of-type으로 <nav> 자식이 생겨도 순서 유지 */
+section:nth-of-type(even) { background: var(--bg-alt); }
+section:last-of-type      { border-bottom: none; }
 
 .section-label {
   font-size: .62rem;
@@ -667,6 +668,12 @@ section:last-of-type    { border-bottom: none; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.25rem;
+  transition: box-shadow .2s, transform .2s;
+}
+
+.skill-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-1px);
 }
 
 .skill-header {
@@ -724,9 +731,53 @@ section:last-of-type    { border-bottom: none; }
   transform: translateX(4px);
 }
 
+/* ── Mobile Nav ── */
+.mobile-nav {
+  display: none;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  padding: .875rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.mobile-nav-logo {
+  font-size: .8rem;
+  font-weight: 800;
+  color: var(--text-1);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.mobile-nav-links {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.mobile-nav-links::-webkit-scrollbar { display: none; }
+
+.mobile-nav-links a {
+  font-size: .775rem;
+  font-weight: 500;
+  color: var(--text-3);
+  white-space: nowrap;
+  transition: color .2s;
+}
+
+.mobile-nav-links a:hover { color: var(--text-1); }
+
 /* ── Footer ── */
 .main-footer {
-  padding: 2rem 3.75rem;
+  padding: 2rem max(3.75rem, calc((100% - 900px) / 2));
   border-top: 1px solid var(--border);
   background: var(--bg-alt);
 }
@@ -853,11 +904,15 @@ section:last-of-type    { border-bottom: none; }
 /* ────────────────────────────────────────────
    MOBILE
 ──────────────────────────────────────────── */
+@media (max-width: 1300px) {
+  .about-layout { grid-template-columns: 1fr; gap: 2rem; }
+}
+
 @media (max-width: 1024px) {
   .panel-left  { display: none; }
   .panel-right { margin-left: 0; }
+  .mobile-nav  { display: flex; }
   section      { padding: 3.5rem 2rem; }
-  .about-layout { grid-template-columns: 1fr; gap: 2rem; }
 }
 
 @media (max-width: 640px) {
