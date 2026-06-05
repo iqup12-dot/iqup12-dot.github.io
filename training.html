@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>직무교육 | YUNTAE LEE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+
+  <header class="detail-topnav">
+    <span class="detail-topnav-logo">YL</span>
+    <a href="index.html#training" class="detail-back">← 포트폴리오로 돌아가기</a>
+  </header>
+
+  <div class="detail-wrap">
+
+    <div class="act-detail-header">
+      <p class="section-label">직무교육</p>
+      <h1 class="detail-title">총 1,177시간 반도체 교육 이수</h1>
+      <p style="font-size:.9rem;color:var(--text-3);margin-top:.5rem;">SKKU 시스템반도체 설계 513h · 공정장비/제어SW 480h · 반도체 제조공정 168h · 공정실습 16h×2</p>
+    </div>
+
+    <!-- 탭 네비게이션 -->
+    <div class="training-tab-nav">
+      <button class="training-tab-btn active" data-panel="process" onclick="showPanel('process')">🏭 공정 / 설비</button>
+      <button class="training-tab-btn" data-panel="circuit" onclick="showPanel('circuit')">⚡ 회로 설계</button>
+      <button class="training-tab-btn" data-panel="etc" onclick="showPanel('etc')">💻 SW · 기타</button>
+    </div>
+
+    <!-- ═══════════════════════════════
+         Panel 1: 공정/설비
+    ═══════════════════════════════ -->
+    <div class="training-panel" id="panel-process">
+
+      <!-- 480h 메인 -->
+      <div class="edu-main-card">
+        <div class="edu-main-meta">
+          <span class="edu-main-badge">480h 수료</span>
+          <span class="edu-main-org">한국전자산업협동조합</span>
+        </div>
+        <h2 class="edu-main-title">반도체 공정장비 및 제어시스템 SW 엔지니어 양성과정</h2>
+        <p class="edu-main-result">공정 장비 제어 SW 설계 역량 확보 · 장비사교육 4개 분야 이수</p>
+      </div>
+
+      <!-- 장비사교육 -->
+      <div class="edu-group-label">장비사 심화 교육</div>
+      <div class="edu-sub-grid">
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(167,139,250,.12);color:#7c3aed">Lithography</span>
+          <h3 class="edu-sub-title">ASML EUV · TEL Track Mark-7</h3>
+          <p class="edu-sub-result">g-line~EUV 전 세대 PR 특성 이해, EUV LPP 광원·Mo/Si 다층막 반사경 구조 학습, Overlay 오차 분석</p>
+          <div class="course-tags">
+            <span>EUV LPP</span><span>Mo/Si 다층막</span><span>Overlay</span><span>TEL Mark-7</span>
+          </div>
+        </div>
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(251,191,36,.12);color:#b45309">CVD·열처리</span>
+          <h3 class="edu-sub-title">TEL Furnace · AMAT RTP · LPCVD</h3>
+          <p class="edu-sub-result">Kokusai/TEL 수직형 Furnace 3-zone 온도제어 구조, AMAT 2015 RTP Edge Ring 온도제어, LPCVD(Poly-Si/Nitride/TEOS) 공정 조건</p>
+          <div class="course-tags">
+            <span>Furnace 3-zone</span><span>RTP Edge Ring</span><span>LPCVD</span><span>TEOS</span>
+          </div>
+        </div>
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(239,68,68,.12);color:#b91c1c">Plasma·식각</span>
+          <h3 class="edu-sub-title">RIE/CCP/ICP · ALE · Cluster Tool</h3>
+          <p class="edu-sub-result">Plasma Source 4종(RIE/CCP/ICP/TCP) 비교 분석, ESC 정전척 구조·Repair 기술, OES/SPOES 진단, ALE(Atomic Layer Etching) 원리</p>
+          <div class="course-tags">
+            <span>RIE/CCP/ICP</span><span>ESC 정전척</span><span>ALE</span><span>OES 진단</span>
+          </div>
+        </div>
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(34,211,238,.12);color:#0891b2">진공·가스</span>
+          <h3 class="edu-sub-title">MKS MFC · 진공펌프 · 밸브 시스템</h3>
+          <p class="edu-sub-result">MKS C/P/G 시리즈 MFC 구조·제어 원리, 진공펌프 4종(Rotary/Dry/Booster/Turbo/Cryo) 메커니즘 비교, Pirani·Baratron·이온 게이지 측정</p>
+          <div class="course-tags">
+            <span>MKS MFC</span><span>Turbo 펌프</span><span>Pirani 게이지</span><span>Baratron</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 공정 기초 -->
+      <div class="edu-group-label">공정 기초 · 산업 동향</div>
+      <div class="edu-sub-grid">
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(74,222,128,.12);color:#15803d">공정 기초</span>
+          <h3 class="edu-sub-title">Si Wafer 제조 및 반도체 공정 기초</h3>
+          <p class="edu-sub-result">CZ법 Si Ingot 성장 및 Wafering(Wire Sawing/Lapping/DSP) 공정 플로우, OSAT 후공정 흐름 학습</p>
+          <div class="course-tags">
+            <span>CZ법</span><span>Wafering</span><span>DSP</span><span>OSAT</span>
+          </div>
+        </div>
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(74,222,128,.12);color:#15803d">공정 기초</span>
+          <h3 class="edu-sub-title">반도체 장비 종합 정리</h3>
+          <p class="edu-sub-result">반도체 8대 공정 전체 및 장비 에코시스템 종합 정리, 세정·CMP·계측·패키징 5개 챕터 체계적 이해</p>
+          <div class="course-tags">
+            <span>8대 공정</span><span>세정</span><span>CMP</span><span>계측</span><span>패키징</span>
+          </div>
+        </div>
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(14,165,233,.12);color:#0284c7">산업 동향</span>
+          <h3 class="edu-sub-title">글로벌 FAB 동향 & 주요 장비 업체 분석</h3>
+          <p class="edu-sub-result">ASML·AMAT·Lam·TEL·KLA 5대 업체 포트폴리오 파악, HBM/3D IC 패키징 기술 동향, IRDS 기술 로드맵</p>
+          <div class="course-tags">
+            <span>ASML</span><span>AMAT</span><span>Lam Research</span><span>IRDS 로드맵</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 추가 과정 -->
+      <div class="edu-group-label">추가 이수 과정</div>
+      <div class="edu-extra-list">
+        <div class="edu-extra-item">
+          <span class="edu-extra-badge">168h 수료</span>
+          <div>
+            <p class="edu-extra-title">반도체 제조공정 및 장비 실무자 양성과정</p>
+            <p class="edu-extra-org">더인에듀 · 반도체 8대 공정 및 장비 실무 이론 체계 확보</p>
+          </div>
+        </div>
+        <div class="edu-extra-item">
+          <span class="edu-extra-badge">16h 수료</span>
+          <div>
+            <p class="edu-extra-title">반도체 제조공정 및 장비 실무자 양성과정 공정실습</p>
+            <p class="edu-extra-org">실습 중심 공정 이해</p>
+          </div>
+        </div>
+        <div class="edu-extra-item">
+          <span class="edu-extra-badge">16h 수료</span>
+          <div>
+            <p class="edu-extra-title">반도체 및 전자부품소재 공정실습</p>
+            <p class="edu-extra-org">소재·부품 공정 실습</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ═══════════════════════════════
+         Panel 2: 회로설계
+    ═══════════════════════════════ -->
+    <div class="training-panel hidden" id="panel-circuit">
+
+      <!-- SKKU 메인 -->
+      <div class="edu-main-card" style="background:linear-gradient(135deg,rgba(167,139,250,.08),rgba(14,165,233,.06));border-color:rgba(167,139,250,.3)">
+        <div class="edu-main-meta">
+          <span class="edu-main-badge" style="background:rgba(167,139,250,.15);color:#7c3aed">513h 수료</span>
+          <span class="edu-main-org">성균관대학교 (SKKU)</span>
+        </div>
+        <h2 class="edu-main-title">SKKU 시스템 반도체 설계 아카데미</h2>
+        <p class="edu-main-result">Analog/Digital IC 풀커스텀 설계 전 과정 습득 · Cadence Virtuoso 실무 운용</p>
+      </div>
+
+      <!-- 이론 교육 -->
+      <div class="edu-group-label">이론 교육</div>
+      <div class="edu-sub-grid">
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(167,139,250,.12);color:#7c3aed">Analog</span>
+          <h3 class="edu-sub-title">CMOS 소자 동작원리 및 Analog 회로 설계 기초</h3>
+          <p class="edu-sub-result">MOSFET 동작 영역(선형/포화/차단) 완전 이해, gm·rds·Cgs 소신호 모델 분석, 바이어스/증폭기/피드백 설계 이론</p>
+          <div class="course-tags">
+            <span>MOSFET</span><span>소신호 모델</span><span>gm·rds</span><span>피드백</span>
+          </div>
+        </div>
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(14,165,233,.12);color:#0284c7">Digital</span>
+          <h3 class="edu-sub-title">Digital IC 설계 방법론</h3>
+          <p class="edu-sub-result">Combinational/Sequential 논리회로 설계 방법론, 유한상태기계(FSM) 설계, Power-Performance-Area 트레이드오프 분석</p>
+          <div class="course-tags">
+            <span>FSM</span><span>PPA 분석</span><span>논리회로</span><span>Sequential</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CAD·검증 실습 -->
+      <div class="edu-group-label">CAD 실습 · 검증</div>
+      <div class="edu-sub-grid">
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(251,146,60,.12);color:#c2410c">CAD 실습</span>
+          <h3 class="edu-sub-title">Cadence Virtuoso 실습</h3>
+          <p class="edu-sub-result">스케매틱·레이아웃 편집기 실무 운용, Spectre 시뮬레이터 DC/AC/Transient 분석, ADE 환경 파라미터 스윕 분석</p>
+          <div class="course-tags">
+            <span>Cadence Virtuoso</span><span>Spectre</span><span>DC/AC/Trans 분석</span><span>ADE</span>
+          </div>
+        </div>
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(239,68,68,.12);color:#b91c1c">검증 실습</span>
+          <h3 class="edu-sub-title">DRC/LVS 검증 실습</h3>
+          <p class="edu-sub-result">gpdk090 공정 Design Rule Check 완전 통과, LVS(Layout vs Schematic) 매칭 검증, 레이아웃 오류 유형별 수정</p>
+          <div class="course-tags">
+            <span>DRC</span><span>LVS</span><span>gpdk090</span><span>레이아웃 검증</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 설계 프로젝트 -->
+      <div class="edu-group-label">설계 프로젝트 (Full Custom)</div>
+      <div class="edu-sub-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr))">
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(167,139,250,.12);color:#7c3aed">Analog IC</span>
+          <h3 class="edu-sub-title">2-Stage OP-AMP 설계</h3>
+          <p class="edu-sub-result">CL=10pF 부하 조건 2-Stage OP-AMP 설계 및 Power·Performance·Area 트레이드오프 분석</p>
+        </div>
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(167,139,250,.12);color:#7c3aed">Analog IC</span>
+          <h3 class="edu-sub-title">2-Stage Comparator 설계</h3>
+          <p class="edu-sub-result">90nm gpdk 공정에서 외부 환경 변화에 안정적인 고속 2-Stage Comparator 설계 완료</p>
+        </div>
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(14,165,233,.12);color:#0284c7">Digital IC</span>
+          <h3 class="edu-sub-title">Repeater 설계 및 PPA 분석</h3>
+          <p class="edu-sub-result">90nm Inverter Chain 기반 Repeater 설계로 신호 감쇠·지연 문제 해결, PPA 최적화 분석 완료</p>
+        </div>
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(14,165,233,.12);color:#0284c7">Digital IC</span>
+          <h3 class="edu-sub-title">Full Custom NPU 설계</h3>
+          <p class="edu-sub-result">90nm 공정 기반 NPU(신경망 처리장치) 풀커스텀 레이아웃 설계 및 DRC/LVS 검증 통과</p>
+        </div>
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(74,222,128,.12);color:#15803d">문서화</span>
+          <h3 class="edu-sub-title">Layout Design Rule Book 제작</h3>
+          <p class="edu-sub-result">공정 수율 및 소자 신뢰성 확보를 위한 Layout Design Rule 분석·정리 완료</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ═══════════════════════════════
+         Panel 3: SW · 기타
+    ═══════════════════════════════ -->
+    <div class="training-panel hidden" id="panel-etc">
+
+      <!-- SECS/GEM 교육 -->
+      <div class="edu-group-label">FAB 자동화 · 장비 제어 SW 교육</div>
+      <div class="edu-sub-grid">
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(59,130,246,.12);color:#1d4ed8">FAB 자동화</span>
+          <h3 class="edu-sub-title">SECS/GEM 프로토콜 & FAB 자동화</h3>
+          <p class="edu-sub-result">SECS/GEM 반도체 장비-호스트 통신 프로토콜 이해, AGV/OHT 기반 FAB 물류 자동화 시스템 학습, Plasma Chamber 원격 제어</p>
+          <div class="course-tags">
+            <span>SECS/GEM</span><span>AGV/OHT</span><span>AMHS</span><span>FAB 자동화</span>
+          </div>
+        </div>
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(59,130,246,.12);color:#1d4ed8">장비 제어</span>
+          <h3 class="edu-sub-title">공정 장비 제어 시스템</h3>
+          <p class="edu-sub-result">BLDC/Servo/Stepping 모터 종류별 제어 방식, Gas Scrubber 4방식(Dry/Wet/Burn/Plasma) 원리, Plasma RF 제어 및 Chiller 냉각 시스템</p>
+          <div class="course-tags">
+            <span>BLDC/Servo</span><span>RF 제어</span><span>Gas Scrubber</span><span>Chiller</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Python 개발 -->
+      <div class="edu-group-label">Python 분석 자동화 개발 (인턴십 중 자체 개발)</div>
+      <p style="font-size:.8rem;color:var(--text-3);margin-bottom:1rem">상세 내용은 <a href="intern.html" style="color:var(--accent);font-weight:600">인턴십 페이지</a>에서 확인</p>
+      <div class="edu-sub-grid">
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(34,211,238,.12);color:#0891b2">분석 자동화</span>
+          <h3 class="edu-sub-title">XPS 피크 진단 자동화</h3>
+          <p class="edu-sub-result">수동 대비 처리 시간 90% 단축 · Scipy 피크 검출 + 화학결합 자동 매핑</p>
+          <div class="course-tags">
+            <span>Python</span><span>Scipy</span><span>XPS</span>
+          </div>
+        </div>
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(34,211,238,.12);color:#0891b2">SPC 시스템</span>
+          <h3 class="edu-sub-title">Wafer 데이터 SPC 시각화</h3>
+          <p class="edu-sub-result">EDS 원시 데이터 자동 구조화 + SPC 관리도 자동 생성</p>
+          <div class="course-tags">
+            <span>Pandas</span><span>Matplotlib</span><span>SPC</span>
+          </div>
+        </div>
+
+        <div class="edu-sub-card">
+          <span class="edu-sub-tag" style="background:rgba(34,211,238,.12);color:#0891b2">패턴 인식</span>
+          <h3 class="edu-sub-title">Probe Card 패턴 분석</h3>
+          <p class="edu-sub-result">EDS 공정 Probe Card 접촉 패턴 자동 분류 알고리즘</p>
+          <div class="course-tags">
+            <span>Python</span><span>패턴 인식</span><span>Probe Card</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    function showPanel(name) {
+      document.querySelectorAll('.training-panel').forEach(p => p.classList.add('hidden'));
+      document.querySelectorAll('.training-tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('panel-' + name).classList.remove('hidden');
+      document.querySelector('[data-panel="' + name + '"]').classList.add('active');
+    }
+  </script>
+</body>
+</html>

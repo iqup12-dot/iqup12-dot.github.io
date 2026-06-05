@@ -875,6 +875,481 @@ section:last-of-type      { border-bottom: none; }
 .star-label { color: var(--accent-dark); font-weight: 700; }
 
 /* ────────────────────────────────────────────
+   OVERVIEW SECTIONS (index.html — undergraduate / intern / training)
+──────────────────────────────────────────── */
+.overview-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.ov-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  transition: box-shadow .2s, transform .2s, border-color .2s;
+}
+
+.ov-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); border-color: var(--border-mid); }
+
+.ov-card-highlight { border-color: var(--accent); background: var(--accent-bg); }
+
+.ov-icon { font-size: 1.75rem; line-height: 1; }
+
+.ov-card h3 {
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--text-1);
+  line-height: 1.35;
+}
+
+.ov-card p { font-size: .82rem; color: var(--text-2); line-height: 1.6; }
+
+.ov-tag {
+  display: inline-block;
+  font-size: .65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--accent-dark);
+  background: rgba(14,165,233,.1);
+  padding: .2rem .55rem;
+  border-radius: 999px;
+}
+
+.section-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  margin-top: 1.75rem;
+  padding: .7rem 1.5rem;
+  background: var(--accent);
+  color: #fff;
+  font-size: .85rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  transition: background .2s, transform .2s;
+}
+
+.section-more-btn:hover { background: var(--accent-dark); transform: translateY(-1px); }
+
+/* ── Training overview (3-col) ── */
+.training-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.tov-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .625rem;
+  transition: box-shadow .2s, transform .2s;
+}
+
+.tov-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+
+.tov-hours {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent-dark);
+  letter-spacing: -.03em;
+  line-height: 1;
+}
+
+.tov-card h3 { font-size: .95rem; font-weight: 700; color: var(--text-1); }
+
+.tov-card p { font-size: .8rem; color: var(--text-2); line-height: 1.55; flex: 1; }
+
+.tov-courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin-top: .25rem;
+}
+
+.tov-courses span {
+  font-size: .65rem;
+  font-weight: 600;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--text-3);
+  padding: .18rem .55rem;
+  border-radius: 999px;
+}
+
+/* ────────────────────────────────────────────
+   DETAIL PAGES — shared page sections
+──────────────────────────────────────────── */
+.pg-sect { margin-bottom: 3rem; }
+
+.pg-sect-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-1);
+  margin-bottom: .4rem;
+}
+
+.pg-sect-sub {
+  font-size: .82rem;
+  color: var(--text-3);
+  margin-bottom: 1.5rem;
+}
+
+/* ── Undergraduate — course grid ── */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.course-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.375rem;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  transition: box-shadow .2s, transform .2s;
+}
+
+.course-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+
+.course-area {
+  display: inline-block;
+  font-size: .62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  padding: .2rem .55rem;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+.course-name { font-size: .88rem; font-weight: 700; color: var(--text-1); line-height: 1.4; }
+
+.course-desc { font-size: .8rem; color: var(--text-2); line-height: 1.6; flex: 1; }
+
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin-top: .25rem;
+}
+
+.course-tags span {
+  font-size: .65rem;
+  font-weight: 600;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--text-3);
+  padding: .18rem .55rem;
+  border-radius: 999px;
+}
+
+/* ── Research of Interest grid ── */
+.roi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.roi-item {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.roi-icon { font-size: 1.5rem; line-height: 1; }
+.roi-item h3 { font-size: .875rem; font-weight: 700; color: var(--text-1); }
+.roi-item p { font-size: .78rem; color: var(--text-3); line-height: 1.55; }
+
+/* ── Intern — equipment ── */
+.equip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: .875rem;
+  margin-top: 1rem;
+}
+
+.equip-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.125rem;
+}
+
+.equip-cat {
+  display: block;
+  font-size: .62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--text-4);
+  margin-bottom: .5rem;
+}
+
+.equip-items { display: flex; flex-direction: column; gap: .3rem; }
+
+.equip-items span {
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--text-1);
+}
+
+/* ── FA analysis flow ── */
+.fa-flow-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .3rem;
+  margin: .875rem 0;
+}
+
+.fa-step, .fa-step-last {
+  font-size: .7rem;
+  font-weight: 700;
+  padding: .25rem .65rem;
+  border-radius: 999px;
+  background: rgba(14,165,233,.1);
+  color: var(--accent-dark);
+}
+
+.fa-step-last { background: var(--accent); color: #fff; }
+.fa-arrow { font-size: .65rem; color: var(--text-4); }
+
+/* ── Python tool cards ── */
+.py-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.1rem;
+  margin-top: 1rem;
+}
+
+.py-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.375rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .625rem;
+  transition: box-shadow .2s, transform .2s;
+}
+
+.py-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+
+.py-type {
+  display: inline-block;
+  font-size: .62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #0891b2;
+  background: rgba(34,211,238,.1);
+  padding: .2rem .55rem;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+.py-title { font-size: .9rem; font-weight: 700; color: var(--text-1); line-height: 1.4; }
+
+.py-result {
+  font-size: .8rem;
+  color: var(--text-2);
+  background: var(--accent-bg);
+  border-left: 3px solid var(--accent);
+  padding: .6rem .875rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  line-height: 1.6;
+}
+
+.py-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.py-list li {
+  font-size: .8rem;
+  color: var(--text-2);
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.py-list li::before { content: '–'; position: absolute; left: 0; color: var(--text-4); }
+
+/* ── Training — tabs ── */
+.training-tab-nav {
+  display: flex;
+  gap: .5rem;
+  margin: 1.75rem 0 1.25rem;
+  flex-wrap: wrap;
+}
+
+.training-tab-btn {
+  padding: .6rem 1.25rem;
+  font-size: .85rem;
+  font-weight: 600;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-3);
+  cursor: pointer;
+  transition: all .18s;
+}
+
+.training-tab-btn:hover { color: var(--text-1); border-color: var(--border-mid); }
+.training-tab-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+.training-panel { display: block; }
+.training-panel.hidden { display: none; }
+
+/* ── Training — edu cards ── */
+.edu-main-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.edu-main-meta { display: flex; align-items: center; gap: .75rem; margin-bottom: .75rem; flex-wrap: wrap; }
+
+.edu-main-badge {
+  font-size: .7rem;
+  font-weight: 700;
+  padding: .25rem .65rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+}
+
+.edu-main-org { font-size: .8rem; color: var(--text-3); font-weight: 600; }
+
+.edu-main-title { font-size: 1.1rem; font-weight: 800; color: var(--text-1); margin-bottom: .5rem; }
+
+.edu-main-result { font-size: .83rem; color: var(--text-2); }
+
+.edu-group-label {
+  font-size: .68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--accent);
+  margin: 1.5rem 0 .875rem;
+}
+
+.edu-sub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: .875rem;
+  margin-bottom: .5rem;
+}
+
+.edu-sub-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1.125rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  transition: box-shadow .18s;
+}
+
+.edu-sub-card:hover { box-shadow: var(--shadow-hover); }
+
+.edu-sub-tag {
+  display: inline-block;
+  font-size: .62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  padding: .2rem .55rem;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+.edu-sub-title { font-size: .85rem; font-weight: 700; color: var(--text-1); line-height: 1.4; }
+
+.edu-sub-result { font-size: .78rem; color: var(--text-2); line-height: 1.6; flex: 1; }
+
+.edu-extra-list { display: flex; flex-direction: column; gap: .75rem; }
+
+.edu-extra-item {
+  display: flex;
+  align-items: flex-start;
+  gap: .875rem;
+  padding: .875rem 1.125rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.edu-extra-badge {
+  flex-shrink: 0;
+  font-size: .68rem;
+  font-weight: 700;
+  padding: .25rem .65rem;
+  border-radius: 999px;
+  background: rgba(14,165,233,.1);
+  color: var(--accent-dark);
+  white-space: nowrap;
+}
+
+.edu-extra-title { font-size: .83rem; font-weight: 600; color: var(--text-1); }
+.edu-extra-org { font-size: .75rem; color: var(--text-3); margin-top: .2rem; }
+
+/* ── Contact status ── */
+.contact-status {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.375rem;
+  margin: 1.5rem 0 1.75rem;
+}
+
+.contact-status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #22c55e;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 3px rgba(34,197,94,.2);
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(34,197,94,.2); }
+  50%       { box-shadow: 0 0 0 6px rgba(34,197,94,.08); }
+}
+
+.contact-status-title { font-size: .88rem; font-weight: 700; color: var(--text-1); }
+.contact-status-sub   { font-size: .78rem; color: var(--text-3); margin-top: .15rem; }
+
+/* ────────────────────────────────────────────
    ACTIVITIES SECTION (index.html cards)
 ──────────────────────────────────────────── */
 .act-grid {

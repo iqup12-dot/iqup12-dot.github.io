@@ -28,13 +28,13 @@
         </div>
 
         <nav class="pl-nav">
-          <a href="#about"       class="pl-nav-link">About</a>
-          <a href="#research"    class="pl-nav-link">Research</a>
-          <a href="#projects"    class="pl-nav-link">Projects</a>
-          <a href="#education"   class="pl-nav-link">Education</a>
-          <a href="#activities"  class="pl-nav-link">대외활동</a>
-          <a href="#skills"      class="pl-nav-link">Skills</a>
-          <a href="#contact"     class="pl-nav-link">Contact</a>
+          <a href="#about"         class="pl-nav-link">About</a>
+          <a href="#undergraduate" class="pl-nav-link">학부·연구</a>
+          <a href="#intern"        class="pl-nav-link">인턴</a>
+          <a href="#training"      class="pl-nav-link">직무교육</a>
+          <a href="#activities"    class="pl-nav-link">대외활동</a>
+          <a href="#skills"        class="pl-nav-link">Skills</a>
+          <a href="#contact"       class="pl-nav-link">Contact</a>
         </nav>
 
       </div><!-- /panel-top -->
@@ -76,9 +76,9 @@
       <span class="mobile-nav-logo">YL · 이윤태</span>
       <div class="mobile-nav-links">
         <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
+        <a href="#undergraduate">학부·연구</a>
+        <a href="#intern">인턴</a>
+        <a href="#training">직무교육</a>
         <a href="#activities">대외활동</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
@@ -129,39 +129,91 @@
       </div>
     </section>
 
-    <!-- Research -->
-    <section id="research">
-      <p class="section-label reveal">Research</p>
-      <h2 class="section-title reveal">한국나노분석랩 · 실무 분석 프로젝트</h2>
-      <p class="section-sub reveal">삼성전자·제주반도체 의뢰 FA 3건, 신규 부품 22종 평가 — FE-SEM · XPS · SAT · VI Curve · EMMI 직접 운용</p>
-      <div class="research-grid" id="research-grid"></div>
+    <!-- 학부·연구 -->
+    <section id="undergraduate">
+      <p class="section-label reveal">학부·연구</p>
+      <h2 class="section-title reveal">학부연구생 · Research of Interest</h2>
+      <p class="section-sub reveal">나노소재공학 전공 교과과정 · 학부 졸업연구 · 석사 연구 방향</p>
+      <div class="overview-cards reveal">
+        <div class="ov-card">
+          <span class="ov-icon">📚</span>
+          <h3>학부 교과과정</h3>
+          <p>화학기초·재료공학·나노소재·에너지소재·반도체소자·재료분석·종합설계 — 핵심 7개 과목 이수</p>
+        </div>
+        <div class="ov-card">
+          <span class="ov-icon">🔬</span>
+          <h3>학부 연구 / 졸업논문</h3>
+          <p>TC Bonding 졸업논문 (HBM/3D IC · IEEE 20편 이상 분석) · NCM622 배터리 소재 합성 및 코인셀 제조 실습</p>
+        </div>
+        <div class="ov-card">
+          <span class="ov-icon">⚗️</span>
+          <h3>Research of Interest</h3>
+          <p>저온 솔더 IMC 계면 분석 (석사 연구) · HBM 패키징 신뢰성 · 반도체 소재/공정 엔지니어링</p>
+        </div>
+      </div>
+      <a href="undergraduate.html" class="section-more-btn reveal">전체 교과·연구 내용 보기 →</a>
     </section>
 
-    <!-- Projects -->
-    <section id="projects">
-      <p class="section-label reveal">Projects</p>
-      <h2 class="section-title reveal">연구 · 개발 · 학습 기록</h2>
-      <div class="tab-row reveal">
-        <button class="tab active" data-filter="all">전체 <span class="tab-count" id="cnt-all"></span></button>
-        <button class="tab" data-filter="mat">🔬 소재·분석 <span class="tab-count" id="cnt-mat"></span></button>
-        <button class="tab" data-filter="ic">⚡ 회로·IC <span class="tab-count" id="cnt-ic"></span></button>
-        <button class="tab" data-filter="sw">💻 SW·자동화 <span class="tab-count" id="cnt-sw"></span></button>
-        <button class="tab" data-filter="proc">🏭 공정·장비 <span class="tab-count" id="cnt-proc"></span></button>
+    <!-- 인턴 -->
+    <section id="intern">
+      <p class="section-label reveal">인턴십</p>
+      <h2 class="section-title reveal">한국나노분석랩 분석기술팀</h2>
+      <p class="section-sub reveal">삼성전자·제주반도체 의뢰 FA 3건 · 신규 부품 22종 평가 · Python 분석 자동화 직접 개발</p>
+      <div class="overview-cards reveal">
+        <div class="ov-card ov-card-highlight">
+          <span class="ov-tag">FA · 삼성전자 의뢰</span>
+          <h3>정품/모조품 식별 분석 — NXP IC</h3>
+          <p>외관·X-ray·디캡슐레이션 3단계 분석 → 3항목 전부 Acceptable 정품 판정 완료</p>
+        </div>
+        <div class="ov-card">
+          <span class="ov-tag">FA · 제주반도체 의뢰</span>
+          <h3>불량 원인 분석 — K12</h3>
+          <p>6단계 비파괴→파괴 분석 · EMMI Thermal 위치 특정 → Crack/Metal Melt 최종 확인</p>
+        </div>
+        <div class="ov-card">
+          <span class="ov-tag">입고 평가</span>
+          <h3>신규 반도체 22종 평가</h3>
+          <p>4종 장비 직접 운용 · 6단계 평가 전 항목 적합 판정 · 부품 등록 프로세스 체계화</p>
+        </div>
       </div>
-      <div class="projects-grid" id="projects-grid">
-        <div class="loading-msg">로딩 중...</div>
-      </div>
-      <p class="last-updated-row">마지막 업데이트: <span id="last-updated">-</span></p>
+      <a href="intern.html" class="section-more-btn reveal">인턴십 전체 내용 보기 →</a>
     </section>
 
-    <!-- Education -->
-    <section id="education">
-      <p class="section-label reveal">Education</p>
+    <!-- 직무교육 -->
+    <section id="training">
+      <p class="section-label reveal">직무교육</p>
       <h2 class="section-title reveal">총 1,177시간 반도체 교육 이수</h2>
-      <p class="section-sub reveal">SKKU 시스템반도체 설계 513h · 공정장비/제어SW 480h · 제조공정 168h · 공정실습 16h×2 — 학부 교과과정 포함</p>
-      <div class="tl-grid" id="education-timeline">
-        <div class="loading-msg">로딩 중...</div>
+      <p class="section-sub reveal">SKKU 시스템반도체 설계 513h · 공정장비/제어SW 480h · 제조공정 168h · 공정실습 16h×2</p>
+      <div class="training-overview reveal">
+        <div class="tov-card">
+          <span class="tov-hours">680h+</span>
+          <h3>공정 / 설비</h3>
+          <p>EUV Lithography · CVD/RTP · Plasma 식각 · 진공가스 제어</p>
+          <div class="tov-courses">
+            <span>공정장비 480h</span>
+            <span>제조공정 168h</span>
+            <span>공정실습 16h×2</span>
+          </div>
+        </div>
+        <div class="tov-card">
+          <span class="tov-hours">513h</span>
+          <h3>회로 설계</h3>
+          <p>Analog/Digital IC Full Custom · Cadence Virtuoso · DRC/LVS</p>
+          <div class="tov-courses">
+            <span>SKKU 시스템반도체 설계</span>
+          </div>
+        </div>
+        <div class="tov-card">
+          <span class="tov-hours">SW</span>
+          <h3>SW · 기타</h3>
+          <p>SECS/GEM · FAB 자동화 · 장비제어 SW · Python 자동화</p>
+          <div class="tov-courses">
+            <span>장비제어 SW 교육</span>
+            <span>Python 개발 3건</span>
+          </div>
+        </div>
       </div>
+      <a href="training.html" class="section-more-btn reveal">교육 상세 내용 보기 →</a>
     </section>
 
     <!-- Activities -->
@@ -287,6 +339,13 @@
       <p class="section-label reveal">Contact</p>
       <h2 class="section-title reveal">함께 일해요</h2>
       <p class="section-sub reveal">반도체 소재·공정·설계 분야 관련 연락을 환영합니다.</p>
+      <div class="contact-status reveal">
+        <span class="contact-status-dot"></span>
+        <div>
+          <p class="contact-status-title">2026년 취업 준비 중</p>
+          <p class="contact-status-sub">삼성전자 · SK하이닉스 반도체 소재/공정 부문 지원 예정 · 연락 환영</p>
+        </div>
+      </div>
       <div class="contact-links reveal">
         <a href="mailto:iqup12@gmail.com" class="contact-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
