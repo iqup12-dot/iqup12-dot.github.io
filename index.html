@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YUNTAE LEE | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-logo">YL</span>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">안녕하세요,</p>
+      <h1 class="hero-name">이윤태 <span>LEE YUNTAE</span></h1>
+      <p class="hero-title">나노소재공학 석사과정 · 반도체 소재/공정 엔지니어 지망</p>
+      <p class="hero-desc">저온 솔더 합금 개발 · IMC 계면 분석 · 지능형반도체공학 연구</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+        <a href="https://github.com/iqup12" class="btn btn-outline" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>나노소재공학 석사과정으로 <strong>저온 솔더 합금의 IMC 계면 분석</strong>과
+          <strong>지능형반도체공학</strong>을 연구합니다.</p>
+          <p>FE-SEM, XPS, SAT 등 첨단 분석 장비 운용 경험과 Python/C# 기반
+          데이터 자동화 능력을 보유하고 있습니다.</p>
+          <p>삼성전자 · SK하이닉스 반도체 소재/공정 부문 엔지니어를 목표로 합니다.</p>
+        </div>
+        <div class="about-info">
+          <div class="info-item"><span class="info-label">전공</span><span>나노소재공학 (석사)</span></div>
+          <div class="info-item"><span class="info-label">연구</span><span>저온 솔더 · IMC 계면분석</span></div>
+          <div class="info-item"><span class="info-label">목표</span><span>삼성전자 · SK하이닉스</span></div>
+          <div class="info-item"><span class="info-label">이메일</span><span>iqup12@gmail.com</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">전체</button>
+        <button class="filter-btn" data-filter="research">🔬 연구/실험</button>
+        <button class="filter-btn" data-filter="coding">💻 코딩</button>
+        <button class="filter-btn" data-filter="learning">📚 학습</button>
+        <button class="filter-btn" data-filter="claude">🤖 Claude</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+        <p class="loading">데이터 로딩 중...</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>분석 장비</h3>
+          <div class="skill-tags">
+            <span>FE-SEM</span><span>XPS</span><span>SAT</span><span>VI Curve</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>프로그래밍</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>C#</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>IC 설계</h3>
+          <div class="skill-tags">
+            <span>Analog IC</span><span>Digital IC</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>연구 분야</h3>
+          <div class="skill-tags">
+            <span>저온 솔더</span><span>IMC 계면분석</span><span>나노소재</span><span>반도체 패키징</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-links">
+        <a href="mailto:iqup12@gmail.com" class="contact-item">
+          <span class="contact-icon">✉</span>
+          <span>iqup12@gmail.com</span>
+        </a>
+        <a href="https://github.com/iqup12" class="contact-item" target="_blank">
+          <span class="contact-icon">◈</span>
+          <span>github.com/iqup12</span>
+        </a>
+        <a href="https://www.notion.so/YUNTAE-LEE-3eda6f1b235e83eaaaa18131c864af72" class="contact-item" target="_blank">
+          <span class="contact-icon">N</span>
+          <span>Notion Portfolio</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 LEE YUNTAE · Built with Claude Code</p>
+    <p class="last-updated">마지막 업데이트: <span id="last-updated">-</span></p>
+  </footer>
+
+  <!-- 프로젝트 상세 모달 -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-header">
+        <span class="card-category" id="modal-category"></span>
+        <span class="card-status" id="modal-status"></span>
+      </div>
+      <h2 class="modal-title" id="modal-title"></h2>
+      <p class="modal-date" id="modal-date"></p>
+      <div class="card-result" id="modal-result"></div>
+      <div class="card-tags" id="modal-tags"></div>
+      <div class="modal-star" id="modal-star"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
