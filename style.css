@@ -875,6 +875,245 @@ section:last-of-type      { border-bottom: none; }
 .star-label { color: var(--accent-dark); font-weight: 700; }
 
 /* ────────────────────────────────────────────
+   ACTIVITIES SECTION (index.html cards)
+──────────────────────────────────────────── */
+.act-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.act-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .875rem;
+  transition: box-shadow .2s, transform .2s, border-color .2s;
+}
+
+.act-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+  border-color: var(--border-mid);
+}
+
+.act-card-highlight {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+}
+
+.act-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: .75rem;
+}
+
+.act-type {
+  display: inline-block;
+  font-size: .65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--accent-dark);
+  background: rgba(14,165,233,.1);
+  padding: .2rem .55rem;
+  border-radius: 999px;
+  margin-bottom: .4rem;
+}
+
+.act-org {
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--text-1);
+  line-height: 1.35;
+}
+
+.act-role {
+  font-size: .8rem;
+  color: var(--text-3);
+  margin-top: .15rem;
+}
+
+.act-period {
+  font-size: .72rem;
+  font-weight: 600;
+  color: var(--text-4);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.act-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .45rem;
+  flex: 1;
+}
+
+.act-list li {
+  font-size: .82rem;
+  color: var(--text-2);
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.55;
+}
+
+.act-list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.act-more {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: .25rem;
+  transition: gap .2s;
+}
+
+.act-more:hover { gap: .55rem; }
+
+/* ────────────────────────────────────────────
+   ACTIVITIES DETAIL PAGE (activities.html)
+──────────────────────────────────────────── */
+.act-detail-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.act-detail-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 2.25rem;
+  margin-bottom: 2rem;
+}
+
+.act-detail-card:last-child { margin-bottom: 0; }
+
+.act-detail-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .875rem;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.act-detail-type {
+  font-size: .65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--accent-dark);
+  background: rgba(14,165,233,.1);
+  padding: .2rem .6rem;
+  border-radius: 999px;
+}
+
+.act-detail-period {
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--text-4);
+}
+
+.act-detail-org {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-1);
+  letter-spacing: -.025em;
+  line-height: 1.3;
+  margin-bottom: .4rem;
+}
+
+.act-detail-role {
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  margin-bottom: 1.5rem;
+}
+
+.act-detail-achievements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--accent-bg);
+  border: 1px solid rgba(14,165,233,.2);
+  border-radius: var(--radius);
+}
+
+.ach-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .3rem;
+  text-align: center;
+}
+
+.ach-num {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--accent-dark);
+  letter-spacing: -.03em;
+  line-height: 1;
+}
+
+.ach-label {
+  font-size: .7rem;
+  font-weight: 600;
+  color: var(--text-3);
+}
+
+.act-detail-section {
+  margin-bottom: 1.75rem;
+}
+
+.act-detail-section h3 {
+  font-size: .68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--accent);
+  margin-bottom: .875rem;
+}
+
+.act-detail-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+}
+
+.act-detail-section ul li {
+  font-size: .875rem;
+  color: var(--text-2);
+  padding-left: 1.1rem;
+  position: relative;
+  line-height: 1.7;
+}
+
+.act-detail-section ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--text-4);
+}
+
+/* ────────────────────────────────────────────
    MOBILE
 ──────────────────────────────────────────── */
 @media (max-width: 1300px) {
