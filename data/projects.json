@@ -86,12 +86,12 @@
         "수율 관리"
       ],
       "key_result": "반도체 8대 공정 전체 및 장비 에코시스템 종합 정리, 세정·CMP·계측·패키징 5개 챕터 체계적 이해 완성",
-      "star": "[상황] 480h 과정 수료를 앞두고 반도체 공정·장비 전 영역을 종합적으로 정리할 필요가 있는 상황에서,\n[과제] 세정·CMP·계측·FAB 공정·패키징 5개 핵심 챕터를 실무 수준으로 종합 정리하는 것을 목표로,\n[행동] 세정(Wet/Dry Cleaning, SC1/SC2) 공정, CMP 메커니즘과 Slurry 특성, 계측(OES/SEM/AFM/ADE) 장비별 측정 원리, FAB 공정 통합 흐름, 패키징(Wire Bonding/Flip Chip/3D IC) 기술을 5개 챕터로 체계적으로 정리했습니다.\n[결과] 480h 과정 종합 역량 완성, 반도체 공정 장비 엔지니어 필수 지식 전 영역 체계화 달성했습니다.",
+      "star": "[상황] 480h 과정 수료를 앞두고 반도체 공정·장비 전 영역을 종합적으로 정���할 필요가 있는 상황에서,\n[과제] 세정·CMP·계측·FAB 공정·패키징 5개 핵심 챕터를 실무 수준으로 종합 정리하는 것을 목표로,\n[행동] 세정(Wet/Dry Cleaning, SC1/SC2) 공정, CMP 메커니즘과 Slurry 특성, 계측(OES/SEM/AFM/ADE) 장비별 측정 원리, FAB 공정 통합 흐름, 패키징(Wire Bonding/Flip Chip/3D IC) 기술을 5개 챕터로 체계적으로 정리했습니다.\n[결과] 480h 과정 종합 역량 완성, 반도체 공정 장비 엔지니어 필수 지식 전 영역 체계화 달성했습니다.",
       "status": "✅ 완료"
     },
     {
       "id": "376a6f1b-235e-811b-ad7c-fdf215bffc41",
-      "title": "[480h 공정기초] Si Wafer 제조 및 반도체 공정 기초 — CZ법·Wafering·SECS/GEM",
+      "title": "[480h ��정기초] Si Wafer 제조 및 반도체 공정 기초 — CZ법·Wafering·SECS/GEM",
       "date": "2025-05-20",
       "category": "📚 학습",
       "tech_stack": [
@@ -147,7 +147,7 @@
         "센서"
       ],
       "key_result": "BLDC/Servo/Stepping 모터 종류별 제어 방식 이해, Gas Scrubber 4방식(Dry/Wet/Burn/Plasma) 작동 원리 학습, Plasma RF 제어 및 Chiller 냉각 시스템 운용 원리 습득",
-      "star": "[상황] 반도체 공정 장비 내부의 전기·기계 제어 시스템에 대한 심층 이해가 필요한 상황에서,\n[과제] 모터 제어·Plasma 제어·배기 처리·냉각 시스템 등 장비 제어 구성요소 전반을 학습하는 것을 목표로,\n[행동] BLDC/Servo/Stepping Motor 종류별 토크-속도 특성, Gas Scrubber(Dry/Wet/Burn/Plasma) 4방식 처리 흐름, Plasma 기초·Sheath·RF Generator(13.56MHz), Chiller/TE Cooler 냉각 원리, 스마트팩토리 센서 기술을 집중 학습했습니다.\n[결과] 장비 제어 구성요소 전반의 동작 원리 이해, 공정 장비 이상 발생 시 원인 분석 가능한 실무 역량 확보했습니다.",
+      "star": "[상황] 반도체 공정 장비 내부의 전기·기계 제어 시스템에 대한 심층 ��해가 필요한 상황에서,\n[과제] 모터 제어·Plasma 제어·배기 처리·냉각 시스템 등 장비 제어 구성요소 전반을 학습하는 것을 목표로,\n[행동] BLDC/Servo/Stepping Motor 종류별 토크-속도 특성, Gas Scrubber(Dry/Wet/Burn/Plasma) 4방식 처리 흐름, Plasma 기초·Sheath·RF Generator(13.56MHz), Chiller/TE Cooler 냉각 원리, 스마트팩토리 센서 기술을 집중 학습했습니다.\n[결과] 장비 제어 구성요소 전반의 동작 원리 이해, 공정 장비 이상 발생 시 원인 분석 가능한 실무 역량 확보했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -188,7 +188,7 @@
         "Leak Test"
       ],
       "key_result": "MKS C/P/G 시리즈 MFC 구조·제어 원리 이해, 진공펌프 4종(Rotary/Dry/Booster/Turbo/Cryo) 작동 메커니즘 비교, Pirani·Baratron·이온 게이지 측정 원리 습득",
-      "star": "[상황] 반도체 공정 장비의 핵심 구성품인 진공·가스 제어 시스템에 대한 실무 이해가 필요한 상황에서,\n[과제] MFC부터 진공펌프·게이지·밸브까지 공정 장비 유틸리티 전반을 체계적으로 학습하는 것을 목표로,\n[행동] MKS C/P/G 시리즈 MFC 구조·교정 방법, 열전달(전도/대류/복사·Fourier 법칙) 기초, 진공펌프 4종 메커니즘, Leak Test(Probe/Sniffer) 방법, 압력 게이지(Pirani/Baratron/이온) 원리, Gate/Check/Throttle/APC Valve 종류와 역할을 집중 학습했습니다.\n[결과] 공정 장비 진공·가스 유틸리티 전반 이해, 공정 챔버 압력 제어 메커니즘 분석 역량 확보했습니다.",
+      "star": "[상황] 반도체 공정 장비의 핵심 구성품인 진공·가스 제어 시스템에 대한 실무 이해가 필요한 상황에서,\n[과제] MFC부터 진공펌프·게이지·밸브까지 공정 장비 유틸리티 전반을 체계적으로 학습하는 것을 목표로,\n[행동] MKS C/P/G 시리즈 MFC 구조·교정 방법, 열전달(전도/대류/복사·Fourier 법칙) 기초, ���공펌프 4종 메커니즘, Leak Test(Probe/Sniffer) 방법, 압력 게이지(Pirani/Baratron/이온) 원리, Gate/Check/Throttle/APC Valve 종류와 역할을 집중 학습했습니다.\n[결과] 공정 장비 진공·가스 유틸리티 전반 이해, 공정 챔버 압력 제어 메커니즘 분석 역량 확보했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -381,7 +381,7 @@
         "TC-MUF"
       ],
       "key_result": "IEEE·ECTC 등 20편+ 문헌 분석, Mass Reflow vs TCB 비교 분석, HBM 핵심 공정 전문 지식 확보",
-      "star": "[상황] 반도체 미세화 한계 극복을 위한 차세대 패키징 기술이 산업 핵심 이슈로 부상한 상황에서,\n[과제] TCB(Thermal Compression Bonding) 기술의 메커니즘·신뢰성·HBM 적용 사례를 체계적으로 고찰하는 졸업논문 작성을 목표로,\n[행동] IEEE, ECTC 등 해외 학술지 20편 이상을 분석하여 Mass Reflow vs TCB 공정 비교, 본딩 헤드 온도 프로파일·가압력이 접합부 형성에 미치는 영향, HBM TC-NCF/TC-MUF 공정 차이, LAB(Laser Assisted Bonding) 차세대 기술 발전 방향을 체계화했습니다.\n[결과] 열-기계적 거동 이해와 공정 파라미터 최적화 사고방식 확보, 반도체 후공정(OSAT) 및 HBM 제조 핵심 기술에 대한 학부 수준 이상의 전문 지식 습득했습니다.",
+      "star": "[상황] 반도체 미세화 한계 극복을 위한 차세대 패키징 기술이 산업 핵심 이슈로 부상한 상황에서,\n[과제] TCB(Thermal Compression Bonding) 기술의 메커니즘·신뢰성·HBM 적용 사례를 체계적으로 고찰하는 졸업논문 작성을 목표로,\n[행동] IEEE, ECTC 등 해외 학술지 20편 이상을 분석하여 Mass Reflow vs TCB 공��� 비교, 본딩 헤드 온도 프로파일·가압력이 접합부 형성에 미치는 영향, HBM TC-NCF/TC-MUF 공정 차이, LAB(Laser Assisted Bonding) 차세대 기술 발전 방향을 체계화했습니다.\n[결과] 열-기계적 거동 이해와 공정 파라미터 최적화 사고방식 확보, 반도체 후공정(OSAT) 및 HBM 제조 핵심 기술에 대한 학부 수준 이상의 전문 지식 습득했습니다.",
       "status": "✅ 완료"
     },
     {
