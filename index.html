@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YUNTAE LEE | Portfolio</title>
+  <title>YUNTAE LEE | Semiconductor Engineer Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,26 +14,37 @@
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
 
+  <!-- ── Hero ── -->
   <section id="hero">
     <div class="hero-content">
-      <p class="hero-greeting">안녕하세요,</p>
-      <h1 class="hero-name">이윤태 <span>LEE YUNTAE</span></h1>
-      <p class="hero-title">나노소재공학 석사과정 · 반도체 소재/공정 엔지니어 지망</p>
-      <p class="hero-desc">저온 솔더 합금 개발 · IMC 계면 분석 · 지능형반도체공학 연구</p>
+      <p class="hero-tag">Nano Materials Engineering · MS Candidate</p>
+      <h1 class="hero-name">이윤태<br><span>LEE YUNTAE</span></h1>
+      <p class="hero-sub">저온 솔더 합금 개발 · IMC 계면 분석 · 지능형반도체공학 연구보조원</p>
       <div class="hero-btns">
-        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
-        <a href="https://github.com/iqup12" class="btn btn-outline" target="_blank">GitHub</a>
+        <a href="#projects" class="btn btn-primary">Projects →</a>
+        <a href="https://github.com/iqup12-dot" class="btn btn-outline" target="_blank">GitHub</a>
       </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">1,177</span><span class="stat-label">교육 이수 시간</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-num">13+</span><span class="stat-label">프로젝트</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-num">5+</span><span class="stat-label">분석 장비</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-num">20+</span><span class="stat-label">참고 문헌</span></div>
     </div>
     <div class="hero-bg"></div>
   </section>
 
+  <!-- ── About ── -->
   <section id="about">
     <div class="container">
       <h2 class="section-title">About</h2>
@@ -41,83 +52,140 @@
         <div class="about-text">
           <p>나노소재공학 석사과정으로 <strong>저온 솔더 합금의 IMC 계면 분석</strong>과
           <strong>지능형반도체공학</strong>을 연구합니다.</p>
-          <p>FE-SEM, XPS, SAT 등 첨단 분석 장비 운용 경험과 Python/C# 기반
-          데이터 자동화 능력을 보유하고 있습니다.</p>
-          <p>삼성전자 · SK하이닉스 반도체 소재/공정 부문 엔지니어를 목표로 합니다.</p>
+          <p>한국나노분석랩 분석기술팀 연구원으로 <strong>삼성전자 의뢰 부품 분석</strong> 등
+          실무 프로젝트를 수행했으며, FE-SEM·XPS·SAT 등 첨단 분석 장비를 직접 운용했습니다.</p>
+          <p>Python·C# 기반 데이터 자동화와 Cadence Virtuoso 기반 IC 설계 역량을 보유하며,
+          <strong>삼성전자 · SK하이닉스</strong> 반도체 소재/공정 엔지니어를 목표로 합니다.</p>
         </div>
-        <div class="about-info">
-          <div class="info-item"><span class="info-label">전공</span><span>나노소재공학 (석사)</span></div>
-          <div class="info-item"><span class="info-label">연구</span><span>저온 솔더 · IMC 계면분석</span></div>
-          <div class="info-item"><span class="info-label">목표</span><span>삼성전자 · SK하이닉스</span></div>
-          <div class="info-item"><span class="info-label">이메일</span><span>iqup12@gmail.com</span></div>
+        <div class="about-cards">
+          <div class="about-card">
+            <span class="acard-icon">🎓</span>
+            <div>
+              <p class="acard-title">나노소재공학 석사과정</p>
+              <p class="acard-sub">중앙대학교 · 2025 ~</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <span class="acard-icon">🔬</span>
+            <div>
+              <p class="acard-title">분석기술팀 연구원</p>
+              <p class="acard-sub">한국나노분석랩 · 2025</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <span class="acard-icon">⚙️</span>
+            <div>
+              <p class="acard-title">지능형반도체공학 연구보조원</p>
+              <p class="acard-sub">중앙대학교 NEAL · 2026 ~</p>
+            </div>
+          </div>
+          <div class="about-card">
+            <span class="acard-icon">🏆</span>
+            <div>
+              <p class="acard-title">나노소재공학 학사 졸업</p>
+              <p class="acard-sub">중앙대학교 · 2019 – 2025</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ── Projects ── -->
   <section id="projects">
     <div class="container">
       <h2 class="section-title">Projects</h2>
-      <div class="filter-btns">
-        <button class="filter-btn active" data-filter="all">전체</button>
-        <button class="filter-btn" data-filter="research">🔬 연구/실험</button>
-        <button class="filter-btn" data-filter="coding">💻 코딩</button>
-        <button class="filter-btn" data-filter="learning">📚 학습</button>
-        <button class="filter-btn" data-filter="claude">🤖 Claude</button>
+      <div class="tab-bar">
+        <button class="tab active" data-filter="all">전체 <span class="tab-count" id="cnt-all"></span></button>
+        <button class="tab" data-filter="research">🔬 연구/실험 <span class="tab-count" id="cnt-research"></span></button>
+        <button class="tab" data-filter="coding">💻 코딩 <span class="tab-count" id="cnt-coding"></span></button>
+        <button class="tab" data-filter="learning">📚 학습/교육 <span class="tab-count" id="cnt-learning"></span></button>
       </div>
       <div class="projects-grid" id="projects-grid">
-        <p class="loading">데이터 로딩 중...</p>
+        <div class="loading-msg">데이터 로딩 중...</div>
       </div>
     </div>
   </section>
 
+  <!-- ── Education Timeline ── -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education Timeline</h2>
+      <div class="timeline" id="education-timeline">
+        <div class="loading-msg">로딩 중...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
   <section id="skills">
     <div class="container">
       <h2 class="section-title">Skills</h2>
       <div class="skills-grid">
-        <div class="skill-group">
-          <h3>분석 장비</h3>
+        <div class="skill-card">
+          <div class="skill-header"><span class="skill-dot research"></span>분석 장비</div>
           <div class="skill-tags">
-            <span>FE-SEM</span><span>XPS</span><span>SAT</span><span>VI Curve</span>
+            <span>FE-SEM</span><span>XPS</span><span>SAT</span>
+            <span>VI Curve</span><span>EMMI</span><span>X-ray</span>
+            <span>KEYENCE VHX-7000</span><span>Agilent B2911A</span>
           </div>
         </div>
-        <div class="skill-group">
-          <h3>프로그래밍</h3>
+        <div class="skill-card">
+          <div class="skill-header"><span class="skill-dot coding"></span>프로그래밍</div>
           <div class="skill-tags">
             <span>Python</span><span>C#</span>
+            <span>Pandas</span><span>NumPy</span>
+            <span>Matplotlib</span><span>Scipy</span>
           </div>
         </div>
-        <div class="skill-group">
-          <h3>IC 설계</h3>
+        <div class="skill-card">
+          <div class="skill-header"><span class="skill-dot learning"></span>IC 설계</div>
           <div class="skill-tags">
-            <span>Analog IC</span><span>Digital IC</span>
+            <span>Cadence Virtuoso</span><span>Analog IC</span>
+            <span>Digital IC</span><span>Full Custom</span>
+            <span>DRC / LVS</span><span>gpdk090</span>
           </div>
         </div>
-        <div class="skill-group">
-          <h3>연구 분야</h3>
+        <div class="skill-card">
+          <div class="skill-header"><span class="skill-dot research"></span>연구 분야</div>
           <div class="skill-tags">
-            <span>저온 솔더</span><span>IMC 계면분석</span><span>나노소재</span><span>반도체 패키징</span>
+            <span>저온 솔더</span><span>IMC 계면분석</span>
+            <span>반도체 패키징</span><span>HBM</span>
+            <span>3D IC / TSV</span><span>SPC</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-header"><span class="skill-dot coding"></span>언어</div>
+          <div class="skill-tags">
+            <span>한국어 (모국어)</span><span>English OPIc IH</span>
+            <span>Japanese JPT 530</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-header"><span class="skill-dot learning"></span>자격·인증</div>
+          <div class="skill-tags">
+            <span>6시그마 GB</span><span>운전면허 1종 보통</span>
+            <span>상공회의소 한자 4급</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ── Contact ── -->
   <section id="contact">
-    <div class="container">
+    <div class="container contact-inner">
       <h2 class="section-title">Contact</h2>
+      <p class="contact-desc">반도체 소재·공정·설계 분야 관련 연락을 환영합니다.</p>
       <div class="contact-links">
         <a href="mailto:iqup12@gmail.com" class="contact-item">
-          <span class="contact-icon">✉</span>
-          <span>iqup12@gmail.com</span>
+          <span>✉</span><span>iqup12@gmail.com</span>
         </a>
-        <a href="https://github.com/iqup12" class="contact-item" target="_blank">
-          <span class="contact-icon">◈</span>
-          <span>github.com/iqup12</span>
+        <a href="https://github.com/iqup12-dot" class="contact-item" target="_blank">
+          <span>◈</span><span>github.com/iqup12-dot</span>
         </a>
         <a href="https://www.notion.so/YUNTAE-LEE-3eda6f1b235e83eaaaa18131c864af72" class="contact-item" target="_blank">
-          <span class="contact-icon">N</span>
-          <span>Notion Portfolio</span>
+          <span>N</span><span>Notion Portfolio</span>
         </a>
       </div>
     </div>
@@ -125,22 +193,25 @@
 
   <footer>
     <p>© 2026 LEE YUNTAE · Built with Claude Code</p>
-    <p class="last-updated">마지막 업데이트: <span id="last-updated">-</span></p>
+    <p>마지막 업데이트: <span id="last-updated">-</span></p>
   </footer>
 
-  <!-- 프로젝트 상세 모달 -->
+  <!-- ── Modal ── -->
   <div class="modal-overlay" id="modal-overlay">
     <div class="modal">
       <button class="modal-close" onclick="closeModal()">✕</button>
-      <div class="modal-header">
-        <span class="card-category" id="modal-category"></span>
+      <div class="modal-meta">
+        <span class="card-cat" id="modal-cat"></span>
         <span class="card-status" id="modal-status"></span>
       </div>
       <h2 class="modal-title" id="modal-title"></h2>
       <p class="modal-date" id="modal-date"></p>
-      <div class="card-result" id="modal-result"></div>
+      <div class="modal-result" id="modal-result"></div>
       <div class="card-tags" id="modal-tags"></div>
-      <div class="modal-star" id="modal-star"></div>
+      <div class="modal-star-wrap">
+        <p class="modal-star-label">STAR 스토리</p>
+        <div class="modal-star" id="modal-star"></div>
+      </div>
     </div>
   </div>
 

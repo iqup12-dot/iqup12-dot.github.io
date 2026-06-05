@@ -1,4 +1,267 @@
 {
   "updated_at": "2026-06-05",
-  "projects": []
+  "projects": [
+    {
+      "id": "376a6f1b-235e-8131-bd8b-db40673a257a",
+      "title": "SKKU 시스템 반도체 설계 아카데미 (513h)",
+      "date": "2025-11-25",
+      "category": "📚 학습",
+      "tech_stack": [
+        "Analog IC",
+        "Digital IC",
+        "Cadence Virtuoso",
+        "Full Custom",
+        "gpdk090",
+        "DRC",
+        "LVS"
+      ],
+      "key_result": "513시간 수료 (성균관대학교), Analog/Digital IC 풀커스텀 설계 전 과정 습득",
+      "star": "[상황] 시스템 반도체 설계 전문 역량 확보를 위해 체계적인 IC 설계 교육이 필요한 상황에서,\n[과제] Analog IC(OP-AMP, Comparator)와 Digital IC(NPU, Repeater) Full Custom 설계 전 과정을 성균관대학교 아카데미에서 습득하는 것을 목표로,\n[행동] 513시간 동안 Cadence Virtuoso 기반 회로 설계→시뮬레이션→레이아웃→DRC/LVS 검증 전 과정을 반복 실습하며, OP-AMP·Comparator·NPU·Repeater 등 다양한 회로를 직접 설계했습니다.\n[결과] Analog/Digital IC 풀커스텀 설계 역량 확보, 설계-검증-최적화 전 과정에 대한 실무 경험 축적했습니다.",
+      "status": "✅ 완료"
+    },
+    {
+      "id": "376a6f1b-235e-81e3-84ef-cd6abd7a7646",
+      "title": "반도체 공정장비 및 제어시스템 SW 엔지니어 양성과정 (480h)",
+      "date": "2025-05-12",
+      "category": "📚 학습",
+      "tech_stack": [
+        "C#",
+        "PLC",
+        "공정 제어",
+        "SW 엔지니어링",
+        "자동화"
+      ],
+      "key_result": "480시간 수료 (한국전자산업협동조합), 공정 장비 제어 SW 설계 역량 확보",
+      "star": "[상황] 공정 장비 제어 소프트웨어 개발 역량이 반도체 엔지니어에게 핵심 경쟁력으로 요구되는 상황에서,\n[과제] 반도체 공정 장비 제어 시스템 SW 설계 역량을 480시간 집중 교육으로 확보하는 것을 목표로,\n[행동] C# 기반 장비 제어 프로그래밍, PLC 제어 로직, 자동화 시스템 설계 등을 한국전자산업협동조합에서 집중 이수했습니다.\n[결과] 공정 장비 제어 SW 개발 역량 확보, 하드웨어-소프트웨어 통합 관점의 장비 엔지니어링 이해도 향상했습니��.",
+      "status": "✅ 완료"
+    },
+    {
+      "id": "376a6f1b-235e-812e-9394-e26eb87a4829",
+      "title": "반도체 제조공정 및 장비 실무자 양성과정 (168h)",
+      "date": "2025-03-18",
+      "category": "📚 학습",
+      "tech_stack": [
+        "반도체 공정",
+        "장비 운용",
+        "CVD",
+        "PVD",
+        "Lithography",
+        "Etching"
+      ],
+      "key_result": "168시간 수료 (더인에듀), 반도체 8대 공정 및 장비 실무 이론 체계 확보",
+      "star": "[상황] 반도체 제조 현장 실무 역량 강화를 위해 체계적인 공정 교육이 필요한 상황에서,\n[과제] 반도체 8대 공정 전반의 원리·장비·불량 메커니즘을 실무 수준으로 학습하는 것을 목표로,\n[행동] 더인에듀에서 168시간 집중 교육을 이수하며 CVD·PVD·Lithography·Etching·CMP·Doping·Cleaning·Metrology 각 공정의 장비 구조와 공정 파라미터를 체계적으로 학습했습니다.\n[결과] 반도체 제조 공정 전 과정에 대한 실무 이론 체계 확보, 공정 엔지니어 직무에 즉시 활용 가능한 지식 기반 구축했습니다.",
+      "status": "✅ 완료"
+    },
+    {
+      "id": "376a6f1b-235e-8165-b9d5-d634d0718ad9",
+      "title": "CABON 학술동아리 — DFT 기반 차세대 배터리 논문스터디 주도",
+      "date": "2024-09-01",
+      "category": "📚 학습",
+      "tech_stack": [
+        "DFT",
+        "계산과학",
+        "논문 분석",
+        "배터리 소재",
+        "이종집적"
+      ],
+      "key_result": "비전공(계산과학) 분야 단기 습득, 20편+ 논문 분석·정리, 연구계획서 작성 주도",
+      "star": "[상황] 비전공 분야인 DFT(제1원리 계산) 기반 차세대 배터리 연구를 학술동아리에서 주도해야 하는 상황에서,\n[과제] 황화물계 전해질·칼슘 이온 양극재 등 3개 핵심 논문을 분석하고 팀의 연구 로드맵을 설계하는 것을 목표로,\n[행동] 단기간에 Band Gap·이온 이동도 등 핵심 기술을 자기주도 학습으로 습득하고, 논문 큐레이션 및 로드맵을 설계하여 팀 산출물을 이끌어냈으며, 복잡한 계산 결과를 소재공학적 관점으로 재해석했습니다.\n[결과] 비전공 분야 빠른 학습 곡선(Learning Agility) 증명, 20편+ 논문 분석 체계 구축, 팀 리더십 및 학제간 협업 역량 확보했습니다.",
+      "status": "��� 완료"
+    },
+    {
+      "id": "376a6f1b-235e-81b0-b93e-ef273aa90e30",
+      "title": "TC Bonding 졸업논문 — HBM/3D IC 열압착 본딩 기술 고찰",
+      "date": "2025-02-01",
+      "category": "📚 학습",
+      "tech_stack": [
+        "TCB",
+        "HBM",
+        "3D IC",
+        "TSV",
+        "반도체 패키징",
+        "TC-NCF",
+        "TC-MUF"
+      ],
+      "key_result": "IEEE·ECTC 등 20편+ 문헌 분석, Mass Reflow vs TCB 비교 분석, HBM 핵심 공정 전문 지식 확보",
+      "star": "[상황] 반도체 미세화 한계 극복을 위한 차세대 패키징 기술이 산업 핵심 이슈로 부상한 상황에서,\n[과제] TCB(Thermal Compression Bonding) 기술의 메커니즘·신뢰성·HBM 적용 사례를 체계적으로 고찰하는 졸업논문 작성을 목표로,\n[행동] IEEE, ECTC 등 해외 학술지 20편 이상을 분석하여 Mass Reflow vs TCB 공정 비교, 본딩 헤드 온도 프로파일·가압력이 접합부 형성에 미치는 영향, HBM TC-NCF/TC-MUF 공정 차이, LAB(Laser Assisted Bonding) 차세대 기술 발전 방향을 체계화했습니다.\n[결과] 열-기계적 거동 이해와 공정 파라미터 최적화 사고방식 확보, 반도체 후공정(OSAT) 및 HBM 제조 핵심 기술에 대한 학부 수준 이상의 전문 지식 습득했습니다.",
+      "status": "✅ 완료"
+    },
+    {
+      "id": "376a6f1b-235e-81ae-89a4-ff0abfa57a38",
+      "title": "반도체 Layout Design Rule Book 제작",
+      "date": "2026-01-01",
+      "category": "💻 코딩 프로젝트",
+      "tech_stack": [
+        "Cadence Virtuoso",
+        "DRC",
+        "Layout Design",
+        "gpdk090"
+      ],
+      "key_result": "공정 수율 및 소자 신뢰성 확보를 위한 Layout Design Rule 분석·정리 완료",
+      "star": "[상황] SKKU 아카데미에서 Layout 설계 시 공정 수율과 소자 신뢰성을 확보하기 위한 설계 가이드라인 체계화가 필요한 상황에서,\n[과제] gpdk090 공정의 핵심 Design Rule을 분석하고 실무 적용 가능한 Design Rule Book을 제작하는 것을 목표로,\n[행동] DRC(Design Rule Check) 기준을 항목별로 분석하고, Metal Layer·Via·Active 영역 등 각 공정 레이어의 최소 간격·폭·면적 규칙을 정리하여 체계적인 레퍼런스 문서를 작성했습니다.\n[결과] 실무 적용 가능한 Layout Design Rule Book 완성, 설계 오류 사전 방지 및 DRC 통과율 향상에 기여하는 지식 체계 구축했습니다.",
+      "status": "✅ 완료"
+    },
+    {
+      "id": "376a6f1b-235e-81dc-8ba8-d26618755ab1",
+      "title": "Digital IC — Repeater 설계 및 PPA 분석",
+      "date": "2026-01-01",
+      "category": "💻 코딩 프로젝트",
+      "tech_stack": [
+        "Cadence Virtuoso",
+        "gpdk090",
+        "Digital IC",
+        "PPA",
+        "Inverter Chain"
+      ],
+      "key_result": "90nm Inverter Chain 기반 Repeater 설계로 신호 감쇠 및 지연 문제 해결, PPA 최적화 분석 완료",
+      "star": "[상황] 긴 글로벌 배선 라인에서 신호 감쇠 및 지연 문제가 발생하는 디지털 IC 설계 환경에서,\n[과제] 90nm 공정 기반 Inverter Chain Repeater를 설계하고 Power·Performance·Area 관점에서 최적화 분석을 수행하는 것을 목표로,\n[행동] Cadence Virtuoso로 Inverter Chain 구조의 Repeater를 설계하고, 삽입 위치·크기 변화에 따른 지연 시간·소비전력·면적 변화를 시뮬레이션하여 PPA 트레이드오프를 정량 분석했습니다.\n[결과] 신호 지연 문제 해결 및 PPA 최적 설계 포인트 도출, 디지털 IC 타이밍 최적화 역량을 확보했습니다.",
+      "status": "✅ 완료"
+    },
+    {
+      "id": "376a6f1b-235e-81d2-be93-c4fa22fa8f06",
+      "title": "Analog IC 설계 — 2-Stage OP-AMP 및 PPA 분석",
+      "date": "2026-02-01",
+      "category": "💻 코딩 프로젝트",
+      "tech_stack": [
+        "Cadence Virtuoso",
+        "gpdk090",
+        "Analog IC",
+        "PPA",
+        "90nm"
+      ],
+      "key_result": "CL=10pF 부하 조건 2-Stage OP-AMP 설계 및 Power·Performance·Area 트레이드오프 분석",
+      "star": "[상황] 고집적 Analog IC에서 부하 커패시턴스 조건에 따른 OP-AMP 성능 최적화가 필요한 상황에서,\n[과제] gpdk090(90nm, VDD=1.2V) 공정에서 CL=10pF 조건 2-Stage OP-AMP를 설계하고 PPA 분석을 수행하는 것을 목표로,\n[행동] Cadence Virtuoso로 2단 증폭기 회로를 설계하고, Gain·Phase Margin·Slew Rate 등 주요 성능 지표를 시뮬레이션하며, Power·Performance·Area 트레이드오프를 분석했습니다.\n[결과] 목표 스펙(Gain, Phase Margin) 만족 OP-AMP 설계 완료, PPA 분석을 통해 공정 설계 최적화 사고방식을 습득했습니다.",
+      "status": "✅ 완료"
+    },
+    {
+      "id": "376a6f1b-235e-81f2-b584-ca8a2a1e7b84",
+      "title": "Analog IC 설계 — 2-Stage Comparator (고속 비교기)",
+      "date": "2026-02-01",
+      "category": "💻 코딩 프로젝트",
+      "tech_stack": [
+        "Cadence Virtuoso",
+        "gpdk090",
+        "Analog IC",
+        "SPICE",
+        "90nm"
+      ],
+      "key_result": "90nm gpdk 공정에서 외부 환경 변화에 안정적인 고속 2-Stage Comparator 설계 완료",
+      "star": "[상황] SKKU 아카데미에서 Analog IC 설계 역량을 실습 기반으로 확보해야 하는 상황에서,\n[과제] gpdk090(90nm, VDD=1.2V) 공정에서 외부 환경 변화에도 안정적인 고속 동작 2-Stage Comparator 설계를 목표로,\n[행동] Cadence Virtuoso에서 소자 파라미터를 설정하고 SPICE 시뮬레이션으로 동작 특성을 반복 검증하며, 오프셋 전압·전파 지연 등 핵심 성능 지표를 최적화했습니다.\n[결과] 목표 스펙을 만족하는 2-Stage Comparator 설계 완료, Analog IC 설계 프로세스 전 과정 습득했습니다.",
+      "status": "✅ 완료"
+    },
+    {
+      "id": "376a6f1b-235e-816a-b727-c573ba8b4c7f",
+      "title": "Full Custom Digital IC — NPU(신경망 처리장치) 설계",
+      "date": "2026-01-01",
+      "category": "💻 코딩 프로젝트",
+      "tech_stack": [
+        "Cadence Virtuoso",
+        "gpdk090",
+        "DRC",
+        "LVS",
+        "Digital IC",
+        "Full Custom"
+      ],
+      "key_result": "90nm 공정 기반 NPU 풀커스텀 레이아웃 설계 및 DRC/LVS 검증 통과",
+      "star": "[상황] SKKU 시스템 반도체 설계 아카데미에서 Full Custom 방식의 디지털 IC 설계 역량 확보가 필요한 상황에서,\n[과제] gpdk090 90nm 공정으로 NPU(Neural Processing Unit) 시스템을 Full Custom 방식으로 설계하고 DRC/LVS 검증을 통과하는 것을 목표로,\n[행동] Cadence Virtuoso를 활용하여 회로 설계(Schematic)부터 레이아웃까지 Full Custom 방식으로 직접 구현하고, Assura DRC/LVS 툴로 설계 규칙 위반 여부와 회로-레이아웃 일치성을 검증했습니다.\n[결과] 90nm 공정 NPU Full Custom 레이아웃 설계 완료, DRC/LVS 검증 통과로 설계 정합성 확인했습니다.",
+      "status": "✅ 완료"
+    },
+    {
+      "id": "376a6f1b-235e-8154-aedf-ce86cabf9098",
+      "title": "Python 기반 Probe Card 패턴 분석 알고리즘 개발",
+      "date": "2026-02-01",
+      "category": "💻 코딩 프로젝트",
+      "tech_stack": [
+        "Python",
+        "패턴 인식",
+        "EDS",
+        "Probe Card"
+      ],
+      "key_result": "EDS 공정 Probe Card 접촉 패턴 자동 분석 알고리즘 개발 완료",
+      "star": "[상황] 반도체 EDS 공정에서 사용되는 Probe Card의 패턴 이상을 수동으로 판별하는 데 시간이 소요되는 상황에서,\n[과제] Probe Card 접촉 패턴을 자동으로 분석하여 이상 패턴을 감지하는 알고리즘 개발을 ��표로,\n[행동] 테스트 데이터에서 Probe Card 좌표 정보를 추출하고, 패턴 인식 알고리즘을 적용하여 정상/이상 패턴을 자동 분류하는 로직을 Python으로 설계·구현했습니다.\n[결과] Probe Card 패턴 자동 분석 알고리즘 개발 완료, EDS 공정 품질 관리 자동화 기반을 마련했습니다.",
+      "status": "✅ 완료"
+    },
+    {
+      "id": "376a6f1b-235e-8114-a74c-c716c49f099e",
+      "title": "Python 기반 Wafer 데이터 처리 및 SPC 시각화 시스템",
+      "date": "2025-06-01",
+      "category": "💻 코딩 프로젝트",
+      "tech_stack": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "SPC"
+      ],
+      "key_result": "EDS 원시 데이터 자동 구조�� + SPC 관리도 자동 생성으로 공정 이상 선제 감지 체계 구현",
+      "star": "[상황] 반도체 제조 공정에서 발생하는 방대한 Wafer 테스트 데이터(EDS)에서 공정 변동성을 신속히 파악하기 어려운 상황에서,\n[과제] Raw 데이터를 자동 처리하여 이상 Wafer·Die를 선제적으로 감지하는 SPC(통계적 공정 제어) 시스템 구축을 목���로,\n[행동] Pandas/NumPy로 대용량 CSV 테스트 Log를 데이터프레임으로 구조화하고 결측치·이상치를 처리했으며, Matplotlib/Seaborn으로 SPC 관리도와 Wafer Map을 자동 시각화했습니다.\n[결과] 수작업 데이터 처리 과정을 완전 자동화하고, 공정 이상 신호를 통계적으로 조기 감지할 수 있는 시스템을 완성했습니다.",
+      "status": "✅ 완료"
+    },
+    {
+      "id": "376a6f1b-235e-8167-b0f9-f9893463c41b",
+      "title": "XPS 데이터 처리 및 피크 진단 자동화 (Python)",
+      "date": "2025-08-01",
+      "category": "💻 코딩 프로젝트",
+      "tech_stack": [
+        "Python",
+        "Pandas",
+        "Scipy",
+        "XPS",
+        "JSON"
+      ],
+      "key_result": "수동 분석 대비 처리 시간 90% 단축 (분 단위 → 초 단위), 화학결합 상태 자동 진단 구현",
+      "star": "[상황] GaN/AlGaN 박막 XPS 분석 시 대량의 Raw 데이터를 수동으로 처리하는 비효율이 연구 속도를 저하시키는 상황에서,\n[과제] Raw CSV에서 Binding Energy 피크를 자동 검출하고 화학결합 상태(Ga-N, Ga-O, Ga-S)를 자�� 진단하는 알고리즘 구현을 목표로,\n[행동] Pandas로 장비 출력 헤더를 제거·정형화하고, Scipy.signal.find_peaks로 노이즈 속 유의미한 신호를 추출하며, 도메인 지식(Binding Energy 기준값)을 프로그래밍 로직에 직접 반영한 화학결합 자동 매핑 알고리즘을 설계했습니다.\n[결과] 분석 처리 시간 90% 단축, JSON 포맷 자동 저장으로 대량 샘플 DB화 기반을 마련하고 데이터 기반 공정 분석 역량을 증명했습니다.",
+      "status": "✅ 완료"
+    },
+    {
+      "id": "376a6f1b-235e-81c6-b60b-c235e9a5e538",
+      "title": "정품/모조품 식별 분석 — 삼성전자 의뢰 NXP IC",
+      "date": "2025-09-01",
+      "category": "🔬 연구/실험",
+      "tech_stack": [
+        "X-ray",
+        "FE-SEM",
+        "KEYENCE VHX-7000",
+        "De-capsulation"
+      ],
+      "key_result": "삼성전자 의뢰 IC 3개 항목 전부 Acceptable, 정품 확�� 판정 완료",
+      "star": "[상황] 삼성전자 의뢰로 입수된 NXP 제조 IC의 진위 여부를 공신력 있는 분석으로 증명해야 하는 상황에서,\n[과제] 외관·X-ray·디캡슐레이션 3단계 분석으로 정품 여부를 판정하는 것을 목표로,\n[행동] 디지털 현미경(KEYENCE VHX-7000, 20~400배)으로 마킹·Sanding/Blacktop 흔적·리드 재도금 흔적을 정밀 검사하고, X-ray로 내부 Die 구조·Wire bond routing을 Known Authentic 데이터와 비교한 뒤, 디캡슐레이션으로 Die 마킹을 직접 확인했습니다.\n[결과] 3개 항목 전부 Acceptable 판정, 위조 또는 위조 의심 증거 없음, 정품 확인 보고서를 완성했습니다.",
+      "status": "✅ 완료"
+    },
+    {
+      "id": "376a6f1b-235e-8137-8bf7-ebf56613a0e0",
+      "title": "불량 원인 분석 — 제주반도체 K12 (Failure Analysis)",
+      "date": "2025-09-01",
+      "category": "🔬 연구/실험",
+      "tech_stack": [
+        "VI Curve",
+        "EMMI",
+        "SAT",
+        "X-ray",
+        "FE-SEM",
+        "De-capsulation"
+      ],
+      "key_result": "외관 이상 없는 전기 불량 원인을 EMMI Thermal로 위치 특정 → Crack/Metal Melt 물리적 원인 최종 확인",
+      "star": "[상황] 양산 중인 제주반도체 K12 제품에서 전기적 이상이 감지됐으나 외관상 원인 파악이 불가한 상황에서,\n[과제] 다단계 비파괴·파괴 분석으로 불량 원인을 물리적으로 특정하는 것을 목표로,\n[행동] 외관→X-ray→SAT→VI Curve→EMMI(Photon/Thermal)→디캡슐레이션 6단계 분석을 순차 수행하여, VI Curve에서 Short curve를 검출하고 EMMI Thermal로 불량 위치 좌표를 특정했습니다.\n[결과] 디캡슐레��션에서 Crack 및 Metal Melt 물리적 손상을 최종 확인, 단순 전기 불량이 아닌 소자 내부 물리적 손상으로 원인 특정하여 재발 방지 근거를 마련했습니다.",
+      "status": "✅ 완료"
+    },
+    {
+      "id": "376a6f1b-235e-8179-ab15-fcf2ee38edc6",
+      "title": "신규 반도체 입고 평가 (KEC KDZ18V 등 22종)",
+      "date": "2025-10-01",
+      "category": "🔬 연구/실험",
+      "tech_stack": [
+        "FE-SEM",
+        "X-ray",
+        "SAT",
+        "VI Curve",
+        "KEYENCE VHX-7000",
+        "Agilent B2911A"
+      ],
+      "key_result": "22종 부품 6단계 평가 전 항목 적합 판정, 신규 공급사 등록 프로세스 완성",
+      "star": "[상황] 신규 공급사 반도체 부품 22종을 최초 사용하기 전, 도면 규격 만족 여부와 품질 이상 유무를 종합적으로 검증해야 했습니다.\n[과제] 외관→X-ray→단면→디캡슐레이션→치수→전기적 특성 6단계 평가 체계를 단독으로 수행하는 것을 목표로,\n[행동] KEYENCE VHX-7000(외관/치수), SEC X-eye 5100(X-ray), Agilent B2911A(I-V Curve), HITACHI S-4700(SEM) 4종 장비를 직접 운용하여 전 샘플을 체계적으로 평가했습니다.\n[결과] 6개 평가 항목 전부 이상 없음 판정, 신규 부품 등록 적합 결론 도출 및 부품 등��� 프로세스 체계화에 기여했습니다.",
+      "status": "✅ 완료"
+    }
+  ]
 }
