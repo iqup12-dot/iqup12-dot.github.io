@@ -43,6 +43,7 @@ async function loadProjects() {
     const res  = await fetch('data/projects.json');
     const data = await res.json();
     allProjects = data.projects || [];
+    renderResearch();
     renderProjects();
     renderEducation();
     updateCounts();
@@ -52,6 +53,44 @@ async function loadProjects() {
     document.getElementById('projects-grid').innerHTML =
       '<p class="loading-msg">데이터를 불러올 수 없습니다.</p>';
   }
+}
+
+// ── Research 섹션 ──
+const ANALYSIS_FLOW = {
+  '정품/모조품 식별 분석': ['X-ray', 'FE-SEM+EDS', 'VHX-7000', 'De-cap', '판정'],
+  '불량 원인 분석':        ['VI Curve', 'EMMI', 'SAT', 'FE-SEM', '원인 확정'],
+  '신규 반도체 입고 평가': ['외관검사', 'X-ray', 'SAT', 'VI Curve', 'FE-SEM', '종합판정'],
+};
+
+function renderResearch() {
+  const grid = document.getElementById('research-grid');
+  if (!grid) return;
+  const items = allProjects
+    .filter(p => p.category === '🔬 연구/실험' && !p.title.includes('배터리'))
+    .sort((a,b) => new Date(b.date) - new Date(a.date));
+  if (!items.length) { grid.innerHTML = ''; return; }
+
+  grid.innerHTML = items.map(p => {
+    const flowKey = Object.keys(ANALYSIS_FLOW).find(k => p.title.includes(k));
+    const steps   = flowKey ? ANALYSIS_FLOW[flowKey] : [];
+    const flowHTML = steps.map((s,i) => `
+      <span class="fa-step">${s}</span>
+      ${i < steps.length-1 ? '<span class="fa-arrow">→</span>' : ''}
+    `).join('');
+    const idx = allProjects.indexOf(p);
+    return `
+    <div class="research-card reveal" data-idx="${idx}">
+      <div class="rc-header">
+        <span class="rc-badge">🔬 Failure Analysis</span>
+        <span class="rc-date">${p.date ? p.date.slice(0,7) : ''}</span>
+      </div>
+      <h3 class="rc-title">${p.title}</h3>
+      <p class="rc-result">${p.key_result || ''}</p>
+      ${steps.length ? `<div class="fa-flow">${flowHTML}</div>` : ''}
+      <div class="rc-tags">${(p.tech_stack||[]).map(t=>`<span class="card-tag">${t}</span>`).join('')}</div>
+      <button class="rc-more" onclick="openModal(allProjects[${idx}])">STAR 스토리 보기 →</button>
+    </div>`;
+  }).join('');
 }
 
 function updateCounts() {

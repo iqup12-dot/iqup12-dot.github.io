@@ -343,6 +343,44 @@ section{padding:7rem 2.5rem;}
 .sub-item-tags{display:flex;flex-wrap:wrap;gap:.25rem;}
 .sub-item-tags .tl-tag{font-size:.65rem;}
 
+/* ── Research Section ── */
+#research{background:linear-gradient(180deg,var(--bg-2) 0%,var(--bg) 100%);}
+.research-sub{color:var(--text-2);font-size:.9rem;margin-bottom:2rem;margin-top:-.5rem;}
+.research-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.5rem;}
+.research-card{
+  background:var(--bg-card);
+  border:1px solid rgba(34,211,238,.18);
+  border-radius:16px;padding:1.75rem;
+  transition:border-color .25s,transform .25s,box-shadow .25s;
+  position:relative;overflow:hidden;
+}
+.research-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--green),var(--blue));
+  opacity:.7;
+}
+.research-card:hover{
+  border-color:rgba(34,211,238,.45);
+  transform:translateY(-4px);
+  box-shadow:0 12px 36px rgba(34,211,238,.12);
+}
+.rc-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;}
+.rc-badge{font-size:.7rem;font-weight:700;color:var(--green);background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.25);padding:.2rem .65rem;border-radius:99px;}
+.rc-date{font-size:.72rem;color:var(--text-3);}
+.rc-title{font-size:1.05rem;font-weight:700;line-height:1.45;margin-bottom:.75rem;color:var(--text);}
+.rc-result{font-size:.82rem;color:var(--text-2);line-height:1.55;margin-bottom:1rem;}
+.fa-flow{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem;margin-bottom:1rem;padding:.75rem;background:var(--bg-2);border-radius:8px;}
+.fa-step{font-size:.7rem;font-weight:600;color:var(--green);background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.2);padding:.2rem .55rem;border-radius:5px;}
+.fa-arrow{font-size:.7rem;color:var(--text-3);}
+.rc-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1rem;}
+.rc-more{
+  background:none;border:1px solid rgba(34,211,238,.3);
+  color:var(--green);font-size:.78rem;font-weight:600;
+  padding:.45rem 1rem;border-radius:8px;cursor:pointer;
+  transition:background .2s,border-color .2s;width:100%;
+}
+.rc-more:hover{background:rgba(34,211,238,.1);border-color:var(--green);}
+
 /* ── Skills ── */
 #skills{background:var(--bg);}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;}
