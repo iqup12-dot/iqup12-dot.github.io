@@ -659,6 +659,8 @@ section:last-of-type      { border-bottom: none; }
   border-radius: var(--radius);
   padding: 1.25rem;
   transition: box-shadow .25s, transform .25s, border-color .25s, background .25s;
+  cursor: default;
+  will-change: transform;
 }
 
 .skill-card:hover {
@@ -793,6 +795,11 @@ section:last-of-type      { border-bottom: none; }
 }
 
 .reveal.visible { opacity: 1; transform: none; }
+
+.skill-card.visible,
+.act-card.visible {
+  transition: box-shadow .25s, transform .25s, border-color .25s, background .25s;
+}
 
 /* ────────────────────────────────────────────
    DETAIL PAGE
