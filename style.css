@@ -929,6 +929,20 @@ section:last-of-type      { border-bottom: none; }
 
 .ov-card p { font-size: .82rem; color: var(--text-2); line-height: 1.6; }
 
+.ov-more {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: auto;
+  padding-top: .5rem;
+  transition: gap .2s;
+}
+
+.ov-more:hover { gap: .55rem; }
+
 .ov-tag {
   display: inline-block;
   font-size: .65rem;
