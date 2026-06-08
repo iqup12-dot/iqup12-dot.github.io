@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07",
+  "updated_at": "2026-06-08",
   "projects": [
     {
       "id": "376a6f1b-235e-81d4-89c4-f4b275ae004d",
@@ -198,7 +198,7 @@
         "Cadence"
       ],
       "key_result": "MOSFET 동작 영역(선형/포화/차단) 완전 이해, gm·rds·Cgs 소신호 모델 분석, Analog 회로 설계 이론(바이어스/증폭기/피드백) 체계 정립",
-      "star": "[상황] SKKU 시스템 반도체 설계 아카데미에서 Analog IC 설계를 위한 회로 이론 기초가 필요한 상황에서,\n[과제] MOSFET 소자 특성부터 Analog 증폭기 설계 이론까지 체계적으로 학습하는 것을 목표로,\n[행동] MOSFET 동작 영역(선형/포화/차단) 분석, gm·rds·Cgs 소신호 모델 파라미터 계산, 공통소스/공통게이트/공통드레인 증폭기 특성, 미러 전류원·캐스코드·차동증폭기·OP-AMP 설계 이론을 집중 학습했습니다.\n[결과] Analog IC 설계에 필요한 CMOS 회로 이론 전반 습득, 이후 2-Stage OP-AMP·Comparator 설계 프로젝트에 직접 적용했습니다.",
+      "star": "[상황] SKKU 시스템 반도체 설계 아카데미에서 Analog IC 설계를 위한 회로 이론 기초가 필요한 상황에서,\n[과제] MOSFET 소자 특성부터 Analog 증폭기 설계 이론까지 체계적으로 학습하는 것을 목표로,\n[행동] MOSFET 동작 영역(선형/포화/차단) 분석, gm·rds·Cgs 소신호 모델 파라미터 계산, 공통소스/공통게이트/공통드레인 증폭기 특��, 미러 전류원·캐스코드·차동증폭기·OP-AMP 설계 이론을 집중 학습했습니다.\n[결과] Analog IC 설계에 필요한 CMOS 회로 이론 전반 습득, 이후 2-Stage OP-AMP·Comparator 설계 프로젝트에 직접 적용했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -320,7 +320,7 @@
         "Leak Test"
       ],
       "key_result": "MKS C/P/G 시리즈 MFC 구조·제어 원리 이해, 진공펌프 4종(Rotary/Dry/Booster/Turbo/Cryo) 작동 메커니즘 비교, Pirani·Baratron·이온 게이지 측정 원리 습득",
-      "star": "[상황] 반도체 공정 장비의 핵심 구성품인 진공·가스 제어 시스템에 대한 실무 이해가 필요한 상황에서,\n[과제] MFC부터 진공펌프·게이지·밸브까지 공정 장비 유틸리티 전반을 체계적으로 학습하는 것을 목표로,\n[행동] MKS C/P/G 시리즈 MFC 구조·교정 방법, 열전달(전도/대류/복사·Fourier 법칙) 기초, 진공펌프 4종 메커니즘, Leak Test(Probe/Sniffer) 방���, 압력 게이지(Pirani/Baratron/이온) 원리, Gate/Check/Throttle/APC Valve 종류와 역할을 집중 학습했습니다.\n[결과] 공정 장비 진공·가스 유틸리티 전반 이해, 공정 챔버 압력 제어 메커니즘 분석 역량 확보했습니다.",
+      "star": "[상황] 반도체 공정 장비의 핵심 구성품인 진공·가스 제어 시스템에 대한 실무 이해가 필요한 상황에서,\n[과제] MFC부터 진공펌프·게이지·밸브까지 공정 장비 유틸리티 전반을 체계적으로 학습하는 것을 목표로,\n[행동] MKS C/P/G 시리즈 MFC 구조·교정 방법, 열전달(전도/대류/복사·Fourier 법칙) 기초, 진공펌프 4종 메커니즘, Leak Test(Probe/Sniffer) 방법, 압력 게이지(Pirani/Baratron/이온) 원리, Gate/Check/Throttle/APC Valve 종류와 역할을 집중 학습했습니다.\n[결과] 공정 장비 진공·가스 유틸리티 전반 이해, 공정 챔버 압력 제어 메커니즘 분석 역량 확보했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -342,7 +342,7 @@
         "EFEM"
       ],
       "key_result": "Plasma Source 4종(RIE/CCP/ICP/TCP) 비교 분석, ESC 정전척 구조·Repair 기술, OES/SPOES 진단 기법, ALE(Atomic Layer Etching) 원리 습득",
-      "star": "[상황] 반도체 식각 공정 핵심 장비인 플라즈마 장비에 대한 심층 학습이 필요한 상황에서,\n[과제] RF Generator·Matching Network 구조부터 Cluster Tool 전체 구성까지 실무 수준으로 이해하는 것을 목표로,\n[행동] RF Generator(13.56MHz)/Matching Network 원리, Plasma Source 4종(RIE/CCP/ICP/TCP) 비교, ESC 정전척 구조·Repair 기술, Shower Head/Baffle, OES/SPOES 진단, ALE·Cryo Etch, Cluster Tool(EFEM/Load Lock/TM/PM) 200mm/300mm 구성 차이를 집중 학습했습니다.\n[결과] 플라즈마 공정 장비 전반의 원리-구조-제어 이해 완성, 식각 장비 엔지니어 직무 연결 역량 확보했습니다.",
+      "star": "[상황] 반도체 식각 공정 핵심 장비인 플라즈마 장비에 대한 심층 학습이 필요한 상황에서,\n[과제] RF Generator·Matching Network 구조부터 Cluster Tool 전체 구성까지 실무 수준으로 이해하는 것을 목표로,\n[행동] RF Generator(13.56MHz)/Matching Network 원리, Plasma Source 4종(RIE/CCP/ICP/TCP) 비교, ESC 정전척 구조·Repair 기술, Shower Head/Baffle, OES/SPOES 진단, ALE·Cryo Etch, Cluster Tool(EFEM/Load Lock/TM/PM) 200mm/300mm 구성 차이를 집중 학습했습니다.\n[결과] 플라즈마 공정 장비 전반��� 원리-구조-제어 이해 완성, 식각 장비 엔지니어 직무 연결 역량 확보했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -381,7 +381,7 @@
         "CAR PR"
       ],
       "key_result": "g-line~EUV 전 세대 PR 특성 이해, EUV LPP 광원·Mo/Si 다층막 반사경 구조 학습, Overlay 오차 분석 기법 습득",
-      "star": "[상황] 480h 반도체 공정장비 과정에서 Lithography 공정의 장비·소재·해상도 향상 기술에 대한 심층 학습이 필요한 상황에서,\n[과제] ASML EUV 장비 구조와 TEL Track 장비 동작 원리를 실무 수준으로 이해하는 것을 목표로,\n[행동] PR 세대별 종류(g-line/i-line/KrF/ArF/EUV·CAR) 특성, OAI/OPC/PSM 해상도 향상 기법, EUV LPP 광원·Mo/Si 다층막 반사경 구조, TEL Mark-7 Track 장비 PR Coating 파라미터, Overlay 오차 분석 방법론을 집중 학습했습니다.\n[결과] EUV 광학계 전반 이해 및 Lithography 해상도 결정 인자 분석 역량 확보, ASML·TEL 장비 엔지니어 직무 연결 가능한 기술 기반 구축했습니다.",
+      "star": "[상황] 480h 반도체 공정장비 과정에서 Lithography 공정의 장비·소재·해상도 향상 기술에 대한 심층 ���습이 필요한 상황에서,\n[과제] ASML EUV 장비 구조와 TEL Track 장비 동작 원리를 실무 수준으로 이해하는 것을 목표로,\n[행동] PR 세대별 종류(g-line/i-line/KrF/ArF/EUV·CAR) 특성, OAI/OPC/PSM 해상도 향상 기법, EUV LPP 광원·Mo/Si 다층막 반사경 구조, TEL Mark-7 Track 장비 PR Coating 파라미터, Overlay 오차 분석 방법론을 집중 학습했습니다.\n[결과] EUV 광학계 전반 이해 및 Lithography 해상도 결정 인자 분석 역량 확보, ASML·TEL 장비 엔지니어 직무 연결 가능한 기술 기반 구축했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -396,7 +396,7 @@
         "공정 실습"
       ],
       "key_result": "16시간 수료 (수원대학교), 전자부품 소재 공정 실습 완료",
-      "star": "[상황] 반도체 공정장비 및 SW 엔지니어 양성과정(480h) 중 소재 현장 실습이 편성된 상황에서,\n[과제] 반도체 및 전자부품 소재의 공정 절차를 현장에서 직접 체험하는 것을 목표로,\n[행동] 수원대학교 실습실에서 16시간 동안 전자부품 소재의 공정 흐름을 체험하고, 소재별 공정 조건과 품질 기준을 학습했습니다.\n[결과] 소재 공정 실무 경험 확보, 소재-공정-장비의 연계성에 대한 현장 관점 습득했습니다.",
+      "star": "[상황] 반도체 공정장비 및 SW 엔지니어 양성과정(480h) 중 소재 현장 실습이 편성된 상황에서,\n[과제] 반도체 및 전자부품 소재의 공정 절차를 현장에서 직접 체험하는 것을 목표로,\n[행동] 수원대학교 실습실에서 16시간 동안 전자부품 소재의 공정 흐름을 체험하고, 소재별 공정 조건과 품질 기준을 학습했습니다.\n[결과] 소재 공정 실무 경험 확보, 소재-공정-장비의 연계성에 대한 현��� 관점 습득했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -411,7 +411,7 @@
         "Clean Room"
       ],
       "key_result": "16시간 공정실습 수료 (수원대학교), 반도체 8대 공정 현장 실습 완료",
-      "star": "[상황] 반도체 제조공정 이론 교육(168h) 이수 후 실제 공정 장비를 직접 다루는 현장 실습이 필요한 상황에서,\n[과제] 수원대학교에서 반도체 공정 장비를 직접 조작하고 현장 감각을 익히는 것을 목표로,\n[행동] 16시간 공정 실습에서 실제 반도체 공정 라인에서 사용되는 장비를 직접 운용하며 Wet Process, 세정 공정 등 실무 절차를 체험했습니다.\n[결과] 이론 지식과 현장 실습을 연결하여 반도체 공정 흐름에 대한 실무적 ��해를 심화했습니다.",
+      "star": "[상황] 반도체 제조공정 이론 교육(168h) 이수 후 실제 공정 장비를 직접 다루는 현장 실습이 필요한 상황에서,\n[과제] 수원대학교에서 반도체 공정 장비를 직접 조작하고 현장 감각을 익히는 것을 목표로,\n[행동] 16시간 공정 실습에서 실제 반도체 공정 라인에서 사용되는 장비를 직접 운용하며 Wet Process, 세정 공정 등 실무 절차를 체험했습니다.\n[결과] 이론 지식과 현장 실습을 연결하여 반도체 공정 흐름에 대한 실무적 이해를 심화했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -568,7 +568,13 @@
       "title": "Analog IC 설계 — 2-Stage Comparator (고속 비교기)",
       "date": "2026-02-01",
       "category": "⚡ 회로·IC 설계",
-      "tech_stack": [],
+      "tech_stack": [
+        "Cadence Virtuoso",
+        "gpdk090",
+        "Analog IC",
+        "SPICE",
+        "90nm"
+      ],
       "key_result": "90nm gpdk 공정에서 외부 환경 변화에 안정적인 고속 2-Stage Comparator 설계 완료",
       "star": "[상황] SKKU 아카데미에서 Analog IC 설계 역량을 실습 기반으로 확보해야 하는 상황에서,\n[과제] gpdk090(90nm, VDD=1.2V) 공정에서 외부 환경 변화에도 안정적인 고속 동작 2-Stage Comparator 설계를 목표로,\n[행동] Cadence Virtuoso에서 소자 파라미터를 설정하고 SPICE 시뮬레이션으로 동작 특성을 반복 검증하며, 오프셋 전압·전파 지연 등 핵심 성능 지표를 최적화했습니다.\n[결과] 목표 스펙을 만족하는 2-Stage Comparator 설계 완료, Analog IC 설계 프로세스 전 과정 습득했습니다.",
       "status": "✅ 완료"
