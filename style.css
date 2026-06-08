@@ -255,6 +255,23 @@ section:last-of-type      { border-bottom: none; }
 .about-text p:last-child { margin-bottom: 0; }
 .about-text strong { color: var(--text-1); font-weight: 600; }
 
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin-top: 1.25rem;
+}
+
+.about-tags span {
+  font-size: .72rem;
+  font-weight: 500;
+  background: var(--accent-bg);
+  border: 1px solid rgba(14,165,233,.3);
+  color: var(--accent-dark);
+  padding: .2rem .6rem;
+  border-radius: var(--radius-sm);
+}
+
 .career-list { display: flex; flex-direction: column; }
 
 .career-item {
@@ -1356,7 +1373,7 @@ section:last-of-type      { border-bottom: none; }
 ──────────────────────────────────────────── */
 .act-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.25rem;
   margin-top: 2rem;
 }
