@@ -1367,33 +1367,24 @@ section:last-of-type      { border-bottom: none; }
   display: flex;
   flex-direction: column;
   gap: .875rem;
-  transition: box-shadow .25s, transform .25s, border-color .25s, background .25s, color .25s;
+  transition: box-shadow .25s, transform .25s, border-color .25s, background .25s;
 }
 
 .act-card:hover {
   box-shadow: var(--shadow-hover);
   transform: translateY(-2px);
   border-color: var(--accent);
-  background: var(--accent);
+  background: var(--accent-bg);
 }
-
-.act-card:hover .act-type {
-  background: rgba(255,255,255,.2);
-  color: #fff;
-}
-
-.act-card:hover .act-period { color: rgba(255,255,255,.7); }
-.act-card:hover .act-org    { color: #fff; }
-.act-card:hover .act-role   { color: rgba(255,255,255,.8); }
-
-.act-card:hover .act-list li        { color: rgba(255,255,255,.9); }
-.act-card:hover .act-list li::before { color: rgba(255,255,255,.6); }
-
-.act-card:hover .act-more { color: #fff; }
 
 .act-card-highlight {
   border-color: var(--accent);
   background: var(--accent-bg);
+}
+
+.act-card-highlight:hover {
+  background: rgba(14,165,233,.2);
+  border-color: var(--accent-dark);
 }
 
 .act-header {
