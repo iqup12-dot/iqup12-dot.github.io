@@ -164,7 +164,7 @@
         "Layout"
       ],
       "key_result": "Cadence Virtuoso 스케매틱·레이아웃 편집기 실무 운용, Spectre 시뮬레이터 DC/AC/Transient 분석, ADE 환경 파라미터 스윕 분석 역량 확보",
-      "star": "[상황] SKKU 아카데미에서 Cadence EDA 툴을 처음 접하는 상황에서,\n[과제] Cadence Virtuoso 환경 전반(셀 라이브러리·시뮬레이터·레이아웃)을 실습을 통해 완전히 습득하는 것을 목표로,\n[행동] Virtuoso 스케매틱 편집기(셀 라이브러리 생성·Symbol·Schematic 작성), Spectre 시뮬레이터(DC OP/AC/Transient Analysis), ADE(Analog Design Environment) 파라미터 스윕·Monte Carlo, 레이아웃 편집기(Rectangle/Path/Instance 배치·Metal Layer 연결)를 실습했습니다.\n[결과] Cadence Virtuoso 전 환경 실무 운용 역량 완성, 이후 모든 IC 설계 프로젝트에 기초 도구로 활용했습니다.",
+      "star": "[상황] SKKU 아카데미에서 Cadence EDA 툴을 처음 접하는 상황에서,\n[과제] Cadence Virtuoso 환��� 전반(셀 라이브러리·시뮬레이터·레이아웃)을 실습을 통해 완전히 습득하는 것을 목표로,\n[행동] Virtuoso 스케매틱 편집기(셀 라이브러리 생성·Symbol·Schematic 작성), Spectre 시뮬레이터(DC OP/AC/Transient Analysis), ADE(Analog Design Environment) 파라미터 스윕·Monte Carlo, 레이아웃 편집기(Rectangle/Path/Instance 배치·Metal Layer 연결)를 실습했습니다.\n[결과] Cadence Virtuoso 전 환경 실무 운용 역량 완성, 이후 모든 IC 설계 프로젝트에 기초 도구로 활용했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -181,7 +181,7 @@
         "gpdk090"
       ],
       "key_result": "Combinational/Sequential 논리회로 설계 방법론 완성, 유한상태기계(FSM) 설계 기법 습득, Power-Performance-Area 트레이드오프 분석 역량 확보",
-      "star": "[상황] SKKU 아카데미에서 Digital IC Full Custom 설계를 위한 방법론 학습이 필요한 상황에서,\n[과제] 논리회로 설계부터 PPA 최적화 분석까지 Digital IC 설계 전 과정을 이해하는 것을 목표로,\n[행동] Combinational Logic(가산기/멀티플렉서/비교기) 설계, Sequential Logic(플립플롭/레지스터/카운터) 구현, 유한상태기계(FSM) 설계 기법, Static Timing Analysis, PPA(Power·Performance·Area) 트레이드오프 분석 방법론을 학습했습니다.\n[결과] Digital IC 설계 방법론 체���화, 이후 Repeater·NPU 설계 프로젝트에 직접 적용하여 PPA 최적화 성공했습니다.",
+      "star": "[상황] SKKU 아카데미에서 Digital IC Full Custom 설계를 위한 방법론 학습이 필요한 상황에서,\n[과제] 논리회로 설계부터 PPA 최적화 분석까지 Digital IC 설계 전 과정을 이해하는 것을 목표로,\n[행동] Combinational Logic(가산기/멀티플렉서/비교기) 설계, Sequential Logic(플립플롭/레지스터/카운터) 구현, 유한상태기계(FSM) 설계 기법, Static Timing Analysis, PPA(Power·Performance·Area) 트레이드오프 분석 방법론을 학습했습니다.\n[결과] Digital IC 설계 방법론 체계화, 이후 Repeater·NPU 설계 프로젝트에 직접 적용하여 PPA 최적화 성공했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -198,7 +198,7 @@
         "Cadence"
       ],
       "key_result": "MOSFET 동작 영역(선형/포화/차단) 완전 이해, gm·rds·Cgs 소신호 모델 분석, Analog 회로 설계 이론(바이어스/증폭기/피드백) 체계 정립",
-      "star": "[상황] SKKU 시스템 반도체 설계 아카데미에서 Analog IC 설계를 위한 회로 이론 기초가 필요한 상황에서,\n[과제] MOSFET 소자 특성부터 Analog 증폭기 설계 이론까지 체계적으로 학습하는 것을 목표로,\n[행동] MOSFET 동작 영역(선형/포화/차단) 분석, gm·rds·Cgs 소신호 모델 파라미터 계산, 공통소스/공통게이트/공통드레인 증폭기 특���, 미러 전류원·캐스코드·차동증폭기·OP-AMP 설계 이론을 집중 학습했습니다.\n[결과] Analog IC 설계에 필요한 CMOS 회로 이론 전반 습득, 이후 2-Stage OP-AMP·Comparator 설계 프로젝트에 직접 적용했습니다.",
+      "star": "[상황] SKKU 시스템 반도체 설계 아카데미에서 Analog IC 설계를 위한 회로 이론 기초가 필요한 상황에서,\n[과제] MOSFET 소자 특성부터 Analog 증폭기 설계 이론까지 체계적으로 학습하는 것을 목표로,\n[행동] MOSFET 동작 영역(선형/포화/차단) 분석, gm·rds·Cgs 소신호 모델 파라미터 계산, 공통소스/공통게이트/공통드레인 증폭기 특성, 미러 전류원·캐스코드·차동증폭기·OP-AMP 설계 이론을 집중 학습했습니다.\n[결과] Analog IC 설계에 필요한 CMOS 회로 이론 전반 습득, 이후 2-Stage OP-AMP·Comparator 설계 프로젝트에 직접 적용했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -411,7 +411,7 @@
         "Clean Room"
       ],
       "key_result": "16시간 공정실습 수료 (수원대학교), 반도체 8대 공정 현장 실습 완료",
-      "star": "[상황] 반도체 제조공정 이론 교육(168h) 이수 후 실제 공정 장비를 직접 다루��� 현장 실습이 필요한 상황에서,\n[과제] 수원대학교에서 반도체 공정 장비를 직접 조작하고 현장 감각을 익히는 것을 목표로,\n[행동] 16시간 공정 실습에서 실제 반도체 공정 라인에서 사용되는 장비를 직접 운용하며 Wet Process, 세정 공정 등 실무 절차를 체험했습니다.\n[결과] 이론 지식과 현장 실습을 연결하여 반도체 공정 흐름에 대한 실무적 이해를 심화했습니다.",
+      "star": "[상황] 반도체 제조공정 이론 교육(168h) 이수 후 실제 공정 장비를 직접 다루는 현장 실습이 필요한 상황에서,\n[과제] 수원대학교에서 반도체 공정 장비를 직접 조작하고 현장 감각을 익히는 것을 목표로,\n[행동] 16시간 공정 실습에서 실제 반도체 공정 라인에서 사용되는 장비를 직접 운용하며 Wet Process, 세정 공정 등 실무 절차를 체험했습니다.\n[결과] 이론 지식과 현장 실습을 연결하여 반도체 공정 흐름에 대한 실무적 이해를 심화했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -446,7 +446,7 @@
         "LVS"
       ],
       "key_result": "513시간 수료 (성균관대학교), Analog/Digital IC 풀커스텀 설계 전 과정 습득",
-      "star": "[상황] 시스템 반도체 설�� 전문 역량 확보를 위해 체계적인 IC 설계 교육이 필요한 상황에서,\n[과제] Analog IC(OP-AMP, Comparator)와 Digital IC(NPU, Repeater) Full Custom 설계 전 과정을 성균관대학교 아카데미에서 습득하는 것을 목표로,\n[행동] 513시간 동안 Cadence Virtuoso 기반 회로 설계→시뮬레이션→레이아웃→DRC/LVS 검증 전 과정을 반복 실습하며, OP-AMP·Comparator·NPU·Repeater 등 다양한 회로를 직접 설계했습니다.\n[결과] Analog/Digital IC 풀커스텀 설계 역량 확보, 설계-검증-최적화 전 과정에 대한 실무 경험 축적했습니다.",
+      "star": "[상황] 시스템 반도체 설계 전문 역량 확보를 위해 체계적인 IC 설계 교육이 필요한 상황에서,\n[과제] Analog IC(OP-AMP, Comparator)와 Digital IC(NPU, Repeater) Full Custom 설계 전 과정을 성균관대학교 아카데미에서 습득하는 것을 목표로,\n[행동] 513시간 동안 Cadence Virtuoso 기반 회로 설계→시뮬레이션→레이아웃→DRC/LVS 검증 전 과정을 반복 실습하며, OP-AMP·Comparator·NPU·Repeater 등 다양한 회로를 직접 설계했습니다.\n[결과] Analog/Digital IC 풀커스텀 설계 역량 확보, 설계-검증-최적화 전 과정에 대한 실무 경험 축적했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -544,7 +544,7 @@
         "Inverter Chain"
       ],
       "key_result": "90nm Inverter Chain 기반 Repeater 설계로 신호 감쇠 및 지연 문제 해결, PPA 최적화 분석 완료",
-      "star": "[상황] 긴 글로벌 배선 라인에서 신호 감쇠 및 지연 문제가 발생하는 디지털 IC 설계 환경에서,\n[과제] 90nm 공정 기반 Inverter Chain Repeater를 설계하고 Power·Performance·Area 관점에서 최적화 분석을 수행하는 것을 목표로,\n[행동] Cadence Virtuoso로 Inverter Chain 구조의 Repeater를 설계하고, 삽입 위치·크기 변화에 따른 지연 시간·소비전력·면적 변화를 시뮬레이션하여 PPA 트레이드오프를 정량 분석했습니다.\n[결과] 신호 지연 문제 해결 및 PPA 최적 설계 포인트 도출, 디지털 IC 타이밍 최적화 역량을 확보했습니다.",
+      "star": "[상황] 긴 글로벌 배선 ��인에서 신호 감쇠 및 지연 문제가 발생하는 디지털 IC 설계 환경에서,\n[과제] 90nm 공정 기반 Inverter Chain Repeater를 설계하고 Power·Performance·Area 관점에서 최적화 분석을 수행하는 것을 목표로,\n[행동] Cadence Virtuoso로 Inverter Chain 구조의 Repeater를 설계하고, 삽입 위치·크기 변화에 따른 지연 시간·소비전력·면적 변화를 시뮬레이션하여 PPA 트레이드오프를 정량 분석했습니다.\n[결과] 신호 지연 문제 해결 및 PPA 최적 설계 포인트 도출, 디지털 IC 타이밍 최적화 역량을 확보했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -672,7 +672,7 @@
         "FE-SEM",
         "De-capsulation"
       ],
-      "key_result": "외관 이��� 없는 전기 불량 원인을 EMMI Thermal로 위치 특정 → Crack/Metal Melt 물리적 원인 최종 확인",
+      "key_result": "외관 이상 없는 전기 불량 원인을 EMMI Thermal로 위치 특정 → Crack/Metal Melt 물리적 원인 최종 확인",
       "star": "[상황] 양산 중인 제주반도체 K12 제품에서 전기적 이상이 감지됐으나 외관상 원인 파악이 불가한 상황에서,\n[과제] 다단계 비파괴·파괴 분석으로 불량 원인을 물리적으로 특정하는 것을 목표로,\n[행동] 외관→X-ray→SAT→VI Curve→EMMI(Photon/Thermal)→디캡슐레이션 6단계 분석을 순차 수행하여, VI Curve에서 Short curve를 검출하고 EMMI Thermal로 불량 위치 좌표를 특정했습니다.\n[결과] 디캡슐레이션에서 Crack 및 Metal Melt 물리적 손상을 최종 확인, 단순 전기 불량이 아닌 소자 내부 물리적 손상으로 원인 특정하여 재발 방지 근거를 마련했습니다.",
       "status": "✅ 완료"
     },
@@ -689,7 +689,7 @@
         "KEYENCE VHX-7000",
         "Agilent B2911A"
       ],
-      "key_result": "22종 부품 6단계 평가 전 항목 적합 판정, 신규 공급사 등록 프���세스 완성",
+      "key_result": "22종 부품 6단계 평가 전 항목 적합 판정, 신규 공급사 등록 프로세스 완성",
       "star": "[상황] 신규 공급사 반도체 부품 22종을 최초 사용하기 전, 도면 규격 만족 여부와 품질 이상 유무를 종합적으로 검증해야 했습니다.\n[과제] 외관→X-ray→단면→디캡슐레이션→치수→전기적 특성 6단계 평가 체계를 단독으로 수행하는 것을 목표로,\n[행동] KEYENCE VHX-7000(외관/치수), SEC X-eye 5100(X-ray), Agilent B2911A(I-V Curve), HITACHI S-4700(SEM) 4종 장비를 직접 운용하여 전 샘플을 체계적으로 평가했습니다.\n[결과] 6개 평가 항목 전부 이상 없음 판정, 신규 부품 등록 적합 결론 도출 및 부품 등록 프로세스 체계화에 기여했습니다.",
       "status": "✅ 완료"
     }
