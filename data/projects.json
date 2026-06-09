@@ -164,7 +164,7 @@
         "Layout"
       ],
       "key_result": "Cadence Virtuoso 스케매틱·레이아웃 편집기 실무 운용, Spectre 시뮬레이터 DC/AC/Transient 분석, ADE 환경 파라미터 스윕 분석 역량 확보",
-      "star": "[상황] SKKU 아카데미에서 Cadence EDA 툴을 처음 접하는 상황에서,\n[과제] Cadence Virtuoso 환��� 전반(셀 라이브러리·시뮬레이터·레이아웃)을 실습을 통해 완전히 습득하는 것을 목표로,\n[행동] Virtuoso 스케매틱 편집기(셀 라이브러리 생성·Symbol·Schematic 작성), Spectre 시뮬레이터(DC OP/AC/Transient Analysis), ADE(Analog Design Environment) 파라미터 스윕·Monte Carlo, 레이아웃 편집기(Rectangle/Path/Instance 배치·Metal Layer 연결)를 실습했습니다.\n[결과] Cadence Virtuoso 전 환경 실무 운용 역량 완성, 이후 모든 IC 설계 프로젝트에 기초 도구로 활용했습니다.",
+      "star": "[상황] SKKU 아카데미에서 Cadence EDA 툴을 처음 접하는 상황에서,\n[과제] Cadence Virtuoso 환경 전반(셀 라이브러리·시뮬레이터·레이아웃)을 실습을 통해 완전히 습득하는 것을 목표로,\n[행동] Virtuoso 스케매틱 편집기(셀 라이브러리 생성·Symbol·Schematic 작성), Spectre 시뮬레이터(DC OP/AC/Transient Analysis), ADE(Analog Design Environment) 파라미터 스윕·Monte Carlo, 레이아웃 편집기(Rectangle/Path/Instance 배치·Metal Layer 연결)를 실습했습니다.\n[결과] Cadence Virtuoso 전 환경 실무 운용 역량 완성, 이후 모든 IC 설계 프로젝트에 기초 도구로 활용했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -342,7 +342,7 @@
         "EFEM"
       ],
       "key_result": "Plasma Source 4종(RIE/CCP/ICP/TCP) 비교 분석, ESC 정전척 구조·Repair 기술, OES/SPOES 진단 기법, ALE(Atomic Layer Etching) 원리 습득",
-      "star": "[상황] 반도체 식각 공정 핵심 장비인 플라즈마 장비에 대한 심층 학습이 필요한 상황에서,\n[과제] RF Generator·Matching Network 구조부터 Cluster Tool 전체 구성까지 실무 수준으로 이해하는 것을 목표로,\n[행동] RF Generator(13.56MHz)/Matching Network 원리, Plasma Source 4종(RIE/CCP/ICP/TCP) 비교, ESC 정전척 구조·Repair 기술, Shower Head/Baffle, OES/SPOES 진단, ALE·Cryo Etch, Cluster Tool(EFEM/Load Lock/TM/PM) 200mm/300mm 구성 차이를 집중 학습했습니다.\n[결과] 플라즈마 공정 장비 전반의 원리-구조-제어 이해 완성, 식각 장비 엔지니어 직무 연결 역량 확보했습니다.",
+      "star": "[상황] 반도체 식각 공정 핵심 장비인 플라즈마 장비에 대한 심층 학습이 필요한 상황에서,\n[과제] RF Generator·Matching Network 구조부터 Cluster Tool 전체 구��까지 실무 수준으로 이해하는 것을 목표로,\n[행동] RF Generator(13.56MHz)/Matching Network 원리, Plasma Source 4종(RIE/CCP/ICP/TCP) 비교, ESC 정전척 구조·Repair 기술, Shower Head/Baffle, OES/SPOES 진단, ALE·Cryo Etch, Cluster Tool(EFEM/Load Lock/TM/PM) 200mm/300mm 구성 차이를 집중 학습했습니다.\n[결과] 플라즈마 공정 장비 전반의 원리-구조-제어 이해 완성, 식각 장비 엔지니어 직무 연결 역량 확보했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -428,7 +428,7 @@
         "충방전 테스터"
       ],
       "key_result": "소성 공정 파라미터(승온 2.5°C/min, 유지 12h) 직접 설정·제어, 0.1C~5C Rate Capability 데이터 도출",
-      "star": "[상황] 배터리 소재 합성부터 셀 평가까지 전 공정을 직접 수행하는 환경에너지융합요소설계 수업에서,\n[과제] 양극 활물질 합성→전극 슬러리 제조→글로브 박스 내 코인셀 조립→충방전 성능 평가의 전 과정을 수행하는 것을 목표로,\n[행동] Tube Furnace로 NCM622 전구체를 소성하며 승온 속도(2.5°C/min)·유지 시간(12h)을 직접 설정하고, 활물질·도전제·바인더를 NMP 용매에 혼합·코팅한 뒤 아르곤 글로브 박스에서 코인셀을 조립하여 0.1C~5C 조건의 충방전 특성을 측정했습니다.\n[결과] 소성 온도-Ni 함량 상관관계를 실험적으로 확인, 전압(2.7V) 기반 불량 셀 판별 경험 확보, 박막 열처리 공정 장비 운용 역량을 반도체 공정과 연결하는 통찰 습득했습니다.",
+      "star": "[상황] 배터리 소재 합성부터 셀 평가까지 전 공정을 직접 수행하는 환경에너지융합요소설계 수업에서,\n[과제] 양극 활물질 합성→전극 슬러리 제조→글로브 박스 내 코인셀 조립→충방전 성능 평가의 전 과정을 수행하는 것을 목표로,\n[행동] Tube Furnace로 NCM622 전구체를 소성하며 승온 속도(2.5°C/min)·유지 시간(12h)을 직접 설정하고, 활물질·도전제·바인더를 NMP 용매에 혼합·코팅한 뒤 아르곤 글로브 박스에서 코인셀을 조립하여 0.1C~5C 조건의 충방전 특성을 측정했습니다.\n[결과] 소성 온도-Ni 함량 상관관계를 실험적으로 확인, 전압(2.7V) 기반 불량 셀 판별 경험 확보, 박막 열���리 공정 장비 운용 역량을 반도체 공정과 연결하는 통찰 습득했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -451,7 +451,7 @@
     },
     {
       "id": "376a6f1b-235e-81e3-84ef-cd6abd7a7646",
-      "title": "반도체 공정장비 및 제어시스템 SW 엔지니어 양성과정 (480h)",
+      "title": "반도체 ���정장비 및 제어시스템 SW 엔지니어 양성과정 (480h)",
       "date": "2025-05-12",
       "category": "📚 교육·학습",
       "tech_stack": [
@@ -544,7 +544,7 @@
         "Inverter Chain"
       ],
       "key_result": "90nm Inverter Chain 기반 Repeater 설계로 신호 감쇠 및 지연 문제 해결, PPA 최적화 분석 완료",
-      "star": "[상황] 긴 글로벌 배선 ��인에서 신호 감쇠 및 지연 문제가 발생하는 디지털 IC 설계 환경에서,\n[과제] 90nm 공정 기반 Inverter Chain Repeater를 설계하고 Power·Performance·Area 관점에서 최적화 분석을 수행하는 것을 목표로,\n[행동] Cadence Virtuoso로 Inverter Chain 구조의 Repeater를 설계하고, 삽입 위치·크기 변화에 따른 지연 시간·소비전력·면적 변화를 시뮬레이션하여 PPA 트레이드오프를 정량 분석했습니다.\n[결과] 신호 지연 문제 해결 및 PPA 최적 설계 포인트 도출, 디지털 IC 타이밍 최적화 역량을 확보했습니다.",
+      "star": "[상황] 긴 글로벌 배선 라인에서 신호 감쇠 및 지연 문제가 발생하는 디지털 IC 설계 환경에서,\n[과제] 90nm 공정 기반 Inverter Chain Repeater를 설계하고 Power·Performance·Area 관점에서 최적화 분석을 수행하는 것을 목표로,\n[행동] Cadence Virtuoso로 Inverter Chain 구조의 Repeater를 설계하고, 삽입 위치·크기 변화에 따른 지연 시간·소비전력·면적 변화를 시뮬레이션하여 PPA 트레이드오프를 정량 분석했습니다.\n[결과] 신호 지연 문제 해결 및 PPA 최적 설계 포인트 도출, 디지털 IC 타이밍 최적화 역량을 확보했습니다.",
       "status": "✅ 완료"
     },
     {
