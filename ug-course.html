@@ -6,6 +6,47 @@
   <title>학부 교과과정 | YUNTAE LEE</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSans.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .cl-list {
+      display: flex;
+      flex-direction: column;
+      gap: .7rem;
+      margin-top: .75rem;
+    }
+    .cl-item {
+      padding: .55rem .75rem;
+      background: rgba(0,0,0,.025);
+      border-radius: 8px;
+      border-left: 2px solid transparent;
+    }
+    .cl-item:hover { background: rgba(0,0,0,.045); }
+    .cl-name {
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--text-1);
+      margin-bottom: .2rem;
+    }
+    .cl-lab {
+      display: inline-block;
+      font-size: .65rem;
+      font-weight: 600;
+      padding: .1rem .35rem;
+      border-radius: 4px;
+      margin-left: .35rem;
+      vertical-align: middle;
+      background: rgba(234,88,12,.12);
+      color: #c2410c;
+    }
+    .cl-desc {
+      font-size: .74rem;
+      color: var(--text-3);
+      line-height: 1.55;
+    }
+    .axis-green .cl-item { border-left-color: rgba(74,222,128,.5); }
+    .axis-orange .cl-item { border-left-color: rgba(251,146,60,.5); }
+    .axis-blue .cl-item { border-left-color: rgba(59,130,246,.5); }
+    .axis-purple .cl-item { border-left-color: rgba(139,92,246,.5); }
+  </style>
 </head>
 <body class="detail-page">
 
@@ -23,7 +64,6 @@
         중앙대학교 융합공학부 나노소재공학과 — 전공 이수 (2019–2025)
         &nbsp;·&nbsp; 전공 <strong style="color:var(--text-1)">94학점</strong> 이수
         &nbsp;·&nbsp; 전공 평점 <strong style="color:var(--text-1)">3.51 / 4.50</strong>
-        &nbsp;·&nbsp; 20과목
       </p>
     </div>
 
@@ -52,22 +92,39 @@
       <div class="course-card">
         <span class="course-area" style="background:rgba(74,222,128,.12);color:#15803d">⚛️ 구조 및 물성</span>
         <h3 class="course-name">결정 구조 · 열역학 · 양자역학 · 전기·광학 물성</h3>
-        <p class="course-desc">
-          결정 결함과 전기적 물성의 인과관계 이해 → 박막 불량 원인을 원자 수준에서 역추적하는 기초 역량.<br>
-          Bragg 법칙·Scherrer 식으로 XRD 결정상·결정립 크기를 정량화하고, 페르미-디랙 분포·에너지 밴드로 반도체 도핑 효과를 양자역학 관점에서 이해.
-        </p>
-        <div class="course-tags">
-          <span>물리화학(1)(2)</span>
-          <span>나노소재설계와물성</span>
-          <span>재료구조 및 X선 결정학</span>
-          <span>소재의 물리적 성질</span>
-          <span>무기재료공학</span>
-          <span>융합소재과학</span>
-          <span>탄소소재공학</span>
-          <span>융합양자개론</span>
-        </div>
-        <div style="margin-top:.5rem;font-size:.72rem;color:var(--text-3);border-top:1px solid var(--border);padding-top:.5rem;">
-          반도체 연계 → DRAM high-k 유전체 결정성 관리 · 박막 잔류응력 모니터링 · 배선 금속 Interconnect 소재 이해
+        <div class="cl-list axis-green">
+          <div class="cl-item">
+            <div class="cl-name">물리화학(1)(2)</div>
+            <div class="cl-desc">열역학 제1·2·3법칙, 깁스 자유에너지로 반응 자발성·화학평형 예측. 상률과 이성분계 상다이어그램으로 소재의 상전이 조건 해석.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">나노소재설계와물성</div>
+            <div class="cl-desc">벌크 대비 나노 스케일에서 나타나는 표면에너지 지배·양자 구속 효과가 전기·광학·기계 물성에 미치는 변화를 이론적으로 분석.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">재료구조 및 X선 결정학</div>
+            <div class="cl-desc">결정계·공간군·밀러지수로 결정 구조를 기술하고, Bragg 법칙으로 결정상 동정, Scherrer 식으로 결정립 크기를 XRD 데이터에서 정량화.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">소재의 물리적 성질</div>
+            <div class="cl-desc">비저항·유전율·열전도도·자기 투자율 등 소재의 물리적 물성값을 측정 방법과 함께 이해하고 구조-물성 상관관계를 해석.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">무기재료공학</div>
+            <div class="cl-desc">세라믹·산화물의 이온 결합 특성, 점결함(공공·침입형·치환형)이 확산 거동과 전기 전도성에 미치는 영향을 학습.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">융합소재과학</div>
+            <div class="cl-desc">금속·세라믹·고분자·복합소재를 결합 유형과 미세구조 관점에서 통합 비교하고, 소재 선택 기준 및 응용 분야 분석.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">탄소소재공학</div>
+            <div class="cl-desc">그래핀·CNT·풀러렌·다이아몬드의 sp²/sp³ 결합 구조 차이와 이에 따른 전기·열·기계 물성 변화, 합성 및 응용 기술 학습.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">융합양자개론</div>
+            <div class="cl-desc">슈뢰딩거 방정식·파동함수·터널링 효과, 에너지 밴드 이론·페르미-디랙 분포로 반도체의 도핑·캐리어 농도를 양자역학 관점에서 이해.</div>
+          </div>
         </div>
       </div>
 
@@ -75,21 +132,31 @@
       <div class="course-card">
         <span class="course-area" style="background:rgba(251,146,60,.12);color:#c2410c">⚙️ 합성 및 공정</span>
         <h3 class="course-name">나노 합성 · 박막 공정 · 소자 제조 · 랩실 실험</h3>
-        <p class="course-desc">
-          공정 변수 → 미세구조 → 소자 특성 인과 사슬 이해 → 박막 증착·소성 조건 최적화 기여.<br>
-          나노공학기초설계·유무기기능소재요소설계·나노융합종합설계(캡스톤)는 <strong>각자 랩실에서 직접 실험</strong>하는 P/F 수업으로, 합성→분석 전 사이클을 수행.
-        </p>
-        <div class="course-tags">
-          <span>나노공학개론(1)(2)</span>
-          <span>나노공학기초설계 🧪</span>
-          <span>디스플레이재료및공학</span>
-          <span>에너지나노소재공학</span>
-          <span>에너지환경촉매개론</span>
-          <span>나노융합종합설계 🧪</span>
-        </div>
-        <div style="margin-top:.5rem;font-size:.72rem;color:var(--text-3);border-top:1px solid var(--border);padding-top:.5rem;">
-          반도체 연계 → TFT·OLED 박막 적층 공정 · ALD/PVD 원리 · 나노 구조체 기반 반도체·에너지 소자 응용<br>
-          🧪 = 랩실 직접 실험 수업
+        <div class="cl-list axis-orange">
+          <div class="cl-item">
+            <div class="cl-name">나노공학개론(1)(2)</div>
+            <div class="cl-desc">탑다운(리소그래피·식각)·바텀업(자기조립·화학합성) 나노 제조 방법론과 PVD·CVD·ALD 박막 증착 원리, 나노 구조체의 소자 응용 사례.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">나노공학기초설계 <span class="cl-lab">랩실</span></div>
+            <div class="cl-desc">나노소재 합성 및 기초 분석 실험을 직접 수행. 시료 제조 → 측정 → 결과 해석의 전 사이클을 실험 보고서로 정리.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">디스플레이재료및공학</div>
+            <div class="cl-desc">LCD·OLED·마이크로LED의 발광 원리와 박막트랜지스터(TFT) 구조, ITO·유기 발광층·봉지막 등 디스플레이용 박막 적층 공정 학습.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">에너지나노소재공학</div>
+            <div class="cl-desc">태양전지(페로브스카이트·DSSC)·이차전지·수소 연료전지에 쓰이는 나노구조 소재의 합성 방법과 에너지 변환·저장 메커니즘.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">에너지환경촉매개론</div>
+            <div class="cl-desc">불균일 촉매의 흡착·반응·탈착 단계, 광촉매 산화·환원 메커니즘, 대기오염 저감 및 수소 생산용 촉매 소재 설계 원리.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">나노융합종합설계 <span class="cl-lab">캡스톤 랩실</span></div>
+            <div class="cl-desc">팀 단위 캡스톤 프로젝트. 주제 설정 → 소재 합성·공정 → 분석·평가 → 결과 발표까지 연구 전 과정을 직접 기획하고 수행.</div>
+          </div>
         </div>
       </div>
 
@@ -97,52 +164,72 @@
       <div class="course-card">
         <span class="course-area" style="background:rgba(59,130,246,.12);color:#1d4ed8">🔬 분석 및 평가</span>
         <h3 class="course-name">기기 분석 · 전기화학 · 계면 특성 · 소자 평가</h3>
-        <p class="course-desc">
-          FE-SEM·XRD·XPS·TEM 원리와 데이터 해석으로 소재 상태 진단 → 계면 품질 정량화·불량 원인 규명.<br>
-          CV·EIS로 계면 반응 정량, I-V 특성으로 소자 전기 특성 평가, 유기 반도체 HOMO/LUMO 구조 해석.
-        </p>
-        <div class="course-tags">
-          <span>나노융합분석학</span>
-          <span>전기화학 이론 및 응용</span>
-          <span>인터페이스 물질전이론 ★</span>
-          <span>유무기기능소재요소설계 🧪</span>
-          <span>응용회로이론</span>
-          <span>유기재료물성 및 ICT융합소자</span>
-        </div>
-        <div style="margin-top:.5rem;font-size:.72rem;color:var(--text-3);border-top:1px solid var(--border);padding-top:.5rem;">
-          반도체 연계 → FA 장비(FE-SEM·XPS) 실무 활용 · MOSFET 계면 특성 평가 · 유기 TFT 소자 측정<br>
-          ★ = SK하이닉스 연계 강의
+        <div class="cl-list axis-blue">
+          <div class="cl-item">
+            <div class="cl-name">나노융합분석학</div>
+            <div class="cl-desc">FE-SEM(형태/단면)·TEM(원자 분해능)·XRD(결정상)·XPS(원소 결합상태)·AFM 원리를 비교하고 각 장비로 얻은 데이터 해석 방법 학습.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">전기화학 이론 및 응용</div>
+            <div class="cl-desc">Nernst 방정식·Butler-Volmer 동역학으로 전극 반응을 정량화하고, CV(순환전압전류법)·EIS(임피던스 분광법)로 계면 반응 속도·용량을 분석.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">인터페이스 물질전이론</div>
+            <div class="cl-desc">SK하이닉스 주관 여러 학부 온라인 교육. DRAM 동작 원리·반도체 주요 원소자, Fick 확산 법칙(1·2법칙), Kirkendall effect, 결정립계 확산, IMC 성장 속도론, 반도체 배선 계면 신뢰성 열화 메커니즘을 현업 엔지니어 관점에서 학습.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">유무기기능소재요소설계 <span class="cl-lab">랩실</span></div>
+            <div class="cl-desc">유·무기 기능성 소재 기반 소자(박막, 센서, 발광소자 등)를 직접 제작하고 I-V 특성·광학 특성을 측정해 구조-성능 상관관계를 분석.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">응용회로이론</div>
+            <div class="cl-desc">OP-AMP·필터·증폭기 회로 설계와 소자 특성 측정 장비(오실로스코프·함수발생기·LCR 미터) 활용법, 아날로그·디지털 회로 기초.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">유기재료물성 및 ICT융합소자</div>
+            <div class="cl-desc">유기 반도체의 HOMO·LUMO 에너지 준위, π-π 스태킹에 의한 전하 이동 메커니즘, 유기 TFT·유기 태양전지의 소자 구조 및 특성 평가.</div>
+          </div>
         </div>
       </div>
 
-      <!-- ④ SK하이닉스 연계 특강 -->
-      <div class="course-card" style="border-color:rgba(139,92,246,.35);background:rgba(139,92,246,.04);">
-        <span class="course-area" style="background:rgba(139,92,246,.15);color:#7c3aed">★ SK하이닉스 연계</span>
-        <h3 class="course-name">인터페이스 물질전이론</h3>
-        <p class="course-desc">
-          SK하이닉스 주관 여러 학부 온라인 교육으로 수강.
-          SK하이닉스 임원 출신 전문 교수 및 현업 엔지니어가 제작한 강의 콘텐츠로, 반도체 산업 현장 관점의 커리큘럼.<br><br>
-          <strong>주요 학습 내용:</strong><br>
-          DRAM 동작 원리 및 반도체 주요 원소자 이론 / Fick의 확산 법칙(1·2법칙) / Kirkendall effect — 공공 확산 속도 불균형으로 인한 void 형성 / 결정립계 확산과 박막 내 고속 확산 경로 / 이종 금속 계면 IMC 성장 속도론 / 반도체 배선·접합 계면 신뢰성 열화 메커니즘
+      <!-- ④ SK하이닉스 연계 -->
+      <div class="course-card" style="border-color:rgba(139,92,246,.3);background:rgba(139,92,246,.03);">
+        <span class="course-area" style="background:rgba(139,92,246,.12);color:#7c3aed">SK하이닉스 연계</span>
+        <h3 class="course-name">인터페이스 물질전이론 — 상세</h3>
+        <p class="course-desc" style="margin-top:.5rem;">
+          SK하이닉스 주관 여러 학부 온라인 교육 프로그램. SK하이닉스 임원 출신 전문 교수·현업 엔지니어가 제작한 콘텐츠로, 반도체 산업 현장 관점의 이론을 직접 학습.
         </p>
-        <div class="course-tags">
-          <span>DRAM 동작 원리</span>
-          <span>반도체 주요 원소자</span>
-          <span>Fick 확산 법칙</span>
-          <span>Kirkendall effect</span>
-          <span>IMC 성장 속도론</span>
-          <span>결정립계 확산</span>
-          <span>계면 신뢰성</span>
-          <span>현업 전문가 강의</span>
-        </div>
-        <div style="margin-top:.5rem;font-size:.72rem;color:#7c3aed;border-top:1px solid rgba(139,92,246,.25);padding-top:.5rem;">
-          반도체 연계 → DRAM/NAND 배선 금속 diffusion barrier 설계 · 패키징 solder joint IMC 신뢰성 · 계면 확산 공정 관리
+        <div class="cl-list axis-purple" style="margin-top:.75rem;">
+          <div class="cl-item">
+            <div class="cl-name">DRAM 동작 원리 및 반도체 원소자</div>
+            <div class="cl-desc">셀 트랜지스터·커패시터의 동작 원리, 워드라인·비트라인 구동 방식, MOSFET 채널 형성 메커니즘 등 반도체 핵심 소자 이론.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">Fick의 확산 법칙 (1·2법칙)</div>
+            <div class="cl-desc">농도 구배 기반 정상 상태 확산(Fick 1법칙)과 시간 의존 확산 방정식(Fick 2법칙)으로 박막 내 원자 이동 거동을 수식으로 기술.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">Kirkendall effect</div>
+            <div class="cl-desc">이종 원자의 확산 속도 차이로 인한 공공(vacancy) 이동 방향·속도 불균형, Kirkendall void 형성 메커니즘과 계면 결함 생성 이해.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">결정립계 확산과 고속 확산 경로</div>
+            <div class="cl-desc">체적 확산 대비 결정립계·전위선을 따른 단락 확산 경로의 활성화에너지 비교, 박막 내 미세구조가 확산 속도에 미치는 영향.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">IMC 성장 속도론</div>
+            <div class="cl-desc">이종 금속 계면에서 금속간화합물(IMC) 핵생성·성장 단계, 확산 지배 성장 모델(두께 ∝ √t), 온도에 따른 성장 속도 상수 변화.</div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-name">계면 신뢰성 열화 메커니즘</div>
+            <div class="cl-desc">반도체 배선·접합부 계면에서 장기 열처리·전류 인가 시 나타나는 EM(전자이동)·확산 의한 저항 증가·크랙 발생 원인 분석.</div>
+          </div>
         </div>
       </div>
 
     </div>
 
-    <!-- 전체 이수 과목 목록 -->
+    <!-- 이수 과목 전체 목록 -->
     <div style="margin-top:2.5rem;">
       <p class="section-label" style="margin-bottom:.75rem;">이수 전공 과목 전체 목록</p>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.4rem;">
@@ -155,19 +242,19 @@
         <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:8px;">탄소소재공학</div>
         <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:8px;">융합양자개론</div>
         <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:8px;">나노공학개론(1)(2)</div>
-        <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:8px;">나노공학기초설계 🧪</div>
+        <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:rgba(234,88,12,.05);border:1px solid rgba(234,88,12,.2);border-radius:8px;">나노공학기초설계 (랩실)</div>
         <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:8px;">디스플레이재료및공학</div>
         <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:8px;">에너지나노소재공학</div>
         <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:8px;">에너지환경촉매개론</div>
-        <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:8px;">나노융합종합설계 🧪</div>
+        <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:rgba(234,88,12,.05);border:1px solid rgba(234,88,12,.2);border-radius:8px;">나노융합종합설계 (캡스톤 랩실)</div>
         <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:8px;">나노융합분석학</div>
         <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:8px;">전기화학 이론 및 응용</div>
-        <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:rgba(139,92,246,.06);border:1px solid rgba(139,92,246,.3);border-radius:8px;">인터페이스 물질전이론 ★</div>
-        <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:8px;">유무기기능소재요소설계 🧪</div>
+        <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:rgba(139,92,246,.06);border:1px solid rgba(139,92,246,.25);border-radius:8px;">인터페이스 물질전이론 (SK하이닉스 연계)</div>
+        <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:rgba(234,88,12,.05);border:1px solid rgba(234,88,12,.2);border-radius:8px;">유무기기능소재요소설계 (랩실)</div>
         <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:8px;">응용회로이론</div>
         <div style="font-size:.75rem;color:var(--text-2);padding:.35rem .6rem;background:var(--bg-alt);border:1px solid var(--border);border-radius:8px;">유기재료물성 및 ICT융합소자</div>
       </div>
-      <p style="font-size:.7rem;color:var(--text-3);margin-top:.75rem;">🧪 랩실 직접 실험 수업 &nbsp;·&nbsp; ★ SK하이닉스 다대학 연합 온라인 강의</p>
+      <p style="font-size:.7rem;color:var(--text-3);margin-top:.75rem;">주황 = 랩실 직접 실험 수업 &nbsp;·&nbsp; 보라 = SK하이닉스 연계 온라인 강의</p>
     </div>
 
   </div>
