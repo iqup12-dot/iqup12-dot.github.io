@@ -3,19 +3,19 @@
 
 /* ── Variables ── */
 :root {
-  --bg:           #ffffff;
-  --bg-alt:       #f8fafc;
-  --bg-panel:     #f1f5f9;
-  --bg-card:      #ffffff;
+  --bg:           #faf8f4;
+  --bg-alt:       #f3f0e9;
+  --bg-panel:     #ede9e0;
+  --bg-card:      #fdfcf9;
   --text-1:       #0f172a;
   --text-2:       #334155;
   --text-3:       #64748b;
   --text-4:       #94a3b8;
   --accent:       #0ea5e9;
   --accent-dark:  #0284c7;
-  --accent-bg:    #f0f9ff;
-  --border:       #e2e8f0;
-  --border-mid:   #cbd5e1;
+  --accent-bg:    #f0ece3;
+  --border:       #ddd8ce;
+  --border-mid:   #cac4b7;
   --shadow-sm:    0 1px 2px rgba(0,0,0,.05);
   --shadow:       0 1px 3px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.06);
   --shadow-hover: 0 6px 24px rgba(0,0,0,.13);
