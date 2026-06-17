@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16",
+  "updated_at": "2026-06-17",
   "projects": [
     {
       "id": "37aa6f1b-235e-8146-a429-fc5717ee7919",
@@ -71,7 +71,7 @@
     {
       "id": "376a6f1b-235e-812a-9948-c3837af0eb7a",
       "title": "[학부 에너지] 에너지 소재 — 이차전지·태양전지·연료전지",
-      "date": "2022-03-01",
+      "date": null,
       "category": "🎓 학부 교과과정",
       "tech_stack": [
         "이차전지",
@@ -122,7 +122,7 @@
         "상평형"
       ],
       "key_result": "BCC/FCC/HCP 결정구조 및 밀러지수 완전 이해, Fick 1·2법칙 기반 확산 메커니즘 분석, 전위·강화 이론(가공경화·고용강화·석출강화) 습득",
-      "star": "[상황] 나노소재공학 전공의 핵심 기반 과목인 재료공학 개론을 이수하는 상황에서,\n[과제] 금속·세라믹·고분자·복합재료의 구조-특성 관계를 이론적으로 이해하는 것을 목표로,\n[행동] 결정구조(BCC/FCC/HCP·밀러지수·역격자), 점결함·선결함·면결함, Fick 1·2법칙 확산 계산, 전위의 슬립·증식·강화 기구(가공경화·고용강화·석출강화), 상평형도(Fe-C 계), 파괴역학(Griffith 이론·K₁c)을 학습했습니다.\n[결과] 재료의 미세구조-물성 관계 분석 역량 확보, 이후 IMC 계면·솔더 합금 연구에서 확산·상변태 이론을 직접 적용하는 기반 형��됩니다.",
+      "star": "[상황] 나노소재공학 전공의 핵심 기반 과목인 재료공학 개론을 이수하는 상황에서,\n[과제] 금속·세라믹·고분자·복합재료의 구조-특성 관계를 이론적으로 이해하는 것을 목표로,\n[행동] 결정구조(BCC/FCC/HCP·밀러지수·역격자), 점결함·선결함·면결함, Fick 1·2법칙 확산 계산, 전위의 슬립·증식·강화 기구(가공경화·고용강화·석출강화), 상평형도(Fe-C 계), 파괴역학(Griffith 이론·K₁c)을 학습했습니다.\n[결과] 재료의 미세구조-물성 관계 분석 역량 확보, 이후 IMC 계면·솔더 합금 ��구에서 확산·상변태 이론을 직접 적용하는 기반 형성됩니다.",
       "status": "✅ 완료"
     },
     {
@@ -157,7 +157,7 @@
         "Layout 검증"
       ],
       "key_result": "gpdk090 공정 Design Rule Check 완전 통과, LVS(Layout vs Schematic) 매칭 검증, 레이아웃 오류 유형별 수정 경험 완성",
-      "star": "[상황] SKKU 아카데미 IC 설계 과정에서 레이아웃 검증(DRC/LVS)이 테이프아웃 전 필수 단계로 요구되는 상황에서,\n[과제] gpdk090 공정 설계 규칙을 이해하고 모든 레이아��� 오류를 수정하는 것을 목표로,\n[행동] DRC(Design Rule Check) 위반 유형(Minimum Width/Spacing/Enclosure/Overlap) 분석·수정, LVS(Layout vs Schematic) Net/Device 불일치 오류 추적·해결, Layer 순서와 Via/Contact 규칙 적용, gpdk090 공정별 디자인 룰 완전 숙지를 실습했습니다.\n[결과] NPU·OP-AMP·Comparator 전 프로젝트 DRC/LVS 통과, 설계-검증 반복 사이클 통한 레이아웃 품질 향상 역량 확보했습니다.",
+      "star": "[상황] SKKU 아카데미 IC 설계 과정에서 레이아웃 검증(DRC/LVS)이 테이프아웃 전 필수 단계로 요구되는 상황에서,\n[과제] gpdk090 공정 설계 규칙을 이해하고 모든 레이아웃 오류를 수정하는 것을 목표로,\n[행동] DRC(Design Rule Check) 위반 유형(Minimum Width/Spacing/Enclosure/Overlap) 분석·수정, LVS(Layout vs Schematic) Net/Device 불일치 오류 추적·해결, Layer 순서와 Via/Contact 규칙 적용, gpdk090 공정별 디자인 룰 완전 숙지를 실습했습니다.\n[결과] NPU·OP-AMP·Comparator 전 프로젝트 DRC/LVS 통과, 설계-검증 반복 사이클 통한 레이아웃 품질 향상 역량 확보했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -174,7 +174,7 @@
         "Layout"
       ],
       "key_result": "Cadence Virtuoso 스케매틱·레이아웃 편집기 실무 운용, Spectre 시뮬레이터 DC/AC/Transient 분석, ADE 환경 파라미터 스윕 분석 역량 확보",
-      "star": "[상황] SKKU 아카데미에서 Cadence EDA 툴을 처음 접하는 상황에서,\n[과제] Cadence Virtuoso 환경 ���반(셀 라이브러리·시뮬레이터·레이아웃)을 실습을 통해 완전히 습득하는 것을 목표로,\n[행동] Virtuoso 스케매틱 편집기(셀 라이브러리 생성·Symbol·Schematic 작성), Spectre 시뮬레이터(DC OP/AC/Transient Analysis), ADE(Analog Design Environment) 파라미터 스윕·Monte Carlo, 레이아웃 편집기(Rectangle/Path/Instance 배치·Metal Layer 연결)를 실습했습니다.\n[결과] Cadence Virtuoso 전 환경 실무 운용 역량 완성, 이후 모든 IC 설계 프로젝트에 기초 도구로 활용했습니다.",
+      "star": "[상황] SKKU 아카데미에서 Cadence EDA ��을 처음 접하는 상황에서,\n[과제] Cadence Virtuoso 환경 전반(셀 라이브러리·시뮬레이터·레이아웃)을 실습을 통해 완전히 습득하는 것을 목표로,\n[행동] Virtuoso 스케매틱 편집기(셀 라이브러리 생성·Symbol·Schematic 작성), Spectre 시뮬레이터(DC OP/AC/Transient Analysis), ADE(Analog Design Environment) 파라미터 스윕·Monte Carlo, 레이아웃 편집기(Rectangle/Path/Instance 배치·Metal Layer 연결)를 실습했습니다.\n[결과] Cadence Virtuoso 전 환경 실무 운용 역량 완성, 이후 모든 IC 설계 프로젝트에 기초 도구로 활용했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -225,7 +225,7 @@
         "OES",
         "SEM",
         "AFM",
-        "���율 관리"
+        "수율 관리"
       ],
       "key_result": "반도체 8대 공정 전체 및 장비 에코시스템 종합 정리, 세정·CMP·계측·패키징 5개 챕터 체계적 이해 완성",
       "star": "[상황] 480h 과정 수료를 앞두고 반도체 공정·장비 전 영역을 종합적으로 정리할 필요가 있는 상황에서,\n[과제] 세정·CMP·계측·FAB 공정·패키징 5개 핵심 챕터를 실무 수준으로 종합 정리하는 것을 목표로,\n[행동] 세정(Wet/Dry Cleaning, SC1/SC2) 공정, CMP 메커니즘과 Slurry 특성, 계측(OES/SEM/AFM/ADE) 장비별 측정 원리, FAB 공정 통합 흐름, 패키징(Wire Bonding/Flip Chip/3D IC) 기술을 5개 챕터로 체계적으로 정리했습니다.\n[결과] 480h 과정 종합 역량 완성, 반도체 공정 장비 엔지니어 필수 지식 전 영역 체계화 달성했습니다.",
@@ -276,7 +276,7 @@
       "id": "376a6f1b-235e-8158-ad32-d1262fbcc9e6",
       "title": "[480h 장비제어SW] 공정 장비 제어 시스템 — 모터·Plasma·Scrubber·Chiller",
       "date": "2025-05-15",
-      "category": "💻 SW·자동화",
+      "category": "💻 SW·��동화",
       "tech_stack": [
         "BLDC",
         "Servo Motor",
@@ -313,7 +313,7 @@
     },
     {
       "id": "376a6f1b-235e-81c7-a820-d8f979a7634b",
-      "title": "[480h 장비사교육] ��공·가스 제어 부품 — MKS MFC · 진공펌프 · 밸브 시스템",
+      "title": "[480h 장비사교육] 진공·가스 제어 부품 — MKS MFC · 진공펌프 · 밸브 시스템",
       "date": "2025-06-01",
       "category": "🏭 공정·장비",
       "tech_stack": [
@@ -372,7 +372,7 @@
         "ISSG"
       ],
       "key_result": "Kokusai/TEL 수직형 Furnace 3-zone 온도제어 구조 이해, AMAT 2015 RTP Edge Ring 온도제어 학습, LPCVD(Poly-Si/Nitride/TEOS/MTO/HTO) 공정 조건 습득",
-      "star": "[상황] 반도체 박막 형성 핵심 공정인 CVD·열처리 장비에 대한 장비사 수준의 이해가 필요한 상황에서,\n[과제] Furnace·RTP·LPCVD 장비 구조와 공정 파라미터를 실무 수준으로 이해하는 것을 목표로,\n[행동] Kokusai·TEL 수직형 Furnace 3-zone 온도제어, AMAT 2015 RTP Edge Ring 온도 균일성 제어, Pulsed Laser Annealing(Melt/Scanning MSA), 열산화(Dry/Wet/ISSG) 메커니즘, LPCVD(Poly-Si/Nitride/TEOS/MTO/HTO) 공정 조건을 집중 학습했습니다.\n[결과] CVD·열처리 장비 구조와 공정 파라미터 간 상관관계 이해, 박막 특성 제어를 위한 장비 설정 최적화 역량 확��했습니다.",
+      "star": "[상황] 반도체 박막 형성 핵심 공정인 CVD·열처리 장비에 대한 장비사 수준의 이해가 필요한 상황에서,\n[과제] Furnace·RTP·LPCVD 장비 구조와 공정 파라미터를 실무 수준으로 이해하는 것을 목표로,\n[행동] Kokusai·TEL 수직형 Furnace 3-zone 온도제어, AMAT 2015 RTP Edge Ring 온도 균일성 제어, Pulsed Laser Annealing(Melt/Scanning MSA), 열산화(Dry/Wet/ISSG) 메커니즘, LPCVD(Poly-Si/Nitride/TEOS/MTO/HTO) 공정 조건을 집중 학습했습니다.\n[결과] CVD·열처리 장비 구조와 공정 파라미터 간 상관관계 이해, 박막 특성 제어를 위한 장비 설정 최적화 역량 확보했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -421,7 +421,7 @@
         "Clean Room"
       ],
       "key_result": "16시간 공정실습 수료 (수원대학교), 반도체 8대 공정 현장 실습 완료",
-      "star": "[상황] 반도체 제조공정 이론 교육(168h) 이수 후 실제 공정 장비를 직접 다루는 현장 실습이 필요한 상황에서,\n[과제] 수원대학교에서 반도체 공정 장비를 직접 조작하고 현장 감각을 익히는 것을 목표로,\n[행동] 16시간 공정 실습에서 실제 반도체 공정 라인에서 사용되는 장비를 직접 운용하며 Wet Process, 세정 공정 등 실무 절차를 체험했습니다.\n[결과] 이론 지식과 현�� 실습을 연결하여 반도체 공정 흐름에 대한 실무적 이해를 심화했습니다.",
+      "star": "[상황] 반도체 제조공정 이론 교육(168h) 이수 후 실제 공정 장비를 직접 다루는 현장 실습이 필요한 상황에서,\n[과제] 수원대학교에서 반도체 공정 장비를 직접 조작하고 현장 감각을 익히는 것을 목표로,\n[행동] 16시간 공정 실습에서 실제 반도체 공정 라인에서 사용되는 장비를 직접 운용하며 Wet Process, 세정 공정 등 실무 절차를 체험했습니다.\n[결과] 이론 지식과 현장 실습을 연결하여 반도체 공정 흐름에 대한 실무적 이해를 심화했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -438,7 +438,7 @@
         "충방전 테스터"
       ],
       "key_result": "소성 공정 파라미터(승온 2.5°C/min, 유지 12h) 직접 설정·제어, 0.1C~5C Rate Capability 데이터 도출",
-      "star": "[상황] 배터리 소재 합성부터 셀 평가까지 전 공정을 직접 수행하는 환경에너지융합요소설계 수업에서,\n[과제] 양극 활물질 합성→전극 슬러리 제조→글로브 박스 내 코인셀 조립→충방전 성능 평가의 전 과정을 수행하는 것을 목표로,\n[행동] Tube Furnace로 NCM622 전구체를 소성하며 승온 속도(2.5°C/min)·유지 시간(12h)을 직접 설정하고, 활물질·도전제·바인더를 NMP 용매에 혼합·코팅한 뒤 아르곤 글로브 박스에서 코인셀을 조립하여 0.1C~5C 조건��� 충방전 특성을 측정했습니다.\n[결과] 소성 온도-Ni 함량 상관관계를 실험적으로 확인, 전압(2.7V) 기반 불량 셀 판별 경험 확보, 박막 열처리 공정 장비 운용 역량을 반도체 공정과 연결하는 통찰 습득했습니다.",
+      "star": "[상황] 배터리 소재 합성부터 셀 평가까지 전 공정을 직접 수행하는 환경에너지융합요소설계 수업에서,\n[과제] 양극 활물질 합성→전극 슬러리 제조→글로브 박스 내 코인셀 조립→충방전 성능 평가의 전 과정을 수행하는 것을 목표로,\n[행동] Tube Furnace로 NCM622 전구체를 소성하며 승온 속도(2.5°C/min)·유지 시간(12h)을 직접 설정하고, 활물질·도전제·바인더를 NMP 용매에 혼합·코팅한 뒤 아르곤 글로브 박스에서 코인셀을 조립하여 0.1C~5C 조건의 충방전 특성을 측정했습니다.\n[결과] 소성 온도-Ni 함량 상관관계를 실험적으로 확인, 전압(2.7V) 기반 불량 셀 판별 경험 확보, 박막 열처리 공정 장비 운용 역량을 반도체 공정과 연결하는 통찰 습득했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -518,7 +518,7 @@
         "HBM",
         "3D IC",
         "TSV",
-        "반도체 패키징",
+        "반도체 패���징",
         "TC-NCF",
         "TC-MUF"
       ],
@@ -666,7 +666,7 @@
         "De-capsulation"
       ],
       "key_result": "삼성전자 의뢰 IC 3개 항목 전부 Acceptable, 정품 확인 판정 완료",
-      "star": "[상황] 삼성전자 의뢰로 입수된 NXP 제조 IC의 진위 여부를 공신력 있는 분석으로 증명해야 하는 상황에서,\n[과제] 외관·X-ray·디캡슐레이션 3단계 분석으로 정품 여부를 판정하는 것을 목표로,\n[행동] 디지털 현미경(KEYENCE VHX-7000, 20~400배)으로 마킹·Sanding/Blacktop 흔적·리드 재도금 흔적을 정밀 검사하고, X-ray로 내부 Die 구조·Wire bond routing을 Known Authentic 데���터와 비교한 뒤, 디캡슐레이션으로 Die 마킹을 직접 확인했습니다.\n[결과] 3개 항목 전부 Acceptable 판정, 위조 또는 위조 의심 증거 없음, 정품 확인 보고서를 완성했습니다.",
+      "star": "[상황] 삼성전자 의뢰로 입수된 NXP 제조 IC의 진위 여부를 공신력 있는 분석으로 증명해야 하는 상황에서,\n[과제] 외관·X-ray·디캡슐레이션 3단계 분석으로 정품 여부를 판정하는 것을 목표로,\n[행동] 디지털 현미경(KEYENCE VHX-7000, 20~400배)으로 마킹·Sanding/Blacktop 흔적·리드 재도금 흔적을 정밀 검사하고, X-ray로 내부 Die 구조·Wire bond routing을 Known Authentic 데이터와 비교한 뒤, 디캡슐레이션으로 Die 마킹을 직접 확인했습니다.\n[결과] 3개 항목 전부 Acceptable 판정, 위조 또는 위조 의심 증거 없음, 정품 확인 보고서를 완성했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -683,7 +683,7 @@
         "De-capsulation"
       ],
       "key_result": "외관 이상 없는 전기 불량 원인을 EMMI Thermal로 위치 특정 → Crack/Metal Melt 물리적 원인 최종 확인",
-      "star": "[상황] 양산 중인 제주반도체 K12 제품에서 전기적 이상이 감지됐으나 외관상 원인 파악이 불가한 상황에서,\n[과제] 다단계 비파괴·파괴 분석으로 불량 원인을 물리적으로 특정하는 것을 목표로,\n[행동] 외관→X-ray→SAT→VI Curve→EMMI(Photon/Thermal)→디캡슐레이션 6단계 분석을 순차 수행하여, VI Curve에서 Short curve를 검출하고 EMMI Thermal로 불량 위치 좌표를 특정했습니다.\n[결과] 디캡슐레이션에서 Crack 및 Metal Melt 물리적 손상을 최종 확인, 단순 전기 불량이 아닌 소자 내부 물리적 손상��로 원인 특정하여 재발 방지 근거를 마련했습니다.",
+      "star": "[상황] 양산 중인 제주반도체 K12 제품에서 전기적 이상이 감지됐으나 외관상 원인 파악이 불가한 상황에서,\n[과제] 다단계 비파괴·파괴 분석으로 불량 원인을 물리적으로 특정하는 것을 목표로,\n[행동] 외관→X-ray→SAT→VI Curve→EMMI(Photon/Thermal)→디캡슐레이션 6단계 분석을 순차 수행하여, VI Curve에서 Short curve를 검출하고 EMMI Thermal로 불량 위치 좌표를 특정했습니다.\n[결과] 디캡슐레이션에서 Crack 및 Metal Melt 물리적 손상을 최종 확인, 단순 전기 불량이 아닌 소자 내부 물리적 손상으로 원인 특정하여 재발 방지 근거를 마련했습니다.",
       "status": "✅ 완료"
     },
     {
