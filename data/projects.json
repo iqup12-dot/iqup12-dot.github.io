@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23",
+  "updated_at": "2026-06-24",
   "projects": [
     {
       "id": "37aa6f1b-235e-8146-a429-fc5717ee7919",
@@ -26,7 +26,7 @@
         "보고서 작성"
       ],
       "key_result": "소재 합성→특성분석→성능 평가→보고서 전 사이클 독립 수행, 나노소재공학 4년간 이론 종합 적용 완성, 졸업논문 TC Bonding 주제 선정의 기반 형성",
-      "star": "[상황] 나노소재공학 학부 4학년 종합설계 과정에서 전공 전 과목 이론을 실제 소재 연구에 통합 적용하는 상황에서,\n[과제] 소재 합성부터 특성분석·성능 평가까지 전 사이클을 팀 단위로 독립 설계·수행하는 것을 목표로,\n[행동] 주제 선정(에너지 소재·반도체 소재 중 선택), 합성 공정 설계(Tube Furnace·Glove Box 활용), XRD·SEM/EDS 특성분석, 성능 평가(전기화학·기계적 특성), 결과 해석·보고서 작성·발표를 수행했습니다.\n[결과] 나노소재공학 전 과목 이론 통합 적용 역량 완성, 환경에너지융합요소설계·TC Bonding 졸업논문 등 연구 역량의 직접적 기반 확보됩니다.",
+      "star": "[상황] 나노소재공학 학부 4학년 종합설계 과정에서 전공 전 과목 이론을 실제 소재 연구에 통합 적용하는 상황에서,\n[과제] 소재 합성부터 특성분석·성능 평가까지 전 사이클을 팀 단위로 독립 설계·수행하는 것을 목표로,\n[행동] 주제 선정(에너지 소재·반도체 소재 중 선택), 합성 공정 설계(Tube Furnace·Glove Box 활용), XRD·SEM/EDS 특성분석, 성능 평가(전기화학·기계적 특성), 결과 해석·보고서 작성·발표를 수행했습니다.\n[결과] 나노소재공학 전 과목 이론 통합 적용 역량 완성, 환경에너지융합요소설계·TC Bonding 졸업논문 등 연구 역량의 직접적 기반 확보��니다.",
       "status": "✅ 완료"
     },
     {
@@ -51,7 +51,7 @@
     },
     {
       "id": "376a6f1b-235e-8178-b2ae-edab25fe290c",
-      "title": "[학부 반도체] 반도체 소재·소자 원리 — Si·화합물반도체·소자",
+      "title": "[학부 반도��] 반도체 소재·소자 원리 — Si·화합물반도체·소자",
       "date": "2021-03-01",
       "category": "🎓 학부 교과과정",
       "tech_stack": [
@@ -103,8 +103,8 @@
         "박막 성장",
         "습식 에칭"
       ],
-      "key_result": "sol-gel·수열합성·공침법 등 나노소재 합성 경로 이해, PVD/CVD 박막 성장 메커니즘(섬 성장·층성장·혼합 모드) 분석, 표면 에너지·젖음각·접촉각 이론 습득",
-      "star": "[상황] 나노소재공학 전공 심화 과정에서 나노소재 합성 기술과 박막공학을 학습하는 상황에서,\n[과제] 다양한 합성 경로와 박막 성장 이론을 이해하고 실제 소재 설계에 적용하는 역량을 기르는 것을 목표로,\n[행동] 나노소재 합성(sol-gel·수열합성·공침법·화염합성), 표면 에너지·Young 방정식·젖음각·접촉각 분석, PVD(스퍼터링·증착) 및 CVD 성장 메커니즘(VW/SK/FM 모드), 박막 응력·결정화·에피택시, 습식·건식 에칭 공정을 학습했습니다.\n[결과] 나노소재 합성 경로 설계 역량 확보, 이후 저온 솔더 IMC 계면 분석 연구에서 박막 성장·젖음성 이론을 직접 연결해 적용했습니다.",
+      "key_result": "sol-gel·수열합성·공침법 등 나노소재 ��성 경로 이해, PVD/CVD 박막 성장 메커니즘(섬 성장·층성장·혼합 모드) 분석, 표면 에너지·젖음각·접촉각 이론 습득",
+      "star": "[상황] 나노소재공학 전공 심화 과정에서 나노소재 합성 기술과 박막공학을 학습하는 상황에서,\n[과제] 다양한 합성 경로와 박막 성장 이론을 이��하고 실제 소재 설계에 적용하는 역량을 기르는 것을 목표로,\n[행동] 나노소재 합성(sol-gel·수열합성·공침법·화염합성), 표면 에너지·Young 방정식·젖음각·접촉각 분석, PVD(스퍼터링·증착) 및 CVD 성장 메커니즘(VW/SK/FM 모드), 박막 응력·결정화·에피택시, 습식·건식 에칭 공정을 학습했습니다.\n[결과] 나노소재 합성 경로 설계 역량 확보, 이후 저온 솔더 IMC 계면 분석 연구에서 박막 성장·젖음성 이론을 직접 연결해 적용했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -175,7 +175,7 @@
       ],
       "key_result": "Cadence Virtuoso 스케매틱·레이아웃 편집기 실무 운용, Spectre 시뮬레이터 DC/AC/Transient 분석, ADE 환경 파라미터 스윕 분석 역량 확보",
       "star": "[상황] SKKU 아카데미에서 Cadence EDA 툴을 처음 접하는 상황에서,\n[과제] Cadence Virtuoso 환경 전반(셀 라이브러리·시뮬레이터·레이아웃)을 실습을 통해 완전히 습득하는 것을 목표로,\n[행동] Virtuoso 스케매틱 편집기(셀 라이브러리 생성·Symbol·Schematic 작성), Spectre 시뮬레이터(DC OP/AC/Transient Analysis), ADE(Analog Design Environment) 파라미터 스윕·Monte Carlo, 레이아웃 편집기(Rectangle/Path/Instance 배치·Metal Layer 연결)를 실습했습니다.\n[결과] Cadence Virtuoso 전 환경 실무 운용 역량 완성, 이후 모든 IC 설계 프로젝트에 기초 도구로 활용했습니다.",
-      "status": "✅ 완��"
+      "status": "✅ 완료"
     },
     {
       "id": "376a6f1b-235e-81f1-adaf-d239d120c10e",
@@ -208,7 +208,7 @@
         "Cadence"
       ],
       "key_result": "MOSFET 동작 영역(선형/포화/차단) 완전 이해, gm·rds·Cgs 소신호 모델 분석, Analog 회로 설계 이론(바이어스/증폭기/피드백) 체계 정립",
-      "star": "[상황] SKKU 시스템 반도체 설계 아카데미에서 Analog IC 설계를 위한 회로 이론 기초가 필요한 상황에서,\n[과제] MOSFET 소자 특성부터 Analog 증폭기 설계 이론까지 체계적으로 학습하는 것을 목표로,\n[행동] MOSFET 동작 영역(선형/포화/차단) 분석, gm·rds·Cgs 소신호 모델 파라미터 계산, 공통소스/공통게이트/공통드레인 증폭기 특성, 미러 전류원·캐스코드·차동증폭기·OP-AMP 설계 이론을 집중 학습했습니다.\n[결과] Analog IC 설계에 필요한 CMOS 회로 이론 전반 습득, 이후 2-Stage OP-AMP·Comparator 설�� 프로젝트에 직접 적용했습니다.",
+      "star": "[상황] SKKU 시스템 반도체 설계 아카데미에서 Analog IC 설계를 위한 회로 이론 기초가 필요한 상황에서,\n[과제] MOSFET 소자 특성부터 Analog 증폭기 설계 이론까지 체계적으로 학습하는 것을 목표로,\n[행동] MOSFET 동작 영역(선형/포화/차단) 분석, gm·rds·Cgs 소신호 모델 파라미터 계산, 공통소스/공통게이트/공통드레인 증폭기 특성, 미러 전류원·캐스코드·차동증폭기·OP-AMP 설계 이론을 집중 학습했습니다.\n[결과] Analog IC 설계에 필요한 CMOS 회로 이론 전반 습득, 이후 2-Stage OP-AMP·Comparator 설계 프로젝트에 직접 적용했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -274,7 +274,7 @@
     },
     {
       "id": "376a6f1b-235e-8158-ad32-d1262fbcc9e6",
-      "title": "[480h 장비제어SW] 공정 장비 ���어 시스템 — 모터·Plasma·Scrubber·Chiller",
+      "title": "[480h 장비제어SW] 공정 장비 제어 시스템 — 모터·Plasma·Scrubber·Chiller",
       "date": "2025-05-15",
       "category": "💻 SW·자동화",
       "tech_stack": [
@@ -352,7 +352,7 @@
         "EFEM"
       ],
       "key_result": "Plasma Source 4종(RIE/CCP/ICP/TCP) 비교 분석, ESC 정전척 구조·Repair 기술, OES/SPOES 진단 기법, ALE(Atomic Layer Etching) 원리 습득",
-      "star": "[상황] 반도체 식각 공정 핵심 장비인 플라즈마 장비에 대한 심층 학습이 필요한 상황에서,\n[과제] RF Generator·Matching Network 구조부터 Cluster Tool 전체 구성까지 실무 수준으로 이해하는 것을 목표로,\n[행동] RF Generator(13.56MHz)/Matching Network 원리, Plasma Source 4종(RIE/CCP/ICP/TCP) 비교, ESC 정전척 구조·Repair 기술, Shower Head/Baffle, OES/SPOES 진단, ALE·Cryo Etch, Cluster Tool(EFEM/Load Lock/TM/PM) 200mm/300mm 구성 차이를 집중 학습했습니다.\n[결과] 플라즈마 공정 장비 전반의 원리-구조-제어 이해 완성, 식각 장비 엔지니어 직무 연결 역량 확보했습니다.",
+      "star": "[상황] 반도체 식각 공정 핵심 장비인 플라즈마 장비에 대한 심층 학습이 필요한 상황에서,\n[과제] RF Generator·Matching Network 구조부터 Cluster Tool 전체 구성까지 실무 수준으로 이해하는 것을 목��로,\n[행동] RF Generator(13.56MHz)/Matching Network 원리, Plasma Source 4종(RIE/CCP/ICP/TCP) 비교, ESC 정전척 구조·Repair 기술, Shower Head/Baffle, OES/SPOES 진단, ALE·Cryo Etch, Cluster Tool(EFEM/Load Lock/TM/PM) 200mm/300mm 구성 차이를 집중 학습했습니다.\n[결과] 플라즈마 공정 장비 전반의 원리-구조-제어 이해 완성, 식각 장비 엔지니어 직무 연결 역량 확보했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -372,7 +372,7 @@
         "ISSG"
       ],
       "key_result": "Kokusai/TEL 수직형 Furnace 3-zone 온도제어 구조 이해, AMAT 2015 RTP Edge Ring 온도제어 학습, LPCVD(Poly-Si/Nitride/TEOS/MTO/HTO) 공정 조건 습득",
-      "star": "[상황] 반도체 박막 형성 핵심 공정인 CVD·열처리 장비에 대한 장비사 수준의 이해가 필요한 상황에서,\n[과제] Furnace·RTP·LPCVD 장비 구조와 공정 파라미터를 실무 수준으로 이해하는 것을 목표로,\n[행동] Kokusai·TEL 수직형 Furnace 3-zone 온도제어, AMAT 2015 RTP Edge Ring 온도 균일성 제어, Pulsed Laser Annealing(Melt/Scanning MSA), 열산화(Dry/Wet/ISSG) 메커니즘, LPCVD(Poly-Si/Nitride/TEOS/MTO/HTO) 공정 조건을 집중 학습했습니다.\n[결과] CVD·열처리 장비 구조와 공정 파라미터 간 상관관계 이해, 박막 특성 제어를 위한 장비 설정 최적화 역량 확보했습니다.",
+      "star": "[상황] 반도체 박막 형성 핵심 공정인 CVD·열처리 ���비에 대한 장비사 수준의 이해가 필요한 상황에서,\n[과제] Furnace·RTP·LPCVD 장비 구조와 공정 파라미터를 실무 수준으로 이해하는 것을 목표로,\n[행동] Kokusai·TEL 수직형 Furnace 3-zone 온도제어, AMAT 2015 RTP Edge Ring 온도 균일성 제어, Pulsed Laser Annealing(Melt/Scanning MSA), 열산화(Dry/Wet/ISSG) 메커니즘, LPCVD(Poly-Si/Nitride/TEOS/MTO/HTO) 공정 조건을 집중 학습했습니다.\n[결과] CVD·열처리 장비 구조와 공정 파라미터 간 상관관계 이해, 박막 특성 제어를 위한 장비 설정 최적화 역량 확보했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -391,7 +391,7 @@
         "CAR PR"
       ],
       "key_result": "g-line~EUV 전 세대 PR 특성 이해, EUV LPP 광원·Mo/Si 다층막 반사경 구조 학습, Overlay 오차 분석 기법 습득",
-      "star": "[상황] 480h 반도체 공정장비 과정에서 Lithography 공정의 장비·소재·해상도 향상 기술에 대한 심층 학습이 필요한 상황에서,\n[과제] ASML EUV 장비 구조와 TEL Track 장비 동작 원리를 실무 수준으로 이해하는 것을 목표로,\n[행동] PR 세대별 종류(g-line/i-line/KrF/ArF/EUV·CAR) 특성, OAI/OPC/PSM 해상도 향상 기법, EUV LPP 광원·Mo/Si 다층막 반사경 구조, TEL Mark-7 Track 장비 PR Coating 파라미터, Overlay 오차 분석 방법론을 집중 학습했습니다.\n[결과] EUV 광학계 전반 이해 및 Lithography 해상도 결정 인자 분석 역량 확보, ASML·TEL 장비 엔지니어 직무 연결 가능한 기술 기반 구축했습니다.",
+      "star": "[���황] 480h 반도체 공정장비 과정에서 Lithography 공정의 장비·소재·해상도 향상 기술에 대한 심층 학습이 필요한 상황에서,\n[과제] ASML EUV 장비 구조와 TEL Track 장비 동작 원리를 실무 수준으로 이해하는 것을 목표로,\n[행동] PR 세대별 종류(g-line/i-line/KrF/ArF/EUV·CAR) 특성, OAI/OPC/PSM 해상도 향상 기법, EUV LPP 광원·Mo/Si 다층막 반사경 구조, TEL Mark-7 Track 장비 PR Coating 파라미터, Overlay 오차 분석 방법론을 집중 학습했습니다.\n[결과] EUV 광학계 전반 이해 및 Lithography 해상도 결정 인자 분석 역량 확보, ASML·TEL 장비 엔지니어 직무 연결 가능한 기술 기반 구축했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -406,7 +406,7 @@
         "공정 실습"
       ],
       "key_result": "16시간 수료 (수원대학교), 전자부품 소재 공정 실습 완료",
-      "star": "[상황] 반도체 공정장비 및 SW 엔지니어 양성과정(480h) 중 소재 현장 실습이 편성된 상황에서,\n[과제] 반도체 및 전자부품 소재의 공정 절차를 현장에서 직접 체험하는 것을 목표로,\n[행동] 수원대학교 실습실에서 16시간 동안 전자부품 소재의 공정 흐름을 체험하고, 소재별 공정 조건과 품질 기준을 학습했습니다.\n[결과] 소재 공정 실무 경험 확보, 소재-공정-장비의 연계성에 대한 현장 관점 습득했습니다.",
+      "star": "[상황] 반도체 공정장비 및 SW 엔지니어 양성과정(480h) 중 소재 현장 실습이 편성된 상황에서,\n[과제] 반도체 및 전자부품 소재의 공정 절차를 현장에서 직접 체험하는 것을 목표로,\n[행동] 수원대학교 실습실에서 16시간 동안 전자부품 소재의 공정 흐름을 체험하고, 소재별 공정 조건과 품질 기준을 학습했습니다.\n[결과] 소재 공정 실무 경험 확보, 소재-공정-장비의 연계���에 대한 현장 관점 습득했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -456,7 +456,7 @@
         "LVS"
       ],
       "key_result": "513시간 수료 (성균관대학교), Analog/Digital IC 풀커스텀 설계 전 과정 습득",
-      "star": "[상황] 시스템 반도체 설계 전문 역량 확보를 위해 체계적인 IC 설계 교��이 필요한 상황에서,\n[과제] Analog IC(OP-AMP, Comparator)와 Digital IC(NPU, Repeater) Full Custom 설계 전 과정을 성균관대학교 아카데미에서 습득하는 것을 목표로,\n[행동] 513시간 동안 Cadence Virtuoso 기반 회로 설계→시뮬레이션→레이아웃→DRC/LVS 검증 전 과정을 반복 실습하며, OP-AMP·Comparator·NPU·Repeater 등 다양한 회로를 직접 설계했습니다.\n[결과] Analog/Digital IC 풀커스텀 설계 역량 확보, 설계-검증-최적화 전 과정에 대한 실무 경험 축적했습니다.",
+      "star": "[상황] 시스템 반도체 설계 전문 역량 확보를 위해 체계적인 IC 설계 교육이 필요한 상황에서,\n[과제] Analog IC(OP-AMP, Comparator)와 Digital IC(NPU, Repeater) Full Custom 설계 전 과정을 성균관대학교 아카데미에서 습득하는 것을 목표로,\n[행동] 513시간 동안 Cadence Virtuoso 기반 회로 설계→시뮬레이션→레이아웃→DRC/LVS 검증 전 과정을 반복 실습하며, OP-AMP·Comparator·NPU·Repeater 등 다양한 회로를 직접 설계했습니다.\n[결과] Analog/Digital IC 풀커스텀 설계 역량 확보, 설계-검증-최적화 전 과정에 대한 실무 경험 축적했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -666,7 +666,7 @@
         "De-capsulation"
       ],
       "key_result": "삼성전자 의뢰 IC 3개 항목 전부 Acceptable, 정품 확인 판정 완료",
-      "star": "[���황] 삼성전자 의뢰로 입수된 NXP 제조 IC의 진위 여부를 공신력 있는 분석으로 증명해야 하는 상황에서,\n[과제] 외관·X-ray·디캡슐레이션 3단계 분석으로 정품 여부를 판정하는 것을 목표로,\n[행동] 디지털 현미경(KEYENCE VHX-7000, 20~400배)으로 마킹·Sanding/Blacktop 흔적·리드 재도금 흔적을 정밀 검사하고, X-ray로 내부 Die 구조·Wire bond routing을 Known Authentic 데이터와 비교한 뒤, 디캡슐레이션으로 Die 마킹을 직접 확인했습니다.\n[결과] 3개 항목 전부 Acceptable 판정, 위조 또는 위조 의심 증거 없음, 정품 확인 보고서를 완성했습니다.",
+      "star": "[상황] 삼성전자 의뢰로 입수된 NXP 제조 IC의 진위 여부를 공신력 있는 분석으로 증명해야 하는 상황에서,\n[과제] 외관·X-ray·디캡슐레이션 3단계 분석으로 정품 여부를 판정하는 것을 목표로,\n[행동] 디지털 현미경(KEYENCE VHX-7000, 20~400배)으로 마킹·Sanding/Blacktop 흔적·리드 재도금 흔적을 정밀 검사하고, X-ray로 내부 Die 구조·Wire bond routing을 Known Authentic 데이터와 비교한 뒤, 디캡슐레이션으로 Die 마킹을 직접 확인했습니다.\n[결과] 3개 항목 전부 Acceptable 판정, 위조 또는 위조 의심 증거 없음, 정품 확인 보고서를 완성했습니다.",
       "status": "✅ 완료"
     },
     {
