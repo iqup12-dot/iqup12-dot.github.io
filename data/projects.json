@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-27",
+  "updated_at": "2026-06-28",
   "projects": [
     {
       "id": "37aa6f1b-235e-8146-a429-fc5717ee7919",
@@ -26,7 +26,7 @@
         "보고서 작성"
       ],
       "key_result": "소재 합성→특성분석→성능 평가→보고서 전 사이클 독립 수행, 나노소재공학 4년간 이론 종합 적용 완성, 졸업논문 TC Bonding 주제 선정의 기반 형성",
-      "star": "[상황] 나노소재공학 학부 4학년 종합설계 과정에서 전공 전 과목 이론을 실제 소재 연구에 통합 적용하는 상황에서,\n[과제] 소재 합성부터 특성분석·성능 평가까지 전 사이클을 팀 단위로 독립 설계·수행하는 것을 목표로,\n[행동] 주제 선정(에너지 소재·반도체 소재 중 선택), 합성 공정 설계(Tube Furnace·Glove Box 활용), XRD·SEM/EDS 특성분석, 성능 평가(전기화학·기계적 특성), 결과 해석·보고서 작성·발표를 수행했습니다.\n[결과] 나노소재공학 전 과목 이론 통합 적용 역량 완성, 환경에너지융합요소설계·TC Bonding 졸업논문 등 연구 역량의 직접적 기반 확보됩니다.",
+      "star": "[상황] 나노소재공학 학부 4학년 종합설계 과정에서 전공 전 과목 이론을 실제 소재 연구에 통합 적용하는 상황에서,\n[과제] 소재 합성부터 특성분석·성능 평가까지 전 사이클을 팀 단위로 독립 설계·수행하는 것을 목표로,\n[행동] 주제 선정(에너지 소재·반도체 소재 중 선택), 합성 공정 설계(Tube Furnace·Glove Box 활용), XRD·SEM/EDS 특성분석, 성능 평가(전기화학·기계적 특성), 결과 해석·보고서 작성·발표를 수행했습니다.\n[결과] 나노소재공학 전 과목 이론 통합 적용 역량 완성, 환경에너지융합요소설계·TC Bonding 졸업논문 등 연구 역량의 직접적 기반 확보됩��다.",
       "status": "✅ 완료"
     },
     {
@@ -46,7 +46,7 @@
         "전자현미경"
       ],
       "key_result": "XRD 브래그 회절·결정 사이즈(Scherrer 식) 분석, FE-SEM/EDS 표면 형상·원소 매핑, TEM Selected Area Electron Diffraction 해석, DSC/TGA 열분석 데이터 해석 역량 완성",
-      "star": "[상황] 나노소재공학 과정에서 합성된 소재의 구조·성분·열특성 분석 능력을 기르는 상황에서,\n[과제] XRD·SEM·TEM·DSC·TGA 등 핵심 재료분석 장비의 원리와 데이터 해석법을 완전히 습득하는 것을 목표로,\n[행동] XRD(브래그 법칙·Scherrer 결정 사이즈·Rietveld 정밀화), FE-SEM(이차전자/후방산란·EDS 원소 매핑), TEM(SAED 패턴 분석·HRTEM 격자상), DSC(상전이·결정화 온도 분석), TGA(열분해·성분 분율), BET 비표면적 분석을 학습했습니다.\n[결과] 다중 분석 장비 병행 운용 역량 확보, 한국나노분석랩 실무 FE-SEM·XPS·SAT 운용 및 XPS 데이터 자동화 프로젝트에 분석 이론이 직접 적용됩니다.",
+      "star": "[상황] 나노소재공학 과정에서 합성된 소재의 구조·성분·열특성 분석 능력을 기르는 상황에서,\n[과제] XRD·SEM·TEM·DSC·TGA 등 핵심 재료분석 장비의 원리와 데이터 해석법을 완전히 습득하는 것을 ��표로,\n[행동] XRD(브래그 법칙·Scherrer 결정 사이즈·Rietveld 정밀화), FE-SEM(이차전자/후방산란·EDS 원소 매핑), TEM(SAED 패턴 분석·HRTEM 격자상), DSC(상전이·결정화 온도 분석), TGA(열분해·성분 분율), BET 비표면적 분석을 학습했습니다.\n[결과] 다중 분석 장비 병행 운용 역량 확보, 한국나노분석랩 실무 FE-SEM·XPS·SAT 운용 및 XPS 데이터 자동화 프로젝트에 분석 이론이 직접 적용됩니다.",
       "status": "✅ 완료"
     },
     {
@@ -122,7 +122,7 @@
         "상평형"
       ],
       "key_result": "BCC/FCC/HCP 결정구조 및 밀러지수 완전 이해, Fick 1·2법칙 기반 확산 메커니즘 분석, 전위·강화 이론(가공경화·고용강화·석출강화) 습득",
-      "star": "[상황] 나노소재공학 전공의 핵심 기반 과목인 재료공학 개론을 이수하는 상황에서,\n[과제] 금속·세라믹·고분자·복합재료의 구조-특성 관계를 이론적으로 이해하는 것을 목표로,\n[행동] 결정구조(BCC/FCC/HCP·밀러지수·역격자), 점결함·선결함·면결함, Fick 1·2법칙 확산 계산, 전위의 슬립·증식·강화 기구(가공경화·고용강화·석출강화), 상평형도(Fe-C 계), 파괴역학(Griffith 이론·K₁c)을 학습했습니다.\n[결과] 재료의 미세구조-물성 관계 분석 역량 확보, 이후 IMC 계면·솔더 합금 연구에서 확산·상변태 이론을 직접 적용하는 기반 형성됩니다.",
+      "star": "[상황] 나노소재공학 전공의 핵심 기반 과목인 재료공학 개론을 이수하는 상황에서,\n[과제] 금속·세라믹·고분자·복합재료의 구조-특성 관계를 이론적으로 이해하는 것을 목표로,\n[행동] 결정구조(BCC/FCC/HCP·밀러지수·역격자), 점결함·선결함·면결함, Fick 1·2법칙 확산 계산, 전위의 슬립·증식·강화 기구(가공경화·고용강화·석출강화), 상평형도(Fe-C 계), 파괴역학(Griffith 이론·K₁c)을 학습했습니다.\n[결과] 재료의 미세구조-물성 관계 분석 역량 확보, 이후 IMC 계면·솔더 합금 연구에서 확산·상변태 이론을 직접 적용하는 기반 형��됩니다.",
       "status": "✅ 완료"
     },
     {
@@ -157,7 +157,7 @@
         "Layout 검증"
       ],
       "key_result": "gpdk090 공정 Design Rule Check 완전 통과, LVS(Layout vs Schematic) 매칭 검증, 레이아웃 오류 유형별 수정 경험 완성",
-      "star": "[상황] SKKU 아카데미 IC 설계 과정에서 레이아웃 검증(DRC/LVS)이 테이프아웃 전 필수 단계로 요구되는 상황에서,\n[과제] gpdk090 공정 설계 규칙을 이해하고 모든 레이아웃 오류를 수정하는 것을 목표로,\n[행동] DRC(Design Rule Check) 위반 유형(Minimum Width/Spacing/Enclosure/Overlap) 분석·수정, LVS(Layout vs Schematic) Net/Device 불일치 오류 추적·해결, Layer 순서와 Via/Contact 규칙 적용, gpdk090 공정별 디자인 룰 완전 숙지를 실습했습니다.\n[결과] NPU·OP-AMP·Comparator 전 프로젝트 DRC/LVS 통과, 설계-검증 반복 사이클 통한 레이아웃 품질 향상 역량 확보했습니다.",
+      "star": "[상황] SKKU 아카데미 IC 설계 과정에서 레이아웃 검증(DRC/LVS)이 테이프아웃 전 필수 단계로 요구되는 상황에서,\n[과제] gpdk090 공정 설계 규칙을 이해하고 모든 레이아��� 오류를 수정하는 것을 목표로,\n[행동] DRC(Design Rule Check) 위반 유형(Minimum Width/Spacing/Enclosure/Overlap) 분석·수정, LVS(Layout vs Schematic) Net/Device 불일치 오류 추적·해결, Layer 순서와 Via/Contact 규칙 적용, gpdk090 공정별 디자인 룰 완전 숙지를 실습했습니다.\n[결과] NPU·OP-AMP·Comparator 전 프로젝트 DRC/LVS 통과, 설계-검증 반복 사이클 통한 레이아웃 품질 향상 역량 확보했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -174,7 +174,7 @@
         "Layout"
       ],
       "key_result": "Cadence Virtuoso 스케매틱·레이아웃 편집기 실무 운용, Spectre 시뮬레이터 DC/AC/Transient 분석, ADE 환경 파라미터 스윕 분석 역량 확보",
-      "star": "[상황] SKKU 아카데미에서 Cadence EDA 툴을 처음 접하는 상황에서,\n[과제] Cadence Virtuoso 환경 전반(셀 라이브러리·시뮬레이터·레이아웃)을 실습을 통해 완전히 습득하는 것을 목표로,\n[행동] Virtuoso 스케매틱 편집기(셀 라이브러리 생성·Symbol·Schematic 작성), Spectre 시뮬레이터(DC OP/AC/Transient Analysis), ADE(Analog Design Environment) 파라미터 스윕·Monte Carlo, 레이아웃 편집기(Rectangle/Path/Instance 배치·Metal Layer 연결)를 실습했습니다.\n[결과] Cadence Virtuoso 전 환경 실무 운용 역량 완성, 이후 모든 IC 설계 프로젝트에 기초 도구로 활용했습니다.",
+      "star": "[상황] SKKU 아카데미에서 Cadence EDA 툴을 처음 접하는 상황에서,\n[과제] Cadence Virtuoso 환경 ���반(셀 라이브러리·시뮬레이터·레이아웃)을 실습을 통해 완전히 습득하는 것을 목표로,\n[행동] Virtuoso 스케매틱 편집기(셀 라이브러리 생성·Symbol·Schematic 작성), Spectre 시뮬레이터(DC OP/AC/Transient Analysis), ADE(Analog Design Environment) 파라미터 스윕·Monte Carlo, 레이아웃 편집기(Rectangle/Path/Instance 배치·Metal Layer 연결)를 실습했습니다.\n[결과] Cadence Virtuoso 전 환경 실무 운용 역량 완성, 이후 모든 IC 설계 프로젝트에 기초 도구로 활용했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -191,7 +191,7 @@
         "gpdk090"
       ],
       "key_result": "Combinational/Sequential 논리회로 설계 방법론 완성, 유한상태기계(FSM) 설계 기법 습득, Power-Performance-Area 트레이드오프 분석 역량 확보",
-      "star": "[상황] SKKU 아카데미에서 Digital IC Full Custom 설계를 위한 방법론 학습이 필요한 상황에서,\n[과제] 논리회로 설계부터 PPA 최적화 분석까지 Digital IC 설계 전 과정을 이해하는 것을 목표로,\n[행동] Combinational Logic(가산기/멀티플렉서/비교기) 설계, Sequential Logic(플립플롭/레지스터/카운터) 구현, 유한상태기계(FSM) 설계 기법, Static Timing Analysis, PPA(Power·Performance·Area) 트레이드오프 분석 방법론을 학���했습니다.\n[결과] Digital IC 설계 방법론 체계화, 이후 Repeater·NPU 설계 프로젝트에 직접 적용하여 PPA 최적화 성공했습니다.",
+      "star": "[상황] SKKU 아카데미에서 Digital IC Full Custom 설계를 위한 방법론 학습이 필요한 상황에서,\n[과제] 논리회로 설계부터 PPA 최적화 분석까지 Digital IC 설계 전 과정을 이해하는 것을 목표로,\n[행동] Combinational Logic(가산기/멀티플렉서/비교기) 설계, Sequential Logic(플립플롭/레지스터/카운터) 구현, 유한상태기계(FSM) 설계 기법, Static Timing Analysis, PPA(Power·Performance·Area) 트레이드오프 분석 방법론을 학습했습니다.\n[결과] Digital IC 설계 방법론 체계화, 이후 Repeater·NPU 설계 프로젝트에 직접 적용하여 PPA 최적화 성공했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -225,7 +225,7 @@
         "OES",
         "SEM",
         "AFM",
-        "수율 관리"
+        "���율 관리"
       ],
       "key_result": "반도체 8대 공정 전체 및 장비 에코시스템 종합 정리, 세정·CMP·계측·패키징 5개 챕터 체계적 이해 완성",
       "star": "[상황] 480h 과정 수료를 앞두고 반도체 공정·장비 전 영역을 종합적으로 정리할 필요가 있는 상황에서,\n[과제] 세정·CMP·계측·FAB 공정·패키징 5개 핵심 챕터를 실무 수준으로 종합 정리하는 것을 목표로,\n[행동] 세정(Wet/Dry Cleaning, SC1/SC2) 공정, CMP 메커니즘과 Slurry 특성, 계측(OES/SEM/AFM/ADE) 장비별 측정 원리, FAB 공정 통합 흐름, 패키징(Wire Bonding/Flip Chip/3D IC) 기술을 5개 챕터로 체계적으로 정리했습니다.\n[결과] 480h 과정 종합 역량 완성, 반도체 공정 장비 엔지니어 필수 지식 전 영역 체계화 달성했습니다.",
@@ -414,12 +414,7 @@
       "title": "반도체 제조공정 및 장비 실무자 양성과정 공정실습 (16h)",
       "date": "2025-04-03",
       "category": "📚 교육·학습",
-      "tech_stack": [
-        "반도체 공정",
-        "장비 운용",
-        "Wet Process",
-        "Clean Room"
-      ],
+      "tech_stack": [],
       "key_result": "16시간 공정실습 수료 (수원대학교), 반도체 8대 공정 현장 실습 완료",
       "star": "[상황] 반도체 제조공정 이론 교육(168h) 이수 후 실제 공정 장비를 직접 다루는 현장 실습이 필요한 상황에서,\n[과제] 수원대학교에서 반도체 공정 장비를 직접 조작하고 현장 감각을 익히는 것을 목표로,\n[행동] 16시간 공정 실습에서 실제 반도체 공정 라인에서 사용되는 장비를 직접 운용하며 Wet Process, 세정 공정 등 실무 절차를 체험했습니다.\n[결과] 이론 지식과 현장 실습을 연결하여 반도체 공정 흐름에 대한 실무적 이해를 심화했습니다.",
       "status": "✅ 완료"
@@ -471,7 +466,7 @@
         "SW 엔지니어링",
         "자동화"
       ],
-      "key_result": "480시간 수료 (한국전자산업협동조합), 공정 장비 제어 SW 설계 역량 확보",
+      "key_result": null,
       "star": "[상황] 공정 장비 제어 소프트웨어 개발 역량이 반도체 엔지니어에게 핵심 경쟁력으로 요구되는 상황에서,\n[과제] 반도체 공정 장비 제어 시스템 SW 설계 역량을 480시간 집중 교육으로 확보하는 것을 목표로,\n[행동] C# 기반 장비 제어 프로그래밍, PLC 제어 로직, 자동화 시스템 설계 등을 한국전자산업협동조합에서 집중 이수했습니다.\n[결과] 공정 장비 제어 SW 개발 역량 확보, 하드웨어-소프트웨어 통합 관점의 장비 엔지니어링 이해도 향상했습니다.",
       "status": "✅ 완료"
     },
@@ -488,7 +483,7 @@
         "Lithography",
         "Etching"
       ],
-      "key_result": "168시간 수료 (더인에듀), 반도체 8대 공정 및 장비 실무 이론 체계 확보",
+      "key_result": "168시간 수료 (더인에듀), 반도체 8대 공정 및 장비 실무 이론 ���계 확보",
       "star": "[상황] 반도체 제조 현장 실무 역량 강화를 위해 체계적인 공정 교육이 필요한 상황에서,\n[과제] 반도체 8대 공정 전반의 원리·장비·불량 메커니즘을 실무 수준으로 학습하는 것을 목표로,\n[행동] 더인에듀에서 168시간 집중 교육을 이수하며 CVD·PVD·Lithography·Etching·CMP·Doping·Cleaning·Metrology 각 공정의 장비 구조와 공정 파라미터를 체계적으로 학습했습니다.\n[결과] 반도체 제조 공정 전 과정에 대한 실무 이론 체계 확보, 공정 엔지니어 직무에 즉시 활용 가능한 지식 기반 구축했습니다.",
       "status": "✅ 완료"
     },
@@ -570,7 +565,7 @@
         "90nm"
       ],
       "key_result": "CL=10pF 부하 조건 2-Stage OP-AMP 설계 및 Power·Performance·Area 트레이드오프 분석",
-      "star": "[상황] 고집적 Analog IC에서 부하 커패시턴스 조건에 따른 OP-AMP 성능 최적화가 필요한 상황에서,\n[과제] gpdk090(90nm, VDD=1.2V) 공정에서 CL=10pF 조건 2-Stage OP-AMP를 설계하고 PPA 분석을 수행하는 것을 목표로,\n[행동] Cadence Virtuoso로 2단 증폭기 회로를 설계하고, Gain·Phase Margin·Slew Rate 등 주요 성능 지표를 시뮬레이션하며, Power·Performance·Area 트레이드오프를 분석했습니다.\n[결과] 목표 스펙(Gain, Phase Margin) 만족 OP-AMP 설계 완료, PPA 분석을 통해 공정 설계 최적화 사고방식을 습득했습니다.",
+      "star": "[상황] 고집적 Analog IC에서 부하 커패시턴스 조건에 따른 OP-AMP 성능 최적��가 필요한 상황에서,\n[과제] gpdk090(90nm, VDD=1.2V) 공정에서 CL=10pF 조건 2-Stage OP-AMP를 설계하고 PPA 분석을 수행하는 것을 목표로,\n[행동] Cadence Virtuoso로 2단 증폭기 회로를 설계하고, Gain·Phase Margin·Slew Rate 등 주요 성능 지표를 시뮬레이션하며, Power·Performance·Area 트레이드오프를 분석했습니다.\n[결과] 목표 스펙(Gain, Phase Margin) 만족 OP-AMP 설계 완료, PPA 분석을 통해 공정 설계 최적화 사고방식을 습득했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -586,7 +581,7 @@
         "90nm"
       ],
       "key_result": "90nm gpdk 공정에서 외부 환경 변화에 안정적인 고속 2-Stage Comparator 설계 완료",
-      "star": "[상황] SKKU 아카데미에서 Analog IC 설계 역량을 실습 기반으로 확보해야 하는 상황에서,\n[과제] gpdk090(90nm, VDD=1.2V) 공정에서 외부 환경 변화에도 안정적인 고속 동작 2-Stage Comparator 설계를 목표로,\n[행동] Cadence Virtuoso에서 소자 파라미터를 설정하고 SPICE 시뮬레이션으로 동작 특성을 반복 검증하며, 오프셋 전압·전파 지연 등 핵심 성능 지표를 최적화했습니다.\n[결과] 목표 스펙을 만족하는 2-Stage Comparator 설계 완료, Analog IC 설계 프로세스 전 과정 습득했습니다.",
+      "star": "[상황] SKKU 아카데미에서 Analog IC 설계 역량을 실습 기반으로 확보해야 하는 상황에서,\n[과제] gpdk090(90nm, VDD=1.2V) 공정에서 외부 환경 변화에도 안정적인 고속 동작 2-Stage Comparator 설계를 목표로,\n[행동] Cadence Virtuoso에서 소자 파라미터를 설정하고 SPICE 시뮬레이션으로 동작 특성을 반복 검증하며, 오프셋 전압·전파 지연 등 핵심 성능 지표를 최적화했습니다.\n[결과] 목표 스펙을 만족하는 2-Stage Comparator 설계 완료, Analog IC 설�� 프로세스 전 과정 습득했습니다.",
       "status": "✅ 완료"
     },
     {
