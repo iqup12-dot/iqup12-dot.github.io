@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02",
+  "updated_at": "2026-07-03",
   "projects": [
     {
       "id": "37aa6f1b-235e-8146-a429-fc5717ee7919",
@@ -330,7 +330,7 @@
         "Leak Test"
       ],
       "key_result": "MKS C/P/G 시리즈 MFC 구조·제어 원리 이해, 진공펌프 4종(Rotary/Dry/Booster/Turbo/Cryo) 작동 메커니즘 비교, Pirani·Baratron·이온 게이지 측정 원리 습득",
-      "star": "[상황] 반도체 공정 장비의 핵심 구성품인 진공·가스 제어 시스템에 대한 실무 이해가 필요한 상황에서,\n[과제] MFC부터 진공펌프·게이지·밸브까지 공정 장비 유틸리티 전반을 체계적으로 학습하는 것을 목표로,\n[행동] MKS C/P/G 시리즈 MFC 구조·교정 방법, 열전달(전도/대류/복사·Fourier 법칙) 기초, 진공펌프 4종 메커니즘, Leak Test(Probe/Sniffer) 방법, 압력 게이지(Pirani/Baratron/이온) 원리, Gate/Check/Throttle/APC Valve 종류와 역할을 집중 학습했습니다.\n[결과] 공정 장비 진공·가스 유틸리티 전반 이해, 공정 챔버 압력 제어 메커니즘 분석 역량 확보했습니다.",
+      "star": "[상황] 반도체 공정 장비의 핵심 구성품인 진공·가스 제어 시스템에 대한 실무 이해가 필요한 상황에서,\n[과제] MFC부터 진공펌프·게이지·밸브까지 공정 장비 유틸리티 전반을 체계적으로 학습하는 것을 목표로,\n[행동] MKS C/P/G 시리즈 MFC 구조·교정 방법, 열전달(전도/대류/복사·Fourier 법칙) 기초, 진공펌프 4종 메커니즘, Leak Test(Probe/Sniffer) 방법, 압력 게이지(Pirani/Baratron/이온) 원리, Gate/Check/Throttle/APC Valve 종류와 역할을 집중 학습했습니다.\n[결과] 공정 장비 진공·가스 유틸리티 전반 이해, 공정 챔버 압력 제어 ���커니즘 분석 역량 확보했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -391,7 +391,7 @@
         "CAR PR"
       ],
       "key_result": "g-line~EUV 전 세대 PR 특성 이해, EUV LPP 광원·Mo/Si 다층막 반사경 구조 학습, Overlay 오차 분석 기법 습득",
-      "star": "[상황] 480h 반도체 공정장비 과정에서 Lithography 공정의 장비·소재·해상도 향상 기술에 대한 심층 학습이 필요한 상황에서,\n[과제] ASML EUV 장비 구조와 TEL Track 장비 동작 원리를 실무 수준으로 이해하는 것을 목표로,\n[행동] PR 세대별 종류(g-line/i-line/KrF/ArF/EUV·CAR) 특성, OAI/OPC/PSM 해상도 향상 기법, EUV LPP 광원·Mo/Si 다층막 반사경 구조, TEL Mark-7 Track 장비 PR Coating 파라미터, Overlay 오차 분석 방법론을 집중 학습했습니다.\n[결과] EUV 광학계 전반 이해 및 Lithography 해상도 결정 인자 분석 역량 확보, ASML·TEL 장비 엔지니어 직무 연결 가능한 기술 기반 구축했습니다.",
+      "star": "[상황] 480h 반도체 공정장비 과정에서 Lithography 공정의 ��비·소재·해상도 향상 기술에 대한 심층 학습이 필요한 상황에서,\n[과제] ASML EUV 장비 구조와 TEL Track 장비 동작 원리를 실무 수준으로 이해하는 것을 목표로,\n[행동] PR 세대별 종류(g-line/i-line/KrF/ArF/EUV·CAR) 특성, OAI/OPC/PSM 해상도 향상 기법, EUV LPP 광원·Mo/Si 다층막 반사경 구조, TEL Mark-7 Track 장비 PR Coating 파라미터, Overlay 오차 분석 방법론을 집중 학습했습니다.\n[결과] EUV 광학계 전반 이해 및 Lithography 해상도 결정 인자 분석 역량 확보, ASML·TEL 장비 엔지니어 직무 연결 가능한 기술 기반 구축했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -438,7 +438,7 @@
         "충방전 테스터"
       ],
       "key_result": "소성 공정 파라미터(승온 2.5°C/min, 유지 12h) 직접 설정·제어, 0.1C~5C Rate Capability 데이터 도출",
-      "star": "[상황] 배터리 소재 합성부터 셀 평가까지 전 공정을 직접 수행하는 환경에너지융합요소설계 수업에서,\n[과제] 양극 활물질 합성→전극 슬러리 제조→글로브 박스 내 코인셀 조립→충방전 성능 평가의 전 과정을 수행하는 것을 목표로,\n[행동] Tube Furnace로 NCM622 전구체를 소성하며 승온 속도(2.5°C/min)·유지 시간(12h)을 직접 설정하고, 활물질·도전제·바인더를 NMP 용매에 혼합·코팅한 뒤 아르곤 글로브 박스에서 코인셀을 조립하여 0.1C~5C 조건의 충방전 특성을 측정했습니다.\n[결과] 소성 온도-Ni 함량 상관관계를 실험적으로 확인, 전압(2.7V) 기반 불량 셀 판별 경험 확보, 박막 열처리 공정 장비 운용 역량을 반도체 공정과 연결하는 통찰 습득했습니다.",
+      "star": "[상황] 배터리 소재 합성부터 셀 평가까지 전 공정을 직접 수행하는 환경에너지융합요소설계 수업에서,\n[과제] 양극 활물질 합성→전극 슬러리 제조→글로브 박스 내 코인셀 조립→충방전 성능 평가의 전 과정을 수행하는 것을 목표로,\n[행동] Tube Furnace로 NCM622 전구체를 소성하며 승온 속도(2.5°C/min)·유지 시간(12h)을 직접 설정하고, 활물질·도전제·바인더를 NMP 용매에 혼��·코팅한 뒤 아르곤 글로브 박스에서 코인셀을 조립하여 0.1C~5C 조건의 충방전 특성을 측정했습니다.\n[결과] 소성 온도-Ni 함량 상관관계를 실험적으로 확인, 전압(2.7V) 기반 불량 셀 판별 경험 확보, 박막 열처리 공정 장비 운용 역량을 반도체 공정과 연결하는 통찰 습득했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -456,7 +456,7 @@
         "LVS"
       ],
       "key_result": "513시간 수료 (성균관대학교), Analog/Digital IC 풀커스텀 설계 전 과정 습득",
-      "star": "[상황] 시스템 반도체 설계 전문 역량 확보를 위해 체계적인 IC 설계 교��이 필요한 상황에서,\n[과제] Analog IC(OP-AMP, Comparator)와 Digital IC(NPU, Repeater) Full Custom 설계 전 과정을 성균관대학교 아카데미에서 습득하는 것을 목표로,\n[행동] 513시간 동안 Cadence Virtuoso 기반 회로 설계→시뮬레이션→레이아웃→DRC/LVS 검증 전 과정을 반복 실습하며, OP-AMP·Comparator·NPU·Repeater 등 다양한 회로를 직접 설계했습니다.\n[결과] Analog/Digital IC 풀커스텀 설계 역량 확보, 설계-검증-최적화 전 과정에 대한 실무 경험 축적했습니다.",
+      "star": "[상황] 시스템 반도체 설계 전문 역량 확보를 위해 체계적인 IC 설계 교육이 필요한 상황에서,\n[과제] Analog IC(OP-AMP, Comparator)와 Digital IC(NPU, Repeater) Full Custom 설계 전 과정을 성균관대학교 아카데미에서 습득하는 것을 목표로,\n[행동] 513시간 동안 Cadence Virtuoso 기반 회로 설계→시뮬레이션→레이아웃→DRC/LVS 검증 전 과정을 반복 실습하며, OP-AMP·Comparator·NPU·Repeater 등 다양한 회로를 직접 설계했습니다.\n[결과] Analog/Digital IC 풀커스텀 설계 역량 확보, 설계-검증-최적화 전 과정에 대한 실무 경험 축적했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -666,7 +666,7 @@
         "De-capsulation"
       ],
       "key_result": "삼성전자 의뢰 IC 3개 항목 전부 Acceptable, 정품 확인 판정 완료",
-      "star": "[���황] 삼성전자 의뢰로 입수된 NXP 제조 IC의 진위 여부를 공신력 있는 분석으로 증명해야 하는 상황에서,\n[과제] 외관·X-ray·디캡슐레이션 3단계 분석으로 정품 여부를 판정하는 것을 목표로,\n[행동] 디지털 현미경(KEYENCE VHX-7000, 20~400배)으로 마킹·Sanding/Blacktop 흔적·리드 재도금 흔적을 정밀 검사하고, X-ray로 내부 Die 구조·Wire bond routing을 Known Authentic 데이터와 비교한 뒤, 디캡슐레이션으로 Die 마킹을 직접 확인했습니다.\n[결과] 3개 항목 전부 Acceptable 판정, 위조 또는 위조 의심 증거 없음, 정품 확인 보고서를 완성했습니다.",
+      "star": "[상황] 삼성전자 의뢰로 입수된 NXP 제조 IC의 진위 여부를 공신력 있는 분석으로 증명해야 하는 상황에서,\n[과제] 외관·X-ray·디캡슐레이션 3단계 분석으로 정품 여부를 판정하는 것을 목표로,\n[행동] 디지털 현미경(KEYENCE VHX-7000, 20~400배)으로 마킹·Sanding/Blacktop 흔적·리드 재도금 흔적을 정밀 검사하고, X-ray로 내부 Die 구조·Wire bond routing을 Known Authentic 데이터와 비교한 뒤, 디캡슐레이션으로 Die 마킹을 직접 확인했습니다.\n[결과] 3개 항목 전부 Acceptable 판정, 위조 또는 위조 의심 증거 없음, 정품 확인 보고서를 완성했습니다.",
       "status": "✅ 완료"
     },
     {
@@ -683,7 +683,7 @@
         "De-capsulation"
       ],
       "key_result": "외관 이상 없는 전기 불량 원인을 EMMI Thermal로 위치 특정 → Crack/Metal Melt 물리적 원인 최종 확인",
-      "star": "[상황] 양산 중인 제주반도체 K12 제품에서 전기적 이상이 감지됐으나 외관상 원인 파악이 불가한 상황에서,\n[과제] 다단계 비파괴·파괴 분석으로 불량 원인을 물리적으로 특정하는 것을 목표로,\n[행동] 외관→X-ray→SAT→VI Curve→EMMI(Photon/Thermal)→디캡슐레이션 6단계 분석을 순차 수행하여, VI Curve에서 Short curve를 검출하고 EMMI Thermal로 불량 위치 좌표를 특정했습니다.\n[결과] 디캡슐레이션에서 Crack 및 Metal Melt 물리적 손상을 최종 확인, 단순 전기 불량이 아닌 소자 내부 물리적 손상으로 원인 특정하여 재발 방지 근거를 마련했습니다.",
+      "star": "[상황] 양산 중인 제주반도체 K12 제품에서 전기적 이상이 감지됐으나 외관상 원인 파악이 불가한 상황에서,\n[과제] 다단계 비파괴·파괴 분석으로 불량 원인을 물리적으로 특정하는 것을 목표로,\n[행동] 외관→X-ray→SAT→VI Curve→EMMI(Photon/Thermal)→디캡슐레이션 6단계 분석을 순차 수행하여, VI Curve에서 Short curve를 검출하고 EMMI Thermal로 불량 위치 좌표를 특정했습니다.\n[결과] 디캡슐레이션에서 Crack 및 Metal Melt 물리��� 손상을 최종 확인, 단순 전기 불량이 아닌 소자 내부 물리적 손상으로 원인 특정하여 재발 방지 근거를 마련했습니다.",
       "status": "✅ 완료"
     },
     {
