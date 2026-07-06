@@ -1,0 +1,334 @@
+{
+ "nodes": [
+  {
+   "id": "__doe__",
+   "title": "내 연구 DOE — Sn-58Bi + 첨가제 IMC",
+   "cluster": "DOE",
+   "relevance": "core",
+   "year": 2026,
+   "authors": "이윤태",
+   "journal": "중앙대 유연소자 및 금속소재 랩"
+  },
+  {
+   "id": "Chang_2020_PhaseEngineering_HEA_review",
+   "title": "Phase Engineering of High-Entropy Alloys",
+   "authors": "Xuejiao Chang, Mengqi Zeng, Keli Liu, Lei Fu",
+   "year": "2020",
+   "journal": "Adv. Mater. 32, 1907226",
+   "cluster": "HEA",
+   "relevance": "low",
+   "doe_linked": true
+  },
+  {
+   "id": "Chen_2024_InSnBiZnAg_HEA_solder",
+   "title": "An innovative high-entropy alloy solder for high-reliability low-temperature bonding in 3D electronic packaging–based on nano InSnBiZnAg particles",
+   "authors": "Yini Chen, Jintao Wang, Ziwen Lv, Jianqiang Wang, Feng Tian, Luobin Zhang, Weiwei Zhang, Hongtao Chen, Mingyu Li",
+   "year": "2024",
+   "journal": "J Mater Res Technol 30:5622-5631",
+   "cluster": "HEA",
+   "relevance": "high",
+   "doe_linked": true
+  },
+  {
+   "id": "HEA_solder_review_Korean_systems",
+   "title": "고엔트로피 합금(HEA) 솔더 기반 저온 접합 기술 리뷰: 미세구조, 계면 반응, 신뢰성 및 3D 전자 패키징 응용",
+   "authors": "(저자 미상 — 국문 리뷰 원고, 저널·DOI 없음)",
+   "year": "2025",
+   "journal": "(미상 — 원고/프리프린트)",
+   "cluster": "HEA",
+   "relevance": "high",
+   "doe_linked": true
+  },
+  {
+   "id": "HEA_solder_review_principles_approaches",
+   "title": "High Entropy Alloy Solders: Principles, Experimental Approaches, and Future Perspectives — A Review",
+   "authors": "(저자 미상 — APA 서지·Liner 출처, 저널 미상)",
+   "year": "2025",
+   "journal": "(미상)",
+   "cluster": "HEA",
+   "relevance": "high",
+   "doe_linked": true
+  },
+  {
+   "id": "Pu_2019_SnBiInZn_HEA_solder",
+   "title": "The microstructure and mechanical property of the high entropy alloy as a low temperature solder",
+   "authors": "Li Pu, Quanfeng He, Yong Yang, Xiuchen Zhao, Zhuangzhuang Hou, K. N. Tu, Yingxia Liu",
+   "year": "2019",
+   "journal": "2019 IEEE 69th ECTC, pp.1716-1721",
+   "cluster": "HEA",
+   "relevance": "mid",
+   "doe_linked": true
+  },
+  {
+   "id": "Jhan_2022_CuCu_nanocrystalline",
+   "title": "Electrodeposition of nanocrystalline Cu for Cu-Cu direct bonding",
+   "authors": "Jhih-Jhu Jhan, Kazutoshi Wataya, Hiroshi Nishikawa, Chih-Ming Chen",
+   "year": "2022",
+   "journal": "",
+   "cluster": "기타",
+   "relevance": "low",
+   "doe_linked": true
+  },
+  {
+   "id": "Chen_2025_laser_SOIC_FPCB",
+   "title": "Study on microstructure and properties of Cu-based SOIC component/flexible printed circuit board laser soldering joint",
+   "authors": "Wen-gang Chen, Jia-wei Yang, Fei Teng, Qi-yuan Chen, Peng-cheng Huan, Chen-shuo Cui, Xiao-nan Wang",
+   "year": "2025",
+   "journal": "Materials Letters 397, 138817",
+   "cluster": "저온솔더",
+   "relevance": "low",
+   "doe_linked": true
+  },
+  {
+   "id": "Lee_2025_SnBi_MXene_Ti3C2Tx",
+   "title": "MXene 입자가 첨가된 Sn-58Bi 나노 복합 솔더 재료의 기계적 특성에 관한 연구",
+   "authors": "이재정, 우윤성",
+   "year": "2025",
+   "journal": "J. Microelectron. Packag. Soc., 32(3), 66-75",
+   "cluster": "저온솔더",
+   "relevance": "high",
+   "doe_linked": true
+  },
+  {
+   "id": "Lin_2023_SnBiAg_CALPHAD",
+   "title": "How to enhance Sn-Bi low-temperature solder by alloying?",
+   "authors": "Shih-kang Lin, Chih-han Yang, Yu-chen Liu, Yuki Hirata, Hiroshi Nishikawa",
+   "year": "2023",
+   "journal": "",
+   "cluster": "저온솔더",
+   "relevance": "mid",
+   "doe_linked": true
+  },
+  {
+   "id": "Ren_2025_SnBiAg_SAC_hybrid_EM",
+   "title": "Electromigration-induced failure mode of low-temperature Sn-49Bi-1Ag hybrid BGA joint in flip chip package",
+   "authors": "J. Ren, F.F. Huang, A.J. Li, M.L. Huang",
+   "year": "2025",
+   "journal": "J. Materials Research and Technology 36, 9673–9677",
+   "cluster": "저온솔더",
+   "relevance": "mid",
+   "doe_linked": true
+  },
+  {
+   "id": "Said_2015_SnCuNi_SiC",
+   "title": "Effect of SiC Particles Addition on the Wettability and Intermetallic Compound Layer Formation of Sn-Cu-Ni (SN100C) Solder Paste",
+   "authors": "Rita Mohd Said, Norainiza Saud, Mohd Arif Anuar Mohd Salleh, Mohd Nazree Derman, Mohd Izrul Izwan Ramli, Norhayanti Mohd Nasir",
+   "year": "2015",
+   "journal": "Applied Mechanics and Materials, 754-755, 546-550",
+   "cluster": "저온솔더",
+   "relevance": "low",
+   "doe_linked": true
+  },
+  {
+   "id": "Singh_2025_SnBi_planar_EM_alloying",
+   "title": "Planar geometry solder joint study of alloying effects on Sn-Bi electromigration",
+   "authors": "Prabjit Singh, L. Palmer, T. Wassick, R.F. Aspandiar, B. Franco, L.A. Swaminathan, H. Fu, V. Vasudevan, A. Allen, K. Howell, K. Murayama, H. Zhang, A. Lifton, T. Munson, S. Middleton, M. Sarangapani",
+   "year": "2025",
+   "journal": "ICEP-IAAC2025 Proceedings, IBM/Intel/iNEMI 컨소시엄",
+   "cluster": "저온솔더",
+   "relevance": "mid",
+   "doe_linked": true
+  },
+  {
+   "id": "Sun_2025_SnBi_TiN",
+   "title": "Nanoparticle-modified SnBi solder: a comprehensive study on interfacial microstructure, shear strength, and wettability",
+   "authors": "Lei Sun, Xuanyu Chen, Peng He, Shuye Zhang, Minghe Chen",
+   "year": "2025",
+   "journal": "J Mater Sci Mater Electron 36:1346",
+   "cluster": "저온솔더",
+   "relevance": "high",
+   "doe_linked": true
+  },
+  {
+   "id": "Yao_2024_Sn_orientation_MTTF",
+   "title": "Influence of Sn grain orientation on mean-time-to-failure equation for microbumps in 3D IC technology",
+   "authors": "Yifan Yao, A.M. Gusak, Chih Chen, Yingxia Liu, K.N. Tu",
+   "year": "2024",
+   "journal": "Scripta Materialia 250, 116175",
+   "cluster": "저온솔더",
+   "relevance": "low",
+   "doe_linked": true
+  }
+ ],
+ "links": [
+  {
+   "source": "Chang_2020_PhaseEngineering_HEA_review",
+   "target": "__doe__",
+   "kind": "doe",
+   "weight": 3
+  },
+  {
+   "source": "Chen_2024_InSnBiZnAg_HEA_solder",
+   "target": "__doe__",
+   "kind": "doe",
+   "weight": 3
+  },
+  {
+   "source": "HEA_solder_review_Korean_systems",
+   "target": "__doe__",
+   "kind": "doe",
+   "weight": 3
+  },
+  {
+   "source": "HEA_solder_review_principles_approaches",
+   "target": "__doe__",
+   "kind": "doe",
+   "weight": 3
+  },
+  {
+   "source": "Pu_2019_SnBiInZn_HEA_solder",
+   "target": "__doe__",
+   "kind": "doe",
+   "weight": 3
+  },
+  {
+   "source": "Jhan_2022_CuCu_nanocrystalline",
+   "target": "__doe__",
+   "kind": "doe",
+   "weight": 3
+  },
+  {
+   "source": "Chen_2025_laser_SOIC_FPCB",
+   "target": "__doe__",
+   "kind": "doe",
+   "weight": 3
+  },
+  {
+   "source": "Lee_2025_SnBi_MXene_Ti3C2Tx",
+   "target": "__doe__",
+   "kind": "doe",
+   "weight": 3
+  },
+  {
+   "source": "Lin_2023_SnBiAg_CALPHAD",
+   "target": "__doe__",
+   "kind": "doe",
+   "weight": 3
+  },
+  {
+   "source": "Ren_2025_SnBiAg_SAC_hybrid_EM",
+   "target": "__doe__",
+   "kind": "doe",
+   "weight": 3
+  },
+  {
+   "source": "Said_2015_SnCuNi_SiC",
+   "target": "__doe__",
+   "kind": "doe",
+   "weight": 3
+  },
+  {
+   "source": "Singh_2025_SnBi_planar_EM_alloying",
+   "target": "__doe__",
+   "kind": "doe",
+   "weight": 3
+  },
+  {
+   "source": "Sun_2025_SnBi_TiN",
+   "target": "__doe__",
+   "kind": "doe",
+   "weight": 3
+  },
+  {
+   "source": "Yao_2024_Sn_orientation_MTTF",
+   "target": "__doe__",
+   "kind": "doe",
+   "weight": 3
+  },
+  {
+   "source": "Chang_2020_PhaseEngineering_HEA_review",
+   "target": "Chen_2024_InSnBiZnAg_HEA_solder",
+   "kind": "kw",
+   "weight": 2,
+   "shared": [
+    "hea",
+    "sluggish diffusion"
+   ]
+  },
+  {
+   "source": "Chen_2024_InSnBiZnAg_HEA_solder",
+   "target": "HEA_solder_review_Korean_systems",
+   "kind": "kw",
+   "weight": 3,
+   "shared": [
+    "imc",
+    "insnbiznag",
+    "sluggish diffusion"
+   ]
+  },
+  {
+   "source": "Chen_2024_InSnBiZnAg_HEA_solder",
+   "target": "Pu_2019_SnBiInZn_HEA_solder",
+   "kind": "kw",
+   "weight": 3,
+   "shared": [
+    "hea",
+    "imc",
+    "low-temperature solder"
+   ]
+  },
+  {
+   "source": "Chen_2024_InSnBiZnAg_HEA_solder",
+   "target": "Sun_2025_SnBi_TiN",
+   "kind": "kw",
+   "weight": 2,
+   "shared": [
+    "imc",
+    "nanoparticle"
+   ]
+  },
+  {
+   "source": "HEA_solder_review_Korean_systems",
+   "target": "HEA_solder_review_principles_approaches",
+   "kind": "kw",
+   "weight": 4,
+   "shared": [
+    "electromigration gap",
+    "hea solder",
+    "sluggish diffusion",
+    "snbiinzn"
+   ]
+  },
+  {
+   "source": "HEA_solder_review_Korean_systems",
+   "target": "Pu_2019_SnBiInZn_HEA_solder",
+   "kind": "kw",
+   "weight": 2,
+   "shared": [
+    "imc",
+    "snbiinzn"
+   ]
+  },
+  {
+   "source": "Pu_2019_SnBiInZn_HEA_solder",
+   "target": "Said_2015_SnCuNi_SiC",
+   "kind": "kw",
+   "weight": 2,
+   "shared": [
+    "cu6sn5",
+    "imc"
+   ]
+  },
+  {
+   "source": "Pu_2019_SnBiInZn_HEA_solder",
+   "target": "Sun_2025_SnBi_TiN",
+   "kind": "kw",
+   "weight": 3,
+   "shared": [
+    "cu6sn5",
+    "imc",
+    "shear"
+   ]
+  },
+  {
+   "source": "Said_2015_SnCuNi_SiC",
+   "target": "Sun_2025_SnBi_TiN",
+   "kind": "kw",
+   "weight": 2,
+   "shared": [
+    "cu6sn5",
+    "imc"
+   ]
+  }
+ ]
+}

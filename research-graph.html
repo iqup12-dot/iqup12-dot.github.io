@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paper Network | YUNTAE LEE</title>
+<style>
+  :root{
+    --bg:#fefefe; --text-1:#0f172a; --text-3:#475569;
+    --border:#ece8db; --accent:#0ea5e9;
+  }
+  html,body{margin:0;height:100%;background:var(--bg);
+    font-family:'Pretendard','Apple SD Gothic Neo',sans-serif;color:var(--text-1)}
+  #chart{width:100%;height:100%;cursor:grab}
+  #chart:active{cursor:grabbing}
+  .panel{
+    position:fixed;top:14px;left:14px;background:rgba(254,254,254,.92);
+    border:1px solid var(--border);border-radius:10px;padding:.8rem 1rem;
+    font-size:.78rem;line-height:1.9;box-shadow:0 1px 3px rgba(0,0,0,.08);
+    backdrop-filter:blur(4px);max-width:230px;
+  }
+  .panel h1{font-size:1.05rem;margin:0 0 .3rem;font-weight:700}
+  .panel .sub{color:var(--text-3);line-height:1.5;margin-bottom:.5rem}
+  .lg{display:flex;align-items:center;gap:.45rem}
+  .lg .dot{width:10px;height:10px;border-radius:50%;flex:none}
+  #tip{
+    position:fixed;pointer-events:none;opacity:0;transition:opacity .12s;
+    background:#0f172a;color:#f8fafc;padding:.55rem .75rem;border-radius:8px;
+    font-size:.78rem;line-height:1.5;max-width:300px;z-index:10;
+  }
+  #tip .t{font-weight:700}
+  #tip .m{color:#94a3b8}
+  .node text{font-size:9.5px;fill:var(--text-3);pointer-events:none}
+</style>
+</head>
+<body>
+<div class="panel">
+  <h1>연구 문헌 그래프</h1>
+  <p class="sub">정밀독해 논문 연결망 · 실선 = 내 DOE와 직결 · 점선 = 키워드 공유. 드래그·휠 줌 가능.</p>
+  <div class="lg"><span class="dot" style="background:#ef4444"></span>내 연구 DOE</div>
+  <div class="lg"><span class="dot" style="background:#0ea5e9"></span>저온솔더 (Sn-58Bi)</div>
+  <div class="lg"><span class="dot" style="background:#8b5cf6"></span>HEA 솔더</div>
+  <div class="lg"><span class="dot" style="background:#f59e0b"></span>EMI 차폐</div>
+  <div class="lg"><span class="dot" style="background:#64748b"></span>기타</div>
+</div>
+<svg id="chart"></svg>
+<div id="tip"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script>
+const COLOR = { 'DOE':'#ef4444','저온솔더':'#0ea5e9','HEA':'#8b5cf6','EMI차폐':'#f59e0b','기타':'#64748b' };
+const R = { core:18, high:11, medium:8.5, low:6.5 };
+
+function label(n){
+  if (n.cluster === 'DOE') return '★ 내 DOE';
+  let first = String(n.authors||'').split(',')[0].trim().split(' ')[0];
+  if (!first || first.startsWith('(')) first = n.id.split('_')[0]; // 저자 미상 → 파일명 첫 토큰
+  return `${first} ${n.year||''}`.trim();
+}
+
+fetch('data/papers.json').then(r=>r.json()).then(({nodes,links})=>{
+  const svg = d3.select('#chart');
+  const W = innerWidth, H = innerHeight;
+  svg.attr('viewBox',[0,0,W,H]);
+  const root = svg.append('g');
+
+  svg.call(d3.zoom().scaleExtent([.35,3]).on('zoom', e=>root.attr('transform',e.transform)));
+
+  const sim = d3.forceSimulation(nodes)
+    .force('link', d3.forceLink(links).id(d=>d.id)
+      .distance(d=>d.kind==='doe'?120:90).strength(d=>d.kind==='doe'?.5:.3))
+    .force('charge', d3.forceManyBody().strength(-320))
+    .force('center', d3.forceCenter(W/2, H/2))
+    .force('collide', d3.forceCollide(d=>(R[d.relevance]||8)+14));
+
+  const link = root.append('g').selectAll('line').data(links).join('line')
+    .attr('stroke', d=>d.kind==='doe' ? '#f87171' : '#cbd5e1')
+    .attr('stroke-width', d=>d.kind==='doe' ? 1.6 : Math.min(d.weight,4))
+    .attr('stroke-dasharray', d=>d.kind==='kw' ? '4 3' : null)
+    .attr('stroke-opacity', .65);
+
+  const tip = document.getElementById('tip');
+  const node = root.append('g').selectAll('g').data(nodes).join('g').attr('class','node')
+    .call(d3.drag()
+      .on('start',(e,d)=>{ if(!e.active) sim.alphaTarget(.25).restart(); d.fx=d.x; d.fy=d.y; })
+      .on('drag', (e,d)=>{ d.fx=e.x; d.fy=e.y; })
+      .on('end',  (e,d)=>{ if(!e.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }));
+
+  node.append('circle')
+    .attr('r', d=>R[d.relevance]||8)
+    .attr('fill', d=>COLOR[d.cluster]||'#64748b')
+    .attr('stroke','#fff').attr('stroke-width',1.5)
+    .on('mousemove',(e,d)=>{
+      tip.innerHTML = `<div class="t">${d.title}</div>
+        <div class="m">${[d.authors,d.year,d.journal].filter(Boolean).join(' · ')}</div>`;
+      tip.style.opacity = 1;
+      tip.style.left = Math.min(e.clientX+14, innerWidth-320)+'px';
+      tip.style.top  = (e.clientY+14)+'px';
+    })
+    .on('mouseleave',()=>tip.style.opacity=0);
+
+  node.append('text')
+    .attr('dy', d=>(R[d.relevance]||8)+11)
+    .attr('text-anchor','middle')
+    .text(label);
+
+  sim.on('tick',()=>{
+    link.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y)
+        .attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);
+    node.attr('transform',d=>`translate(${d.x},${d.y})`);
+  });
+}).catch(()=>{
+  document.querySelector('.panel .sub').textContent =
+    'data/papers.json을 불러올 수 없습니다. tools/build_papers.py를 실행해 주세요.';
+});
+</script>
+</body>
+</html>

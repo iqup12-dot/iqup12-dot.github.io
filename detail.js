@@ -12,14 +12,16 @@ const CAT_COLORS = {
 
 async function loadDetail() {
   const params = new URLSearchParams(window.location.search);
+  const id     = params.get('id');
   const idx    = parseInt(params.get('idx'), 10);
   const el     = document.getElementById('detail-content');
+  if (!el) return;
 
   try {
     const res      = await fetch('data/projects.json');
     const data     = await res.json();
     const projects = data.projects || [];
-    const p        = projects[idx];
+    const p        = id ? projects.find(x => x.id === id) : projects[idx];
 
     if (!p) { el.innerHTML = '<p class="loading-msg">항목을 찾을 수 없습니다.</p>'; return; }
 
