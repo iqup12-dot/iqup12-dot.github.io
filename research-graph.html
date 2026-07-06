@@ -47,6 +47,7 @@
 <div id="tip"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="data/papers.js"></script>
 <script>
 const COLOR = { 'DOE':'#ef4444','저온솔더':'#0ea5e9','HEA':'#8b5cf6','EMI차폐':'#f59e0b','기타':'#64748b' };
 const R = { core:18, high:11, medium:8.5, low:6.5 };
@@ -58,7 +59,7 @@ function label(n){
   return `${first} ${n.year||''}`.trim();
 }
 
-fetch('data/papers.json').then(r=>r.json()).then(({nodes,links})=>{
+(({nodes,links})=>{
   const svg = d3.select('#chart');
   const W = innerWidth, H = innerHeight;
   svg.attr('viewBox',[0,0,W,H]);
@@ -109,10 +110,11 @@ fetch('data/papers.json').then(r=>r.json()).then(({nodes,links})=>{
         .attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);
     node.attr('transform',d=>`translate(${d.x},${d.y})`);
   });
-}).catch(()=>{
+})(window.PAPERS_DATA || { nodes: [], links: [] });
+if (!window.PAPERS_DATA) {
   document.querySelector('.panel .sub').textContent =
-    'data/papers.json을 불러올 수 없습니다. tools/build_papers.py를 실행해 주세요.';
-});
+    'data/papers.js가 없습니다. tools/build_papers.py를 실행해 주세요.';
+}
 </script>
 </body>
 </html>

@@ -10,7 +10,7 @@ const CAT_COLORS = {
   '📚 학습':           { bg: 'rgba(148,163,184,.12)', color: '#475569' },
 };
 
-async function loadDetail() {
+function loadDetail() {
   const params = new URLSearchParams(window.location.search);
   const id     = params.get('id');
   const idx    = parseInt(params.get('idx'), 10);
@@ -18,8 +18,7 @@ async function loadDetail() {
   if (!el) return;
 
   try {
-    const res      = await fetch('data/projects.json');
-    const data     = await res.json();
+    const data     = window.PROJECTS_DATA || {};
     const projects = data.projects || [];
     const p        = id ? projects.find(x => x.id === id) : projects[idx];
 

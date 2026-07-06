@@ -1,4 +1,4 @@
-{
+window.PAPERS_DATA = {
  "nodes": [
   {
    "id": "__doe__",
@@ -331,4 +331,4 @@
    ]
   }
  ]
-}
+};

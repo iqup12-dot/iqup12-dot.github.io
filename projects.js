@@ -21,27 +21,19 @@ function esc(s) {
     ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
 }
 
-async function load() {
-  try {
-    const res  = await fetch('data/projects.json');
-    const data = await res.json();
-    allProjects = data.projects || [];
-    updateCounts();
-    render();
-    loadPaperCount();
-  } catch {
+function load() {
+  const data = window.PROJECTS_DATA;
+  if (!data) {
     document.getElementById('projects-grid').innerHTML =
-      '<p class="loading-msg">데이터를 불러올 수 없습니다.</p>';
+      '<p class="loading-msg">데이터를 불러올 수 없습니다 (data/projects.js 누락).</p>';
+    return;
   }
-}
-
-async function loadPaperCount() {
-  try {
-    const res  = await fetch('data/papers.json');
-    const data = await res.json();
-    const el = document.getElementById('stat-papers');
-    if (el) el.textContent = (data.nodes || []).filter(n => n.id !== '__doe__').length + '편';
-  } catch { /* papers.json 없으면 통계만 생략 */ }
+  allProjects = data.projects || [];
+  updateCounts();
+  render();
+  const papers = window.PAPERS_DATA;
+  const el = document.getElementById('stat-papers');
+  if (el && papers) el.textContent = (papers.nodes || []).filter(n => n.id !== '__doe__').length + '편';
 }
 
 function updateCounts() {

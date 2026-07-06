@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Obsidian 논문정리 노트 → data/papers.json (논문 그래프 데이터) 생성.
+"""Obsidian 논문정리 노트 → data/papers.js (논문 그래프 데이터) 생성.
 
 사용: python3 tools/build_papers.py
 입력: ~/Desktop/Obsidian/연구/📑 논문정리/{클러스터}/*.md (frontmatter)
-출력: data/papers.json  { nodes: [...], links: [...] }
+출력: data/papers.js  window.PAPERS_DATA = { nodes: [...], links: [...] }
+      (script 태그 로딩 방식 — file:// 더블클릭으로 열어도 동작)
 
 공개 데이터만 추출: 서지정보(제목·저자·연도·저널)와 키워드.
 노트 본문(실험 데이터·DOE 세부)은 포함하지 않음.
@@ -13,7 +14,7 @@ import re
 from pathlib import Path
 
 VAULT = Path.home() / "Desktop/Obsidian/연구/📑 논문정리"
-OUT = Path(__file__).resolve().parent.parent / "data/papers.json"
+OUT = Path(__file__).resolve().parent.parent / "data/papers.js"
 MIN_SHARED_KEYWORDS = 2  # 키워드 엣지 최소 공유 개수
 
 def parse_frontmatter(text: str) -> dict:
@@ -77,7 +78,8 @@ def main():
                 })
 
     OUT.parent.mkdir(exist_ok=True)
-    OUT.write_text(json.dumps({"nodes": nodes, "links": links}, ensure_ascii=False, indent=1), encoding="utf-8")
+    payload = json.dumps({"nodes": nodes, "links": links}, ensure_ascii=False, indent=1)
+    OUT.write_text(f"window.PAPERS_DATA = {payload};\n", encoding="utf-8")
     print(f"nodes={len(nodes)} links={len(links)} -> {OUT}")
 
 if __name__ == "__main__":
