@@ -43,6 +43,7 @@
   --radius:       12px;
   --radius-sm:    8px;
   --panel-w:      320px;
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 html { scroll-behavior: smooth; }
@@ -812,14 +813,25 @@ section:last-of-type      { border-bottom: none; }
   grid-column: 1 / -1;
 }
 
-/* ── Reveal ── */
-.reveal {
-  opacity: 0;
-  transform: translateY(14px);
-  transition: opacity .5s ease, transform .5s ease;
-}
+/* ── Reveal — enhances an already-visible default ── */
+/* Real content ships visible: no-JS crawlers, headless renderers and
+   reduced-motion users always get the section, never a blank fade that
+   never fires. The hidden→reveal state is opt-in only once the inline
+   head script confirms JS runs (html.js) and motion is welcome. */
+.reveal { opacity: 1; transform: none; }
 
-.reveal.visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity .6s var(--ease-out-quart), transform .6s var(--ease-out-quart);
+  }
+  .js .reveal.visible { opacity: 1; transform: none; }
+
+  /* Section heading assembles top-down instead of one flat reflex */
+  .js .section-title.reveal { transition-delay: .08s; }
+  .js .section-sub.reveal   { transition-delay: .16s; }
+}
 
 .skill-card.visible,
 .act-card.visible,
