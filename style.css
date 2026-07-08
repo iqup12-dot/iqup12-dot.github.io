@@ -334,7 +334,6 @@ section:last-of-type      { border-bottom: none; }
 .research-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-top: 3px solid var(--accent);
   border-radius: var(--radius);
   padding: 1.5rem;
   display: flex;
@@ -564,7 +563,6 @@ section:last-of-type      { border-bottom: none; }
 .tl-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
   border-radius: var(--radius);
   padding: 1.25rem;
   cursor: pointer;
@@ -606,7 +604,6 @@ section:last-of-type      { border-bottom: none; }
   grid-column: 1 / -1;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-top: 3px solid #fb923c;
   border-radius: var(--radius);
   padding: 1.5rem;
 }
@@ -829,8 +826,7 @@ section:last-of-type      { border-bottom: none; }
   .js .reveal.visible { opacity: 1; transform: none; }
 
   /* Section heading assembles top-down instead of one flat reflex */
-  .js .section-title.reveal { transition-delay: .08s; }
-  .js .section-sub.reveal   { transition-delay: .16s; }
+  .js .section-sub.reveal { transition-delay: .08s; }
 }
 
 .skill-card.visible,
@@ -912,9 +908,8 @@ section:last-of-type      { border-bottom: none; }
   font-size: .9rem;
   color: var(--text-2);
   background: var(--accent-bg);
-  border-left: 3px solid var(--accent);
   padding: .875rem 1.125rem;
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  border-radius: var(--radius-sm);
   line-height: 1.65;
 }
 
@@ -1269,9 +1264,8 @@ section:last-of-type      { border-bottom: none; }
   font-size: .8rem;
   color: var(--text-2);
   background: var(--accent-bg);
-  border-left: 3px solid var(--accent);
   padding: .6rem .875rem;
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  border-radius: var(--radius-sm);
   line-height: 1.6;
 }
 
