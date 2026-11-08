@@ -1,342 +1,270 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="이윤태 (YUNTAE LEE) — 나노소재공학 학사, 반도체 소재/공정 엔지니어 지망">
-  <title>YUNTAE LEE | Portfolio</title>
-  <script>document.documentElement.classList.add('js');</script>
-  <link rel="stylesheet" href="../style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="이윤태 — 솔더 재료개발 엔지니어. 중앙대학교 나노소재공학 학사.">
+<title>이윤태 | Yuntae Lee</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root {
+  --bg: #faf9f6;
+  --text: #1f1e1c;
+  --muted: #6b6862;
+  --faint: #a19d95;
+  --rule: #e4e1da;
+  --accent: #9a4a2c;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #191817; --text: #e9e6df; --muted: #a29e96; --faint: #6f6b64; --rule: #2f2d2a; --accent: #d08a6a; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  word-break: keep-all;
+}
+a { color: inherit; text-decoration: underline; text-decoration-color: var(--faint); text-underline-offset: 3px; }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 96px 24px 72px; }
+
+header h1 { font-size: 30px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.3; }
+header h1 span { font-weight: 400; color: var(--faint); font-size: 18px; margin-left: 10px; letter-spacing: 0; }
+header .role { margin-top: 6px; color: var(--muted); }
+header .intro { margin-top: 32px; max-width: 600px; }
+header .intro p + p { margin-top: 14px; }
+header nav { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: 14px; color: var(--muted); }
+header nav a { text-decoration: none; }
+
+section { margin-top: 80px; }
+h2 {
+  font-size: 13px; font-weight: 600; letter-spacing: 0.08em;
+  color: var(--muted); padding-bottom: 12px; border-bottom: 1px solid var(--rule); margin-bottom: 8px;
+}
+
+.entry { display: grid; grid-template-columns: 136px 1fr; gap: 24px; padding: 24px 0; border-bottom: 1px solid var(--rule); }
+.entry:last-child { border-bottom: 0; }
+.when { font-size: 14px; color: var(--faint); font-variant-numeric: tabular-nums; padding-top: 2px; }
+.entry h3 { font-size: 17px; font-weight: 600; line-height: 1.5; }
+.entry .org { color: var(--muted); font-size: 15px; }
+.entry p, .entry ul { margin-top: 10px; font-size: 15px; }
+.entry ul { list-style: none; }
+.entry li { position: relative; padding-left: 14px; }
+.entry li + li { margin-top: 4px; }
+.entry li::before { content: ""; position: absolute; left: 0; top: 0.85em; width: 5px; height: 1px; background: var(--faint); }
+.entry .meta { margin-top: 10px; font-size: 13px; color: var(--faint); }
+.note { font-size: 13px; color: var(--faint); }
+
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+td { padding: 12px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+td:first-child { color: var(--muted); width: 160px; padding-right: 24px; }
+td.num { text-align: right; color: var(--faint); font-variant-numeric: tabular-nums; white-space: nowrap; padding-left: 16px; }
+
+footer { margin-top: 96px; padding-top: 20px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--faint); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+@media (max-width: 600px) {
+  .wrap { padding: 56px 16px 48px; }
+  header h1 { font-size: 26px; }
+  section { margin-top: 56px; }
+  .entry { grid-template-columns: 1fr; gap: 4px; }
+  td:first-child { width: 112px; padding-right: 12px; }
+}
+</style>
 </head>
 <body>
+<div class="wrap">
 
-<div class="layout">
+<header>
+  <h1>이윤태<span>Yuntae Lee</span></h1>
+  <p class="role">솔더 재료개발 엔지니어, 엘티소재 재료개발팀</p>
+  <div class="intro">
+    <p>나노소재공학을 전공했고, 지금은 Solder Paste용 플럭스를 배합하고 평가하는 일을 합니다. 학부연구생 때 Sn-Bi 저온솔더 접합부의 계면을 SEM과 EDS로 들여다봤고, 인턴 때는 반도체 불량을 비파괴 분석부터 단면까지 따라가며 원인을 찾았습니다.</p>
+    <p>재료를 만드는 일과 그 재료가 왜 실패하는지 확인하는 일을 함께 해 왔습니다. 측정 데이터는 Python으로 정리하고, 근거가 남는 방식으로 일하는 것을 기본으로 둡니다.</p>
+  </div>
+  <nav>
+    <a href="#work">경력</a>
+    <a href="#research">연구</a>
+    <a href="#projects">프로젝트</a>
+    <a href="#education">학력, 교육</a>
+    <a href="#other">그 밖의 경험</a>
+    <a href="#skills">역량</a>
+    <a href="mailto:iqup12@gmail.com">iqup12@gmail.com</a>
+  </nav>
+</header>
 
-  <!-- ── Left Panel ── -->
-  <aside class="panel-left">
-    <div class="panel-inner">
-      <div class="panel-top">
+<section id="work">
+  <h2>경력</h2>
 
-        <div class="pl-name-block">
-          <h1 class="pl-name-ko">이윤태</h1>
-          <p class="pl-name-en">YUNTAE LEE</p>
-          <p class="pl-school">중앙대학교 나노소재공학 졸업</p>
-          <p class="pl-role">반도체 소재/공정 엔지니어</p>
-          <p class="pl-tagline">나노소재공학 학사<br>반도체 소재·분석 실무 경험</p>
-        </div>
-
-        <nav class="pl-nav">
-          <a href="#about"         class="pl-nav-link">About</a>
-          <a href="#undergraduate" class="pl-nav-link">학부·연구</a>
-          <a href="#intern"        class="pl-nav-link">인턴</a>
-          <a href="#training"      class="pl-nav-link">직무교육</a>
-          <a href="#activities"    class="pl-nav-link">대외활동</a>
-          <a href="#skills"        class="pl-nav-link">Skills</a>
-          <a href="#contact"       class="pl-nav-link">Contact</a>
-        </nav>
-
-      </div>
-
-      <div class="panel-bottom">
-        <div class="pl-social">
-          <a href="mailto:iqup12@gmail.com" class="pl-social-link" title="Email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-          </a>
-          <a href="https://www.notion.so/YUNTAE-LEE-3eda6f1b235e83eaaaa18131c864af72" class="pl-social-link" target="_blank" rel="noopener" title="Notion">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.14c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-
+  <div class="entry">
+    <div class="when">2026.10 –</div>
+    <div>
+      <h3>재료개발팀 사원</h3>
+      <div class="org">엘티소재(주), 솔더 재료개발</div>
+      <p>국내 가전사向 Solder Paste 개발에서 플럭스를 연구실 규모로 제조하고, 페이스트를 합성해 점도, 틱소지수, 점착력, 솔더볼, 슬럼프를 직접 평가합니다. 평가 데이터를 근거로 배합 방향을 제안하고, 최종 설계는 선임이 맡습니다.</p>
+      <ul>
+        <li>플럭스 함량 3수준 스크리닝으로 점도와 점착력이 균형을 이루는 구간 확인</li>
+        <li>신규 플럭스 2종 평가: 점도는 기존 대비 약 25~30% 올라 요구 범위에 들어왔지만, 8시간 점착 유지가 부족하고 1종은 솔더볼이 다발하는 트레이드오프 확인</li>
+        <li>이 데이터를 근거로 칙소제 조절 방향을 제안했고, 개선안은 점착 기준을 30% 이상 상회하고 솔더볼 Pass, 슬럼프 개선을 확인해 출시 단계로 진행 중</li>
+        <li>세선 와이어용 플럭스 제작과 퍼짐률 평가로 레이저 솔더링 후보 선별</li>
+      </ul>
     </div>
-  </aside>
+  </div>
 
-  <!-- ── Right Content ── -->
-  <main class="panel-right">
+  <div class="entry">
+    <div class="when">2025.08 – 2025.10</div>
+    <div>
+      <h3>분석기술팀 인턴 연구원</h3>
+      <div class="org">한국나노분석랩(주)</div>
+      <ul>
+        <li>메모리 VDD-VSS short 불량 분석: X-ray, SAT 비파괴 → I-V 측정 → EMMI로 위치 특정 → Decap, Cross-section으로 Crack과 Metal melt 확인</li>
+        <li>신규 소자 22종 6단계 신뢰성 평가</li>
+        <li>대기업 반도체사 의뢰 위조 부품 정품 식별 분석(외관, 마킹, X-ray, Decapsulation)</li>
+        <li>3개월간 분석 보고서 약 20건 작성, 반복 데이터 정리와 시각화를 Python으로 자동화</li>
+      </ul>
+      <p class="meta">X-ray, SAT(C-SAM), EMMI, FE-SEM, I-V(Agilent B2911A), VHX-7000, De-layer용 RIE</p>
+    </div>
+  </div>
+</section>
 
-    <nav class="mobile-nav">
-      <span class="mobile-nav-logo">YL · 이윤태</span>
-      <div class="mobile-nav-links">
-        <a href="#about">About</a>
-        <a href="#undergraduate">학부·연구</a>
-        <a href="#intern">인턴</a>
-        <a href="#training">직무교육</a>
-        <a href="#activities">대외활동</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+<section id="research">
+  <h2>연구</h2>
 
-    <!-- About -->
-    <section id="about">
-      <h2 class="section-title reveal">분석 경험과 공정 지식으로 현장에 도전합니다</h2>
-      <div class="about-layout">
-        <div class="about-text reveal">
-          <p>나노소재공학을 전공하고 한국나노분석랩 인턴십에서 <strong>FE-SEM, XPS, SAT, VI Curve</strong>를 직접 운용한 실무 경험이 있습니다. 분석 데이터를 Python으로 자동 처리·시각화하는 파이프라인을 직접 구축했습니다.</p>
-          <p>학부연구생으로 <strong>저온 솔더 IMC 계면 분석</strong> 연구에 참여하며, 소재 미세구조와 계면 확산이 반도체 패키징 신뢰성에 미치는 영향을 실험적으로 접근했습니다.</p>
-          <p>총 <strong>1,193시간</strong>의 반도체 직무교육(공정 380h · 설비 및 장비제어 300h · 회로설계 513h)을 이수하며 공정 전반과 설비 제어 이론을 체계적으로 학습했습니다.</p>
-          <p>목표는 <strong>반도체 소재/공정 엔지니어</strong>입니다. 실험실 분석 역량과 공정 지식을 연결해 양산 현장의 문제를 데이터로 해결하는 엔지니어가 되고자 합니다.</p>
-        </div>
-        <div class="career-list reveal">
-          <div class="career-item">
-            <div class="ci-year">2025</div>
-            <div class="ci-info">
-              <p class="ci-title">분석기술팀 연구원</p>
-              <p class="ci-sub">한국나노분석랩</p>
-            </div>
-          </div>
-          <div class="career-item">
-            <div class="ci-year">2023–24</div>
-            <div class="ci-info">
-              <p class="ci-title">학부연구생</p>
-              <p class="ci-sub">중앙대학교</p>
-            </div>
-          </div>
-          <div class="career-item">
-            <div class="ci-year">2019–25</div>
-            <div class="ci-info">
-              <p class="ci-title">나노소재공학 학사</p>
-              <p class="ci-sub">중앙대학교 융합공학부</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="entry">
+    <div class="when">2024.01 – 2024.12</div>
+    <div>
+      <h3>Sn-58Bi 저온솔더 접합 계면 분석</h3>
+      <div class="org">중앙대 융합공학부 유연소자 및 금속소재 연구실, 학부연구생</div>
+      <ul>
+        <li>Cu 기판과 Sn-58Bi 솔더 접합 시편 제작, In, Ag, CNT 첨가 조건 비교</li>
+        <li>FE-SEM 단면과 EDS mapping으로 Cu-Sn IMC 두께, 형상, 조성 정량 분석(Cu6Sn5, Cu3Sn 구분)</li>
+        <li>Ag 1.5wt% 첨가 조건에서 상용 솔더 대비 파괴강도 약 15% 증가, 계면 Ag₃Sn 층을 EDS로 확인</li>
+        <li>투명전극 시료 제작: DFR lamination, photolithography 미세패턴, AgNW와 그래핀 전사</li>
+      </ul>
+    </div>
+  </div>
 
-    <!-- 학부·연구 -->
-    <section id="undergraduate">
-      <h2 class="section-title reveal">학부연구생 · 졸업연구</h2>
-      <p class="section-sub reveal">나노소재공학 전공 교과과정 · 학부 졸업연구 · 연구 관심 분야</p>
-      <div class="overview-cards reveal">
-        <div class="ov-card">
-          <span class="ov-icon">📚</span>
-          <h3>학부 교과과정</h3>
-          <p>화학기초·재료공학·나노소재·에너지소재·반도체소자·재료분석·종합설계 — 핵심 7개 과목 이수</p>
-          <a href="../ug-course.html" class="ov-more">자세히 보기 →</a>
-        </div>
-        <div class="ov-card">
-          <span class="ov-icon">🔬</span>
-          <h3>학부 연구 / 졸업논문</h3>
-          <p>TC Bonding 졸업논문 (HBM/3D IC · IEEE 20편 이상 분석) · NCM622 배터리 소재 합성 및 코인셀 제조 실습</p>
-          <a href="../ug-research.html" class="ov-more">자세히 보기 →</a>
-        </div>
-        <div class="ov-card">
-          <span class="ov-icon">⚗️</span>
-          <h3>학부연구생 연구</h3>
-          <p>저온 솔더 IMC 계면 분석 참여 (2023–2024) · HBM 패키징 신뢰성 · 반도체 소재 분석</p>
-          <a href="ug-roi.html" class="ov-more">자세히 보기 →</a>
-        </div>
-      </div>
-    </section>
+  <div class="entry">
+    <div class="when">2024.01 – 2024.12</div>
+    <div>
+      <h3>졸업논문: TC Bonding 문헌 리뷰</h3>
+      <div class="org">중앙대 융합공학부 졸업연구</div>
+      <p>IEEE, ECTC 논문 20여 편을 바탕으로 Mass Reflow와 TC Bonding을 비교하고, TC-NCF, TC-MUF, LAB 갈래별로 접합 온도, 압력, 접촉면 재질이 접합 품질과 수율에 미치는 영향을 정리했습니다.</p>
+    </div>
+  </div>
 
-    <!-- 인턴 -->
-    <section id="intern">
-      <h2 class="section-title reveal">인턴십 · 한국나노분석랩 분석기술팀</h2>
-      <p class="section-sub reveal">3개월간 분석 보고서 약 20건 작성 · 삼성전자·제주반도체 의뢰 FA 3건 · 신규 부품 22종 평가 · Python 분석 자동화 직접 개발</p>
-      <div class="overview-cards reveal">
-        <div class="ov-card">
-          <span class="ov-tag">FA · 삼성전자 의뢰</span>
-          <h3>정품/모조품 식별 분석 — NXP IC</h3>
-          <p>외관·X-ray·디캡슐레이션 3단계 분석 → 3항목 전부 Acceptable 정품 판정 완료</p>
-        </div>
-        <div class="ov-card">
-          <span class="ov-tag">FA · 제주반도체 의뢰</span>
-          <h3>불량 원인 분석 — K12</h3>
-          <p>6단계 비파괴→파괴 분석 · EMMI Thermal 위치 특정 → Crack/Metal Melt 최종 확인</p>
-        </div>
-        <div class="ov-card">
-          <span class="ov-tag">입고 평가</span>
-          <h3>신규 반도체 22종 평가</h3>
-          <p>4종 장비 직접 운용 · 6단계 평가 전 항목 적합 판정 · 부품 등록 프로세스 체계화</p>
-        </div>
-      </div>
-      <a href="../intern.html" class="section-more-btn reveal">인턴십 전체 내용 보기 →</a>
-    </section>
+  <div class="entry">
+    <div class="when">2023.03 – 2023.06</div>
+    <div>
+      <h3>NCM622 양극재 합성과 슬러리 배합</h3>
+      <div class="org">환경에너지융합요소설계(3학년 설계 수업)</div>
+      <p>NCM622를 직접 합성하고 Carbon Black, PVDF, NMP로 슬러리를 배합해 코인셀까지 제작했습니다. 분체와 유기 비히클을 섞는 구조가 지금의 솔더 페이스트 업무와 같습니다.</p>
+    </div>
+  </div>
+</section>
 
-    <!-- 직무교육 -->
-    <section id="training">
-      <h2 class="section-title reveal">총 1,193시간 반도체 교육 이수</h2>
-      <p class="section-sub reveal">공정 380h · 설비 및 장비제어 300h · 회로설계 513h · 4인 팀 XPS 분석 자동화 프로젝트</p>
-      <div class="training-overview reveal">
-        <div class="tov-card">
-          <span class="tov-hours">380h</span>
-          <h3>공정</h3>
-          <p>반도체 8대 공정 · Si Wafer 제조 · 공정실습 포함</p>
-          <div class="tov-courses">
-            <span>제조공정 이론</span>
-            <span>공정실습</span>
-          </div>
-        </div>
-        <div class="tov-card">
-          <span class="tov-hours">300h</span>
-          <h3>설비 및 장비제어</h3>
-          <p>EUV · CVD · Plasma · SECS/GEM · PLC · FAB 자동화</p>
-          <div class="tov-courses">
-            <span>장비사 교육</span>
-            <span>장비제어 SW</span>
-            <span>PLC 실습</span>
-            <span>XPS 분석 자동화</span>
-          </div>
-        </div>
-        <div class="tov-card">
-          <span class="tov-hours">513h</span>
-          <h3>회로 설계</h3>
-          <p>Analog/Digital IC Full Custom · Cadence Virtuoso · DRC/LVS</p>
-          <div class="tov-courses">
-            <span>SKKU 시스템반도체 설계</span>
-          </div>
-        </div>
-      </div>
-      <a href="../training.html" class="section-more-btn reveal">교육 상세 내용 보기 →</a>
-    </section>
+<section id="projects">
+  <h2>프로젝트</h2>
 
-    <!-- Activities -->
-    <section id="activities">
-      <h2 class="section-title reveal">대외활동 · 학내외 경험</h2>
-      <p class="section-sub reveal">동아리 운영·공연·매장 총괄까지 — 전공 외 역량을 쌓은 경험들</p>
-      <div class="act-grid reveal">
+  <div class="entry">
+    <div class="when">2025.11 – 2026.03</div>
+    <div>
+      <h3>Probe Card 패턴 분석 자동화</h3>
+      <div class="org">SKKU 첨단 시스템반도체 설계 아카데미, 3조 팀 프로젝트</div>
+      <p>프로브 패턴 이미지에서 고위험 Spot 상위 5개를 약 45초 안에 뽑아내는 도구를 팀이 만들었고, 저는 이미지 처리 파트(OpenCV, skeletonize, Circle Sweep)를 맡았습니다. 머신러닝이 아닌 고전 영상처리와 기하 연산으로 구성했습니다.</p>
+    </div>
+  </div>
 
-        <div class="act-card">
-          <div class="act-header">
-            <div>
-              <span class="act-type">아르바이트</span>
-              <h3 class="act-org">역전할머니맥주 장승배기점</h3>
-              <p class="act-role">총괄매니저</p>
-            </div>
-            <span class="act-period">2022.04 – 2023.12</span>
-          </div>
-          <ul class="act-list">
-            <li>매장 운영 전반 총괄 — 매출 분석·식자재 발주·인력 스케줄 관리</li>
-            <li>운영 프로세스 효율화로 인건비 <strong>20% 절감</strong> 달성</li>
-            <li>적극적 고객 관리로 전년 대비 매출 <strong>10% 증대</strong></li>
-            <li>배달의민족 별점 4.9점 유지 · 본사 <strong>우수 점포 수상</strong> (2022년 하반기)</li>
-          </ul>
-          <a href="../act-work.html" class="act-more">자세히 보기 →</a>
-        </div>
+  <div class="entry">
+    <div class="when">2025.11 – 2026.03</div>
+    <div>
+      <h3>gpdk090 Design Rule Book, Systolic Array NPU Full Custom</h3>
+      <div class="org">SKKU 첨단 시스템반도체 설계 아카데미, 3조 팀 프로젝트</div>
+      <p>Nwell, Salicide, Poly 룰을 값과 물리적 근거(기생소자, Latch-up, 공정 산포 마진)로 정리한 룰북을 만들고, 6T SRAM과 ALU를 포함한 NPU를 schematic부터 layout까지 Cadence Virtuoso로 설계해 DRC, LVS로 검증했습니다.</p>
+    </div>
+  </div>
 
-        <div class="act-card">
-          <div class="act-header">
-            <div>
-              <span class="act-type">학술동아리</span>
-              <h3 class="act-org">중앙대학교 학술동아리 CABON</h3>
-              <p class="act-role">조장</p>
-            </div>
-            <span class="act-period">2023.03 – 2023.12</span>
-          </div>
-          <ul class="act-list">
-            <li>반도체·이차전지 분야 최신 논문 기반 스터디 운영 및 조장 역할</li>
-            <li>HBM / TSV 관련 논문 분석 — 고대역폭 메모리·패키징 기술 심화 학습</li>
-            <li>학기말 교수 앞 연구 발표 및 Q&A 준비</li>
-          </ul>
-          <a href="../act-cabon.html" class="act-more">자세히 보기 →</a>
-        </div>
+  <div class="entry">
+    <div class="when">2025.05 – 2025.07</div>
+    <div>
+      <h3>XPS 데이터 peak deconvolution 자동화</h3>
+      <div class="org">반도체 공정장비 및 제어시스템 SW 과정, 4인 팀 프로젝트</div>
+      <p>XPS raw data를 받아 peak deconvolution으로 원소 조성비를 산출하는 프로그램입니다. 연산은 Python, UI는 C#으로 구성했습니다.</p>
+    </div>
+  </div>
 
-        <div class="act-card">
-          <div class="act-header">
-            <div>
-              <span class="act-type">밴드동아리</span>
-              <h3 class="act-org">중앙대학교 밴드동아리 음융</h3>
-              <p class="act-role">부원 · 보컬 / 리드기타</p>
-            </div>
-            <span class="act-period">2019.03 – 2019.12</span>
-          </div>
-          <ul class="act-list">
-            <li>교내 축제 메인 무대 및 소극장 공연 다수 참여</li>
-            <li>셋리스트 구성·리허설 등 공연 총괄 기획·진행 주도</li>
-            <li>팀 협업 및 자기주도적 연습 환경 조성</li>
-          </ul>
-          <a href="../act-music.html" class="act-more">자세히 보기 →</a>
-        </div>
+  <div class="entry">
+    <div class="when">2026 –</div>
+    <div>
+      <h3>개인 지식 위키</h3>
+      <div class="org">Obsidian, Claude Code</div>
+      <p>공부한 내용과 업무 기록을 위키링크와 Dataview로 엮어 두는 개인 위키를 직접 구성하고 운영합니다.</p>
+    </div>
+  </div>
+</section>
 
-      </div>
-    </section>
+<section id="education">
+  <h2>학력, 교육</h2>
+  <table>
+    <tr><td>2019 – 2025</td><td>중앙대학교 나노소재공학 학사 졸업<br><span class="note">전체 3.44 / 4.5, 전공 3.52</span></td><td class="num"></td></tr>
+    <tr><td>2025.11 – 2026.03</td><td>첨단 시스템반도체 설계 아카데미 7기<br><span class="note">성균관대 산학협력단</span></td><td class="num">513h</td></tr>
+    <tr><td>2025.05 – 2025.07</td><td>반도체 공정장비 및 제어시스템 SW 엔지니어 양성과정<br><span class="note">한국전자산업협동조합</span></td><td class="num">480h</td></tr>
+    <tr><td>2025.03 – 2025.04</td><td>반도체 제조공정 및 장비 실무자 양성과정<br><span class="note">더인에듀</span></td><td class="num">168h</td></tr>
+    <tr><td>2025.04</td><td>공정실습 13기: PR 도포, 현상, BOE 습식식각, CF4 건식식각, 세정<br><span class="note">서울테크노파크</span></td><td class="num">16h</td></tr>
+    <tr><td>2025.07</td><td>반도체 및 전자부품소재 공정교육: 박막 두께 측정<br><span class="note">수원대 TICEM</span></td><td class="num">16h</td></tr>
+  </table>
+</section>
 
-    <!-- Skills -->
-    <section id="skills">
-      <h2 class="section-title reveal">보유 역량</h2>
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <div class="skill-header"><span class="skill-dot" style="background:#0ea5e9"></span>분석 장비</div>
-          <div class="skill-tags">
-            <span>FE-SEM</span><span>XPS</span><span>SAT</span>
-            <span>VI Curve</span><span>EMMI</span><span>X-ray</span>
-            <span>KEYENCE VHX-7000</span><span>Agilent B2911A</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-header"><span class="skill-dot" style="background:#14b8a6"></span>프로그래밍</div>
-          <div class="skill-tags">
-            <span>Python</span><span>C#</span><span>Pandas</span>
-            <span>NumPy</span><span>Matplotlib</span><span>Scipy</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-header"><span class="skill-dot" style="background:#8b5cf6"></span>IC 설계</div>
-          <div class="skill-tags">
-            <span>Cadence Virtuoso</span><span>Analog IC</span>
-            <span>Digital IC</span><span>Full Custom</span>
-            <span>DRC / LVS</span><span>gpdk090</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-header"><span class="skill-dot" style="background:#f59e0b"></span>연구 분야</div>
-          <div class="skill-tags">
-            <span>저온 솔더</span><span>IMC 계면분석</span>
-            <span>반도체 패키징</span><span>HBM</span>
-            <span>3D IC / TSV</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-header"><span class="skill-dot" style="background:#64748b"></span>언어</div>
-          <div class="skill-tags">
-            <span>English OPIc IH</span>
-            <span>Japanese JPT 530</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-header"><span class="skill-dot" style="background:#ef4444"></span>자격 · 인증</div>
-          <div class="skill-tags">
-            <span>ADsP</span><span>6시그마 GB</span><span>운전면허 1종 보통</span>
-            <span>MS Office 상급</span>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="other">
+  <h2>그 밖의 경험</h2>
 
-    <!-- Contact -->
-    <section id="contact">
-      <h2 class="section-title reveal">함께 일해요</h2>
-      <p class="section-sub reveal">반도체 소재·공정 분야 관련 연락을 환영합니다.</p>
-      <div class="contact-links reveal">
-        <a href="mailto:iqup12@gmail.com" class="contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-          </svg>
-          iqup12@gmail.com
-        </a>
-        <a href="https://www.notion.so/YUNTAE-LEE-3eda6f1b235e83eaaaa18131c864af72" class="contact-item" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.14c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"/>
-          </svg>
-          Notion Portfolio
-        </a>
-      </div>
-    </section>
+  <div class="entry">
+    <div class="when">2022.04 – 2023.12</div>
+    <div>
+      <h3>운영 총괄 매니저</h3>
+      <div class="org">역전할머니맥주 장승배기점</div>
+      <p>발주, 재고, 매출, 인력 스케줄과 교육을 맡았습니다. 서비스 매뉴얼과 일일 체크리스트로 응대를 표준화해 피크 인력을 6명에서 4명으로 줄이고(인건비 약 15% 절감), 전년 대비 매출을 약 10% 늘렸습니다. 2022년 하반기 본사 우수점포상을 받았습니다.</p>
+    </div>
+  </div>
 
-    <footer class="main-footer">
-      <p>© 2026 LEE YUNTAE · Semiconductor Engineer Portfolio</p>
-      <p>Built with Claude Code</p>
-    </footer>
+  <div class="entry">
+    <div class="when">2023.04 – 2023.12</div>
+    <div>
+      <h3>학술동아리 CABON</h3>
+      <div class="org">중앙대 융합공학부, 논문 스터디</div>
+      <p>1학기 다가이온 이차전지(조장), 2학기 HBM, TSV(Implantation 공정 파트)를 주제로 논문을 읽고 학기말에 교수님 앞에서 발표했습니다.</p>
+    </div>
+  </div>
 
-  </main>
+  <div class="entry">
+    <div class="when">2019.03 – 2019.12</div>
+    <div>
+      <h3>밴드동아리 음융</h3>
+      <div class="org">중앙대, 보컬과 리드기타</div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>역량</h2>
+  <table>
+    <tr><td>분석</td><td>FE-SEM, EDS, X-ray, SAT(C-SAM), EMMI, I-V, VHX-7000</td></tr>
+    <tr><td>재료 평가</td><td>Solder Paste 점도, 틱소지수, 점착력, 솔더볼, 슬럼프, 플럭스 퍼짐률</td></tr>
+    <tr><td>소프트웨어</td><td>Python(Pandas, NumPy, Matplotlib, SciPy, OpenCV), C#, Cadence Virtuoso, Linux</td></tr>
+    <tr><td>자격</td><td>ADsP, 6시그마 GreenBelt, 상공회의소 한자 4급, 운전면허 1종보통</td></tr>
+    <tr><td>어학</td><td>OPIc 영어 IH, JPT 일본어 530</td></tr>
+  </table>
+</section>
+
+<footer>
+  <span>이윤태, <a href="mailto:iqup12@gmail.com">iqup12@gmail.com</a></span>
+  <span>2026년 11월 갱신</span>
+</footer>
+
 </div>
-
-<script src="../script.js"></script>
 </body>
 </html>
