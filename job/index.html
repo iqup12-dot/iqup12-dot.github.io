@@ -55,8 +55,8 @@ main { width: 62%; padding: 120px 0 96px; }
 
 section { margin-bottom: 160px; scroll-margin-top: 120px; }
 h2 {
-  font-size: 13px; font-weight: 600; letter-spacing: 0.08em; color: var(--muted);
-  position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+  font-size: 13px; font-weight: 600; letter-spacing: 0.08em; color: var(--accent);
+  margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--rule);
 }
 
 .entry { position: relative; display: grid; grid-template-columns: 128px 1fr; gap: 32px; padding: 28px 28px; margin: 0 -28px 16px; border-radius: 6px; transition: opacity .15s, background-color .15s; }
@@ -145,7 +145,7 @@ summary:hover { color: var(--accent); }
   <div>
     <h1>이윤태<span>Yuntae Lee</span></h1>
     <p class="role">솔더 재료개발 엔지니어</p>
-    <p class="lede">엘티소재 재료개발팀에서 Solder Paste용 플럭스를 배합하고 평가합니다.</p>
+    <p class="lede">엘티소재 재료개발팀에서 Solder Bar/Wire, Paste를 개발하고 평가합니다.</p>
     <nav aria-label="섹션 이동">
       <a href="#about">소개</a>
       <a href="#work">경력</a>
@@ -156,7 +156,7 @@ summary:hover { color: var(--accent); }
       <a href="#etc">기타</a>
     </nav>
   </div>
-  <p class="contact"><a href="mailto:iqup12@gmail.com">iqup12@gmail.com</a><button type="button" class="print-btn" onclick="window.print()">이력서 PDF 저장</button></p>
+  <p class="contact"><a href="mailto:iqup12@naver.com">iqup12@naver.com</a><button type="button" class="print-btn" onclick="window.print()">이력서 PDF 저장</button></p>
 </header>
 
 <main>
@@ -164,7 +164,7 @@ summary:hover { color: var(--accent); }
 <section id="about">
   <h2>소개</h2>
   <div class="intro">
-    <p>나노소재공학을 전공했고, 지금은 <strong>Solder Paste용 플럭스를 배합하고 평가</strong>하는 일을 합니다. 학부연구생 때 Sn-Bi 저온솔더 접합부의 계면을 SEM과 EDS로 들여다봤고, 인턴 때는 반도체 불량을 비파괴 분석부터 단면까지 따라가며 원인을 찾았습니다.</p>
+    <p>나노소재공학을 전공했고, 지금은 <strong>Solder Bar/Wire, Paste를 개발하고 평가</strong>하는 일을 합니다. 학부연구생 때 Sn-Bi 저온솔더 접합부의 계면을 SEM과 EDS로 들여다봤고, 인턴 때는 반도체 불량을 비파괴 분석부터 단면까지 따라가며 원인을 찾았습니다.</p>
     <p>재료를 만드는 일과 그 재료가 왜 실패하는지 확인하는 일을 함께 해 왔습니다. 측정 데이터는 Python으로 정리하고, 근거가 남는 방식으로 일하는 것을 기본으로 둡니다.</p>
   </div>
 </section>
@@ -176,7 +176,7 @@ summary:hover { color: var(--accent); }
     <div class="when">2026.10 –</div>
     <div>
       <h3>재료개발팀 사원</h3>
-      <div class="org">엘티소재(주), 솔더 재료개발</div>
+      <div class="org">엘티소재(주), 솔더 재료개발(Solder Bar/Wire, Paste)</div>
       <ul>
         <li>국내 가전사向 Solder Paste 플럭스 개선: 평가 데이터로 칙소제 조절 방향을 제안, 개선안이 점착 기준을 30% 이상 상회하고 솔더볼 Pass 확인, 출시 단계 진행 중</li>
         <li>신규 플럭스 평가에서 점도와 점착 유지, 솔더볼 사이의 트레이드오프를 데이터로 확인</li>
@@ -191,7 +191,7 @@ summary:hover { color: var(--accent); }
           <li>세선 와이어용 플럭스 제작과 퍼짐률 평가로 레이저 솔더링 후보 선별</li>
         </ul>
       </details>
-      <p class="tags"><span>Solder Paste</span><span>Flux</span><span>Rheology</span><span>양산이관</span></p>
+      <p class="tags"><span>Solder Bar/Wire</span><span>Solder Paste</span><span>Flux</span><span>Rheology</span><span>양산이관</span></p>
     </div>
   </div>
 
@@ -353,9 +353,6 @@ summary:hover { color: var(--accent); }
   </table>
 </section>
 
-<footer>
-  <p>2026년 11월 갱신</p>
-</footer>
 
 </main>
 
