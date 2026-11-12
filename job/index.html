@@ -86,6 +86,16 @@ td.num { text-align: right; color: var(--faint); font-variant-numeric: tabular-n
 
 footer { font-size: 13px; color: var(--faint); }
 
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 40px; }
+.stat { padding: 20px; border: 1px solid var(--rule); border-radius: 6px; }
+.stat b { display: block; font-size: 26px; font-weight: 600; color: var(--accent); line-height: 1.2; font-variant-numeric: tabular-nums; }
+.stat span { display: block; margin-top: 8px; font-size: 13px; line-height: 1.6; color: var(--muted); }
+
+.bento { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.bento .entry { display: block; margin: 0; padding: 24px; border: 1px solid var(--rule); }
+.bento .entry.wide { grid-column: span 2; }
+.bento .when { padding-top: 0; margin-bottom: 6px; }
+
 .card-link { text-decoration: none; }
 .card-link::after { content: ""; position: absolute; inset: 0; border-radius: 6px; }
 .arrow { display: inline-block; margin-left: 4px; font-size: 0.85em; color: var(--faint); transition: transform .15s, color .15s; }
@@ -115,6 +125,11 @@ summary:hover { color: var(--accent); }
   section { margin-bottom: 14pt; break-inside: auto; }
   h2 { position: static; width: auto; height: auto; overflow: visible; clip: auto; margin: 0 0 4pt; padding: 0 0 3pt; border-bottom: 1px solid #ccc; background: none; backdrop-filter: none; }
   .entry { margin: 0; padding: 6pt 0; break-inside: avoid; opacity: 1 !important; background: none !important; }
+  .bento { display: block; }
+  .bento .entry { border: 0; padding: 6pt 0; }
+  .stats { gap: 6pt; margin-top: 10pt; }
+  .stat { padding: 6pt 8pt; }
+  .stat b { font-size: 14pt; }
   a { text-decoration: none; }
 }
 
@@ -127,6 +142,7 @@ summary:hover { color: var(--accent); }
   section { margin-bottom: 96px; scroll-margin-top: 64px; }
   h2 { position: sticky; top: 0; z-index: 1; width: auto; height: auto; overflow: visible; clip: auto; margin: 0 -24px 8px; padding: 14px 24px; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); }
   .entry { margin: 0 0 12px; padding: 22px 0; }
+  .bento .entry { padding: 22px; }
 }
 @media (max-width: 600px) {
   .layout { padding: 0 16px; }
@@ -135,6 +151,9 @@ summary:hover { color: var(--accent); }
   h2 { margin: 0 -16px 8px; padding: 12px 16px; }
   .entry { grid-template-columns: 1fr; gap: 4px; }
   td:first-child { width: 104px; padding-right: 12px; }
+  .stats { grid-template-columns: 1fr; }
+  .bento { grid-template-columns: 1fr; }
+  .bento .entry.wide { grid-column: auto; }
 }
 </style>
 </head>
@@ -166,6 +185,11 @@ summary:hover { color: var(--accent); }
   <div class="intro">
     <p>나노소재공학을 전공했고, 지금은 <strong>Solder Bar/Wire, Paste를 개발하고 평가</strong>하는 일을 합니다. 학부연구생 때 Sn-Bi 저온솔더 접합부의 계면을 SEM과 EDS로 들여다봤고, 인턴 때는 반도체 불량을 비파괴 분석부터 단면까지 따라가며 원인을 찾았습니다.</p>
     <p>재료를 만드는 일과 그 재료가 왜 실패하는지 확인하는 일을 함께 해 왔습니다. 측정 데이터는 Python으로 정리하고, 근거가 남는 방식으로 일하는 것을 기본으로 둡니다.</p>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>30%+</b><span>플럭스 개선안의 점착 기준 상회 폭</span></div>
+    <div class="stat"><b>15%</b><span>Ag 1.5wt% 저온솔더 파괴강도 증가</span></div>
+    <div class="stat"><b>20건</b><span>3개월 인턴 기간 불량 분석 보고서</span></div>
   </div>
 </section>
 
@@ -227,6 +251,22 @@ summary:hover { color: var(--accent); }
 
 <section id="projects">
   <h2>프로젝트, 연구</h2>
+  <div class="bento">
+
+  <div class="entry wide">
+    <div class="when">2024.01 – 2024.12</div>
+    <div>
+      <h3>Sn-58Bi 저온솔더 접합 계면 분석</h3>
+      <div class="org">중앙대 융합공학부 유연소자 및 금속소재 연구실, 학부연구생</div>
+      <ul>
+        <li>Cu 기판과 Sn-58Bi 솔더 접합 시편 제작, In, Ag, CNT 첨가 조건 비교</li>
+        <li>FE-SEM 단면과 EDS mapping으로 Cu-Sn IMC 두께, 형상, 조성 정량 분석(Cu6Sn5, Cu3Sn 구분)</li>
+        <li>Ag 1.5wt% 첨가 조건에서 상용 솔더 대비 파괴강도 약 15% 증가, 계면 Ag₃Sn 층을 EDS로 확인</li>
+        <li>투명전극 시료 제작: DFR lamination, photolithography 미세패턴, AgNW와 그래핀 전사</li>
+      </ul>
+      <p class="tags"><span>Low-temp Solder</span><span>IMC</span><span>FE-SEM</span><span>EDS</span></p>
+    </div>
+  </div>
 
   <div class="entry">
     <div class="when">2025.11 – 2026.03</div>
@@ -259,21 +299,6 @@ summary:hover { color: var(--accent); }
   <div class="entry">
     <div class="when">2024.01 – 2024.12</div>
     <div>
-      <h3>Sn-58Bi 저온솔더 접합 계면 분석</h3>
-      <div class="org">중앙대 융합공학부 유연소자 및 금속소재 연구실, 학부연구생</div>
-      <ul>
-        <li>Cu 기판과 Sn-58Bi 솔더 접합 시편 제작, In, Ag, CNT 첨가 조건 비교</li>
-        <li>FE-SEM 단면과 EDS mapping으로 Cu-Sn IMC 두께, 형상, 조성 정량 분석(Cu6Sn5, Cu3Sn 구분)</li>
-        <li>Ag 1.5wt% 첨가 조건에서 상용 솔더 대비 파괴강도 약 15% 증가, 계면 Ag₃Sn 층을 EDS로 확인</li>
-        <li>투명전극 시료 제작: DFR lamination, photolithography 미세패턴, AgNW와 그래핀 전사</li>
-      </ul>
-      <p class="tags"><span>Low-temp Solder</span><span>IMC</span><span>FE-SEM</span><span>EDS</span></p>
-    </div>
-  </div>
-
-  <div class="entry">
-    <div class="when">2024.01 – 2024.12</div>
-    <div>
       <h3>졸업논문: TC Bonding 문헌 리뷰</h3>
       <div class="org">중앙대 융합공학부 졸업연구</div>
       <p>IEEE, ECTC 논문 20여 편을 바탕으로 Mass Reflow와 TC Bonding을 비교하고, TC-NCF, TC-MUF, LAB 갈래별로 접합 온도, 압력, 접촉면 재질이 접합 품질과 수율에 미치는 영향을 정리했습니다.</p>
@@ -298,6 +323,7 @@ summary:hover { color: var(--accent); }
       <div class="org">Obsidian, Claude Code</div>
       <p>공부한 내용과 업무 기록을 위키링크와 Dataview로 엮어 두는 개인 위키를 직접 구성하고 운영합니다.</p>
     </div>
+  </div>
   </div>
 </section>
 
