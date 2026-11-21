@@ -20,7 +20,7 @@
     <div class="act-detail-header">
       <p class="section-label">인턴십</p>
       <h1 class="detail-title">한국나노분석랩 분석기술팀</h1>
-      <p style="font-size:.9rem;color:var(--text-3);margin-top:.5rem;">3개월간 분석 보고서 약 20건 작성 · 삼성전자·제주반도체 의뢰 FA 3건 · 신규 부품 22종 평가 · Python 분석 자동화 직접 개발</p>
+      <p style="font-size:.9rem;color:var(--text-3);margin-top:.5rem;">3개월간 분석 보고서 약 20건 작성 · 외부 의뢰 FA 3건 · 신규 부품 22종 평가 · Python 분석 자동화 직접 개발</p>
     </div>
 
     <!-- ── 통계 바 ── -->
@@ -45,8 +45,7 @@
         <div class="equip-card">
           <span class="equip-cat">원소·화학 분석</span>
           <div class="equip-items">
-            <span>XPS (X선 광전자 분광)</span>
-            <span>EDS (에너지분산 X선 분석)</span>
+                        <span>EDS (에너지분산 X선 분석)</span>
           </div>
         </div>
         <div class="equip-card">
@@ -74,7 +73,7 @@
       <div class="act-detail-card">
         <div class="act-detail-meta">
           <span class="act-detail-type">FA · 정품 판정</span>
-          <span class="act-detail-period">삼성전자 의뢰</span>
+          <span class="act-detail-period">외부 의뢰</span>
         </div>
         <h2 class="act-detail-org">정품/모조품 식별 분석 — NXP IC</h2>
         <div class="detail-result" style="margin:1rem 0 1.25rem">
@@ -103,9 +102,9 @@
       <div class="act-detail-card" style="margin-top:1.25rem">
         <div class="act-detail-meta">
           <span class="act-detail-type">FA · 불량 원인 규명</span>
-          <span class="act-detail-period">제주반도체 의뢰</span>
+          <span class="act-detail-period">외부 의뢰</span>
         </div>
-        <h2 class="act-detail-org">불량 원인 분석 — 제주반도체 K12</h2>
+        <h2 class="act-detail-org">불량 원인 분석 — 메모리 IC</h2>
         <div class="detail-result" style="margin:1rem 0 1.25rem">
           📌 외관 이상 없는 전기 불량을 EMMI Thermal로 위치 특정 → 디캡슐레이션에서 Crack/Metal Melt 최종 확인
         </div>
@@ -174,20 +173,6 @@
       <p class="pg-sect-sub">업무 중 반복·수동 작업을 직접 자동화 — 분석 시간 및 인적 오류 대폭 절감</p>
 
       <div class="py-grid">
-
-        <div class="py-card">
-          <span class="py-type">분석 자동화</span>
-          <h3 class="py-title">XPS 데이터 처리 및 피크 진단 자동화</h3>
-          <p class="py-result">📌 수동 분석 대비 처리 시간 <strong>90% 단축</strong> (분 → 초), 화학결합 상태 자동 진단</p>
-          <ul class="py-list">
-            <li>Pandas로 장비 출력 헤더 제거·정형화, Scipy.signal.find_peaks로 유의미한 신호 추출</li>
-            <li>도메인 지식(Binding Energy 기준값)을 프로그래밍 로직에 직접 반영 — Ga-N, Ga-O, Ga-S 자동 매핑</li>
-            <li>결과 JSON 자동 저장 → 대량 샘플 DB화 기반 마련</li>
-          </ul>
-          <div class="course-tags" style="margin-top:.75rem">
-            <span>Pandas</span><span>Scipy</span><span>XPS</span><span>Binding Energy</span>
-          </div>
-        </div>
 
         <div class="py-card">
           <span class="py-type">SPC 시스템</span>

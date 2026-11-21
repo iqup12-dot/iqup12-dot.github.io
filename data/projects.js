@@ -656,7 +656,7 @@ window.PROJECTS_DATA = {
   },
   {
    "id": "376a6f1b-235e-81c6-b60b-c235e9a5e538",
-   "title": "정품/모조품 식별 분석 — 삼성전자 의뢰 NXP IC",
+   "title": "정품/모조품 식별 분석 — NXP IC",
    "date": "2025-09-01",
    "category": "🔬 소재·분석 연구",
    "tech_stack": [
@@ -665,13 +665,13 @@ window.PROJECTS_DATA = {
     "KEYENCE VHX-7000",
     "De-capsulation"
    ],
-   "key_result": "삼성전자 의뢰 IC 3개 항목 전부 Acceptable, 정품 확인 판정 완료",
-   "star": "[상황] 삼성전자 의뢰로 입수된 NXP 제조 IC의 진위 여부를 공신력 있는 분석으로 증명해야 하는 상황에서,\n[과제] 외관·X-ray·디캡슐레이션 3단계 분석으로 정품 여부를 판정하는 것을 목표로,\n[행동] 디지털 현미경(KEYENCE VHX-7000, 20~400배)으로 마킹·Sanding/Blacktop 흔적·리드 재도금 흔적을 정밀 검사하고, X-ray로 내부 Die 구조·Wire bond routing을 Known Authentic 데이터와 비교한 뒤, 디캡슐레이션으로 Die 마킹을 직접 확인했습니다.\n[결과] 3개 항목 전부 Acceptable 판정, 위조 또는 위조 의심 증거 없음, 정품 확인 보고서를 완성했습니다.",
+   "key_result": "의뢰 IC 3개 항목 전부 Acceptable, 정품 확인 판정 완료",
+   "star": "[상황] 외부 의뢰로 입수된 NXP 제조 IC의 진위 여부를 공신력 있는 분석으로 증명해야 하는 상황에서,\n[과제] 외관·X-ray·디캡슐레이션 3단계 분석으로 정품 여부를 판정하는 것을 목표로,\n[행동] 디지털 현미경(KEYENCE VHX-7000, 20~400배)으로 마킹·Sanding/Blacktop 흔적·리드 재도금 흔적을 정밀 검사하고, X-ray로 내부 Die 구조·Wire bond routing을 Known Authentic 데이터와 비교한 뒤, 디캡슐레이션으로 Die 마킹을 직접 확인했습니다.\n[결과] 3개 항목 전부 Acceptable 판정, 위조 또는 위조 의심 증거 없음, 정품 확인 보고서를 완성했습니다.",
    "status": "✅ 완료"
   },
   {
    "id": "376a6f1b-235e-8137-8bf7-ebf56613a0e0",
-   "title": "불량 원인 분석 — 제주반도체 K12 (Failure Analysis)",
+   "title": "불량 원인 분석 — 메모리 IC (Failure Analysis)",
    "date": "2025-09-01",
    "category": "🔬 소재·분석 연구",
    "tech_stack": [
@@ -683,7 +683,7 @@ window.PROJECTS_DATA = {
     "De-capsulation"
    ],
    "key_result": "외관 이상 없는 전기 불량 원인을 EMMI Thermal로 위치 특정 → Crack/Metal Melt 물리적 원인 최종 확인",
-   "star": "[상황] 양산 중인 제주반도체 K12 제품에서 전기적 이상이 감지됐으나 외관상 원인 파악이 불가한 상황에서,\n[과제] 다단계 비파괴·파괴 분석으로 불량 원인을 물리적으로 특정하는 것을 목표로,\n[행동] 외관→X-ray→SAT→VI Curve→EMMI(Photon/Thermal)→디캡슐레이션 6단계 분석을 순차 수행하여, VI Curve에서 Short curve를 검출하고 EMMI Thermal로 불량 위치 좌표를 특정했습니다.\n[결과] 디캡슐레이션에서 Crack 및 Metal Melt 물리적 손상을 최종 확인, 단순 전기 불량이 아닌 소자 내부 물리적 손상으로 원인 특정하여 재발 방지 근거를 마련했습니다.",
+   "star": "[상황] 양산 중인 메모리 IC 제품에서 전기적 이상이 감지됐으나 외관상 원인 파악이 불가한 상황에서,\n[과제] 다단계 비파괴·파괴 분석으로 불량 원인을 물리적으로 특정하는 것을 목표로,\n[행동] 외관→X-ray→SAT→VI Curve→EMMI(Photon/Thermal)→디캡슐레이션 6단계 분석을 순차 수행하여, VI Curve에서 Short curve를 검출하고 EMMI Thermal로 불량 위치 좌표를 특정했습니다.\n[결과] 디캡슐레이션에서 Crack 및 Metal Melt 물리적 손상을 최종 확인, 단순 전기 불량이 아닌 소자 내부 물리적 손상으로 원인 특정하여 재발 방지 근거를 마련했습니다.",
    "status": "✅ 완료"
   },
   {
