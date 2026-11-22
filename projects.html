@@ -39,32 +39,31 @@
   <div class="detail-wrap">
 
     <div class="act-detail-header">
-      <p class="section-label">Projects Hub</p>
       <h1 class="detail-title">전체 프로젝트 아카이브</h1>
       <p style="font-size:.9rem;color:var(--text-3);margin-top:.5rem;">
-        연구·IC 설계·SW·공정·교육 — 모든 프로젝트를 한 곳에서. 데이터 시각화와 논문 그래프까지 연결됩니다.
+        연구, IC 설계, SW, 공정, 교육: 모든 프로젝트를 한 곳에서. 데이터 시각화와 논문 그래프까지 연결됩니다.
       </p>
     </div>
 
     <div class="act-detail-achievements" style="margin-bottom:2rem">
-      <div class="ach-item"><span class="ach-num" id="stat-total">–</span><span class="ach-label">전체 프로젝트</span></div>
-      <div class="ach-item"><span class="ach-num" id="stat-research">–</span><span class="ach-label">소재·분석 연구</span></div>
-      <div class="ach-item"><span class="ach-num" id="stat-papers">–</span><span class="ach-label">논문 정밀독해</span></div>
+      <div class="ach-item"><span class="ach-num" id="stat-total"></span><span class="ach-label">전체 프로젝트</span></div>
+      <div class="ach-item"><span class="ach-num" id="stat-research"></span><span class="ach-label">소재, 분석 연구</span></div>
+      <div class="ach-item"><span class="ach-num" id="stat-papers"></span><span class="ach-label">논문 정밀독해</span></div>
       <div class="ach-item"><span class="ach-num">1,193h</span><span class="ach-label">직무교육</span></div>
     </div>
 
     <!-- ── 프로젝트 갤러리 ── -->
     <div class="hub-sect" id="gallery" style="margin-top:0">
       <h2 class="section-title">프로젝트 갤러리</h2>
-      <input type="search" id="hub-search" class="hub-search" placeholder="검색 — 제목·기술스택·성과 (예: XPS, Python, IMC)">
+      <input type="search" id="hub-search" class="hub-search" placeholder="검색: 제목, 기술스택, 성과 (예: XPS, Python, IMC)">
       <div class="tab-row" id="hub-tabs">
         <button class="tab active" data-filter="all">전체 <span class="tab-count" id="cnt-all">0</span></button>
-        <button class="tab" data-filter="mat">🔬 소재·분석 <span class="tab-count" id="cnt-mat">0</span></button>
-        <button class="tab" data-filter="ic">⚡ 회로·IC <span class="tab-count" id="cnt-ic">0</span></button>
-        <button class="tab" data-filter="sw">💻 SW·자동화 <span class="tab-count" id="cnt-sw">0</span></button>
-        <button class="tab" data-filter="proc">🏭 공정·장비 <span class="tab-count" id="cnt-proc">0</span></button>
-        <button class="tab" data-filter="edu">📚 교육 <span class="tab-count" id="cnt-edu">0</span></button>
-        <button class="tab" data-filter="ugrad">🎓 학부 <span class="tab-count" id="cnt-ugrad">0</span></button>
+        <button class="tab" data-filter="mat">소재, 분석 <span class="tab-count" id="cnt-mat">0</span></button>
+        <button class="tab" data-filter="ic">회로, IC <span class="tab-count" id="cnt-ic">0</span></button>
+        <button class="tab" data-filter="sw">SW, 자동화 <span class="tab-count" id="cnt-sw">0</span></button>
+        <button class="tab" data-filter="proc">공정, 장비 <span class="tab-count" id="cnt-proc">0</span></button>
+        <button class="tab" data-filter="edu">교육 <span class="tab-count" id="cnt-edu">0</span></button>
+        <button class="tab" data-filter="ugrad">학부 <span class="tab-count" id="cnt-ugrad">0</span></button>
       </div>
       <div class="hub-grid" id="projects-grid">
         <p class="loading-msg">불러오는 중…</p>
@@ -73,12 +72,12 @@
 
     <!-- ── 데이터 시각화 ── -->
     <div class="hub-sect" id="viz">
-      <h2 class="section-title">데이터 시각화 — Wafer 측정 분석</h2>
+      <h2 class="section-title">데이터 시각화: Wafer 측정 분석</h2>
       <p class="section-sub">Python(Plotly)으로 제작한 웨이퍼 측정 데이터 인터랙티브 시각화</p>
       <div class="hub-frame-wrap">
         <div class="hub-frame-bar">
           <span>wafer_visualization_portfolio</span>
-          <a href="viz/wafer.html" target="_blank" rel="noopener">전체 화면으로 보기 ↗</a>
+          <a href="viz/wafer.html" target="_blank" rel="noopener">전체 화면으로 보기</a>
         </div>
         <iframe src="viz/wafer.html" loading="lazy" title="Wafer 측정 데이터 시각화"></iframe>
       </div>
@@ -86,19 +85,19 @@
 
     <!-- ── 논문 그래프 ── -->
     <div class="hub-sect" id="graph">
-      <h2 class="section-title">연구 문헌 그래프 — Paper Network</h2>
-      <p class="section-sub">정밀독해한 논문들의 주제·키워드 연결망 (Sn-58Bi 저온솔더 · HEA · IMC)</p>
+      <h2 class="section-title">연구 문헌 그래프: Paper Network</h2>
+      <p class="section-sub">정밀독해한 논문들의 주제, 키워드 연결망 (Sn-58Bi 저온솔더, HEA, IMC)</p>
       <div class="hub-frame-wrap">
         <div class="hub-frame-bar">
           <span>research paper network</span>
-          <a href="research-graph.html" target="_blank" rel="noopener">전체 화면으로 보기 ↗</a>
+          <a href="research-graph.html" target="_blank" rel="noopener">전체 화면으로 보기</a>
         </div>
         <iframe src="research-graph.html" loading="lazy" title="논문 연결망 그래프"></iframe>
       </div>
     </div>
 
     <footer class="main-footer" style="margin-top:4rem">
-      <p>© 2026 LEE YUNTAE · Semiconductor Engineer Portfolio</p>
+      <p>© 2026 LEE YUNTAE, Semiconductor Engineer Portfolio</p>
     </footer>
 
   </div>

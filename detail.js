@@ -1,13 +1,13 @@
 const CAT_COLORS = {
-  '🔬 소재·분석 연구': { bg: 'rgba(34,211,238,.12)',  color: '#0891b2' },
-  '⚡ 회로·IC 설계':   { bg: 'rgba(167,139,250,.15)', color: '#7c3aed' },
-  '💻 SW·자동화':      { bg: 'rgba(59,130,246,.12)',  color: '#1d4ed8' },
-  '🏭 공정·장비':      { bg: 'rgba(251,191,36,.12)',  color: '#b45309' },
-  '📚 교육·학습':      { bg: 'rgba(148,163,184,.12)', color: '#475569' },
-  '🎓 학부 교과과정':  { bg: 'rgba(251,146,60,.12)',  color: '#c2410c' },
-  '🔬 연구/실험':      { bg: 'rgba(34,211,238,.12)',  color: '#0891b2' },
-  '💻 코딩 프로젝트':  { bg: 'rgba(167,139,250,.15)', color: '#7c3aed' },
-  '📚 학습':           { bg: 'rgba(148,163,184,.12)', color: '#475569' },
+  '소재·분석 연구': { bg: 'rgba(34,211,238,.12)',  color: '#0891b2' },
+  '회로·IC 설계':   { bg: 'rgba(167,139,250,.15)', color: '#7c3aed' },
+  'SW·자동화':      { bg: 'rgba(59,130,246,.12)',  color: '#1d4ed8' },
+  '공정·장비':      { bg: 'rgba(251,191,36,.12)',  color: '#b45309' },
+  '교육·학습':      { bg: 'rgba(148,163,184,.12)', color: '#475569' },
+  '학부 교과과정':  { bg: 'rgba(251,146,60,.12)',  color: '#c2410c' },
+  '연구/실험':      { bg: 'rgba(34,211,238,.12)',  color: '#0891b2' },
+  '코딩 프로젝트':  { bg: 'rgba(167,139,250,.15)', color: '#7c3aed' },
+  '학습':           { bg: 'rgba(148,163,184,.12)', color: '#475569' },
 };
 
 function loadDetail() {
@@ -44,7 +44,7 @@ function loadDetail() {
           ${p.date   ? `<span class="detail-date">${p.date}</span>`   : ''}
         </div>
         <h1 class="detail-title">${p.title}</h1>
-        ${p.key_result ? `<div class="detail-result">📌 ${p.key_result}</div>` : ''}
+        ${p.key_result ? `<div class="detail-result">${p.key_result}</div>` : ''}
       </div>
 
       ${tags ? `

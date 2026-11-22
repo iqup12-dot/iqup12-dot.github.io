@@ -1,15 +1,15 @@
 // Projects Hub — data/projects.json 기반 갤러리 (검색·필터·상세연결)
 const CAT_MAP = {
-  '🔬 소재·분석 연구': { key:'mat',   cls:'cat-mat'  },
-  '⚡ 회로·IC 설계':   { key:'ic',    cls:'cat-ic'   },
-  '💻 SW·자동화':      { key:'sw',    cls:'cat-sw'   },
-  '🏭 공정·장비':      { key:'proc',  cls:'cat-proc' },
-  '📚 교육·학습':      { key:'edu',   cls:'cat-edu'  },
-  '🎓 학부 교과과정':  { key:'ugrad', cls:'cat-ugrad'},
+  '소재·분석 연구': { key:'mat',   cls:'cat-mat'  },
+  '회로·IC 설계':   { key:'ic',    cls:'cat-ic'   },
+  'SW·자동화':      { key:'sw',    cls:'cat-sw'   },
+  '공정·장비':      { key:'proc',  cls:'cat-proc' },
+  '교육·학습':      { key:'edu',   cls:'cat-edu'  },
+  '학부 교과과정':  { key:'ugrad', cls:'cat-ugrad'},
   // 구버전 호환
-  '🔬 연구/실험':      { key:'mat',   cls:'cat-mat'  },
-  '💻 코딩 프로젝트':  { key:'ic',    cls:'cat-ic'   },
-  '📚 학습':           { key:'edu',   cls:'cat-edu'  },
+  '연구/실험':      { key:'mat',   cls:'cat-mat'  },
+  '코딩 프로젝트':  { key:'ic',    cls:'cat-ic'   },
+  '학습':           { key:'edu',   cls:'cat-edu'  },
 };
 
 let allProjects = [];

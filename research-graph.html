@@ -7,16 +7,16 @@
 <style>
   :root{
     --bg:#fefefe; --text-1:#0f172a; --text-3:#475569;
-    --border:#ece8db; --accent:#0ea5e9;
+    --border:#ece8db; --accent:#0ea5e9; --muted-tip:#94a3b8; --font-body:'Pretendard','Apple SD Gothic Neo',sans-serif;
   }
   html,body{margin:0;height:100%;background:var(--bg);
-    font-family:'Pretendard','Apple SD Gothic Neo',sans-serif;color:var(--text-1)}
+    font-family:var(--font-body);color:var(--text-1)}
   #chart{width:100%;height:100%;cursor:grab}
   #chart:active{cursor:grabbing}
   .panel{
-    position:fixed;top:14px;left:14px;background:rgba(254,254,254,.92);
+    position:fixed;top:14px;left:14px;background:var(--i-06);
     border:1px solid var(--border);border-radius:10px;padding:.8rem 1rem;
-    font-size:.78rem;line-height:1.9;box-shadow:0 1px 3px rgba(0,0,0,.08);
+    font-size:.78rem;line-height:1.9;box-shadow:0 1px 3px var(--i-07);
     backdrop-filter:blur(4px);max-width:230px;
   }
   .panel h1{font-size:1.05rem;margin:0 0 .3rem;font-weight:700}
@@ -25,25 +25,25 @@
   .lg .dot{width:10px;height:10px;border-radius:50%;flex:none}
   #tip{
     position:fixed;pointer-events:none;opacity:0;transition:opacity .12s;
-    background:#0f172a;color:#f8fafc;padding:.55rem .75rem;border-radius:8px;
+    background:var(--i-08);color:var(--i-09);padding:.55rem .75rem;border-radius:8px;
     font-size:.78rem;line-height:1.5;max-width:300px;z-index:10;
   }
   #tip .t{font-weight:700}
-  #tip .m{color:#94a3b8}
+  #tip .m{color:var(--muted-tip)}
   .node text{font-size:9.5px;fill:var(--text-3);pointer-events:none}
 </style>
 </head>
 <body>
 <div class="panel">
   <h1>연구 문헌 그래프</h1>
-  <p class="sub">정밀독해 논문 연결망 · 실선 = 내 DOE와 직결 · 점선 = 키워드 공유. 드래그·휠 줌 가능.</p>
-  <div class="lg"><span class="dot" style="background:#ef4444"></span>내 연구 DOE</div>
-  <div class="lg"><span class="dot" style="background:#0ea5e9"></span>저온솔더 (Sn-58Bi)</div>
-  <div class="lg"><span class="dot" style="background:#8b5cf6"></span>HEA 솔더</div>
-  <div class="lg"><span class="dot" style="background:#f59e0b"></span>EMI 차폐</div>
-  <div class="lg"><span class="dot" style="background:#64748b"></span>기타</div>
+  <p class="sub">정밀독해 논문 연결망, 실선 = 내 DOE와 직결, 점선 = 키워드 공유. 드래그, 휠 줌 가능.</p>
+  <div class="lg"><span class="dot" style="background:var(--i-01)"></span>내 연구 DOE</div>
+  <div class="lg"><span class="dot" style="background:var(--i-02)"></span>저온솔더 (Sn-58Bi)</div>
+  <div class="lg"><span class="dot" style="background:var(--i-03)"></span>HEA 솔더</div>
+  <div class="lg"><span class="dot" style="background:var(--i-04)"></span>EMI 차폐</div>
+  <div class="lg"><span class="dot" style="background:var(--i-05)"></span>기타</div>
 </div>
-<svg id="chart"></svg>
+<svg aria-hidden="true" id="chart"></svg>
 <div id="tip"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
@@ -53,7 +53,7 @@ const COLOR = { 'DOE':'#ef4444','저온솔더':'#0ea5e9','HEA':'#8b5cf6','EMI차
 const R = { core:18, high:11, medium:8.5, low:6.5 };
 
 function label(n){
-  if (n.cluster === 'DOE') return '★ 내 DOE';
+  if (n.cluster === 'DOE') return '내 DOE';
   let first = String(n.authors||'').split(',')[0].trim().split(' ')[0];
   if (!first || first.startsWith('(')) first = n.id.split('_')[0]; // 저자 미상 → 파일명 첫 토큰
   return `${first} ${n.year||''}`.trim();
@@ -93,7 +93,7 @@ function label(n){
     .attr('stroke','#fff').attr('stroke-width',1.5)
     .on('mousemove',(e,d)=>{
       tip.innerHTML = `<div class="t">${d.title}</div>
-        <div class="m">${[d.authors,d.year,d.journal].filter(Boolean).join(' · ')}</div>`;
+        <div class="m">${[d.authors,d.year,d.journal].filter(Boolean).join(', ')}</div>`;
       tip.style.opacity = 1;
       tip.style.left = Math.min(e.clientX+14, innerWidth-320)+'px';
       tip.style.top  = (e.clientY+14)+'px';
